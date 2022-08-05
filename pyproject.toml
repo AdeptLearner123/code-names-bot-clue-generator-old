@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "code-names-bot-clue-generator"
+version = "0.1.0"
+description = ""
+authors = ["Nalu Zou <zonalu@amazon.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+isort = "^5.10.1"
+black = "^22.6.0"
+PyYAML = "^6.0"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+format                  = "tasks:format"
+
+create-eval-triplets    = "evaluation.triplet_generator:main"
+eval-triplets           = "evaluation.triplet_evaluator:main"
+
+get-synsets             = "tools.get_synsets:main"
+get-hyponyms            = "tools.get_hyponyms:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
