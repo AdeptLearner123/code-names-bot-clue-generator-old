@@ -1,7 +1,10 @@
-from . import scores_database
+from code_names_bot_clue_generator.scores.scores_database import ScoresDatabase
+from code_names_bot_clue_generator.config import WIKI_SCORES_PATH
 
 NEGATIVE_THRESHOLD = 2.0
 
+
+scores_database = ScoresDatabase(WIKI_SCORES_PATH)
 
 def best_clue(pos_terms, neg_terms, count, ignore=[]):
     term_scores = get_term_scores(pos_terms, neg_terms)
@@ -78,12 +81,12 @@ def explore_clue(clue, pos_terms, neg_terms):
 
 
 def print_clue_term(term, clue):
-    score, path, excerpt = scores_database.get_term_clue(term, clue)
-    if score is None or path is None:
+    score, type, reason = scores_database.get_term_clue(term, clue)
+    if score is None:
         print("Term: {0} N/A".format(term))
     else:
         print(
-            "Term: {0} Score: {1} Path: {2} Excerpt: {3}".format(
-                term, score, path, excerpt
+            "Term: {0} Score: {1} Type: {2} Reason: {3}".format(
+                term, score, type, reason
             )
         )

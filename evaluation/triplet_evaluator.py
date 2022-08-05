@@ -3,10 +3,9 @@ import random
 import yaml
 
 from code_names_bot_clue_generator.config import EVALUATION_TRIPLETS_PATH
-from code_names_bot_clue_generator.scores.clue_generator import (best_clue,
-                                                                 explore_clue)
+from evaluation.clue_generator import (best_clue, explore_clue)
 
-from .scenario import Scenario, ScenarioSet
+from .scenario import ScenarioSet
 
 
 def get_guess(clue, triplet):

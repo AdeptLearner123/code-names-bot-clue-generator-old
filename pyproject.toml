@@ -9,6 +9,7 @@ python = "^3.9"
 isort = "^5.10.1"
 black = "^22.6.0"
 PyYAML = "^6.0"
+nltk = "^3.7"
 
 [tool.poetry.dev-dependencies]
 
@@ -19,7 +20,7 @@ create-eval-triplets    = "evaluation.triplet_generator:main"
 eval-triplets           = "evaluation.triplet_evaluator:main"
 
 get-synsets             = "tools.get_synsets:main"
-get-hyponyms            = "tools.get_hyponyms:main"
+get-hypernyms           = "tools.get_hypernyms:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
