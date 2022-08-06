@@ -2,8 +2,7 @@ import random
 
 import yaml
 
-from code_names_bot_clue_generator.config import (EVALUATION_TRIPLETS_PATH,
-                                                  TERMS_PATH)
+from config import EVALUATION_TRIPLETS_PATH, TERMS_PATH
 
 from .scenario import Scenario, ScenarioSet
 

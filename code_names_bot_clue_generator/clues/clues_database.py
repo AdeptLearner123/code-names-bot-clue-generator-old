@@ -1,7 +1,7 @@
 import sqlite3
 
-class ScoresDatabase:
-    
+
+class CluesDatabase:
     def __init__(self, PATH):
         self.con = sqlite3.connect(PATH)
         self.cur = self.con.cursor()
@@ -26,7 +26,9 @@ class ScoresDatabase:
         )
 
     def insert_term_clue(self, term, clue, score, type, reason):
-        self.cur.execute("SELECT * FROM term_clue WHERE term=? AND clue=?;", [term, clue])
+        self.cur.execute(
+            "SELECT * FROM term_clue WHERE term=? AND clue=?;", [term, clue]
+        )
         if len(self.cur.fetchall()) == 0:
             self.cur.execute(
                 "INSERT INTO term_clue (term, clue, score, type, reason) VALUES(?,?,?,?,?);",
@@ -48,14 +50,12 @@ class ScoresDatabase:
         )
         return self.cur.fetchall()
 
-
-    def get_scores(self, term):
-        self.cur.execute("SELECT clue, score FROM term_clue WHERE term=?", [term])
+    def get_all_clues(self, term):
+        self.cur.execute("SELECT clue, score, type, reason FROM term_clue WHERE term=?", [term])
         scores = {}
         for row in self.cur.fetchall():
-            scores[row[0]] = row[1]
+            scores[row[0]] = row[1:]
         return scores
-
 
     def get_term_clue(self, term, clue):
         self.cur.execute(
@@ -67,20 +67,23 @@ class ScoresDatabase:
             return None, None, None
         return row
 
-
     def commit(self):
         self.con.commit()
 
-
     def clear_term_clues(self, term):
+        self.cur.execute(
+            "SELECT name FROM sqlite_master WHERE type='table' AND name='term_clue';"
+        )
+        if self.cur.fetchone() is None:
+            return
+
         self.cur.execute("DELETE FROM term_clue WHERE term=?", [term])
         self.con.commit()
         self.cur.execute("VACUUM")
         self.con.commit()
 
-
     def clear(self):
         self.cur.execute("DELETE FROM term_clue")
-        self.on.commit()
+        self.con.commit()
         self.cur.execute("VACUUM")
         self.con.commit()

@@ -1,27 +1,23 @@
 import sys
+
 from nltk.corpus import wordnet
+
+from code_names_bot_clue_generator.hypernym_scores.generate_hypernym_clues import \
+    get_term_hypernyms
 
 
 def main():
-    synsets = wordnet.synsets(sys.argv[1])
-    result_synsets = set()
-    for synset in synsets:
-        get_hypernyms(synset, result_synsets)
-    print("\nAll Synsets: ", result_synsets)
+    result_synsets, result_words = get_term_hypernyms(sys.argv[1])
 
-    hypernym_words = set()
-    for hypernym_synset in result_synsets:
-        hypernym_synset_words = map(lambda lemma: lemma.name(), hypernym_synset.lemmas())
-        hypernym_words.update(hypernym_synset_words)
-    print("All words: ", hypernym_words)
+    for synset in result_synsets:
+        depth, path = result_synsets[synset]
+        print(synset, depth, path)
 
+    print()
 
-def get_hypernyms(synset, result):
-    for hypernym in synset.hypernyms():
-        print(f"{synset} -> {hypernym}")
-        if hypernym not in result:
-            result.add(hypernym)
-            get_hypernyms(hypernym, result)
+    for word in result_words:
+        depth, path = result_words[word]
+        print(word, depth, path)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,1750 @@
+correct_scenarios:
+- pos: [FLY, VET]
+  neg: [BEIJING]
+  clue: BEING
+  score: 2.0
+  count: 2
+  terms: [FLY, VET]
+  reasons:
+    FLY: {type: HYPERNYM, reason: Synset('fly.n.01')->Synset('dipterous_insect.n.01')->Synset('insect.n.01')->Synset('arthropod.n.01')->Synset('invertebrate.n.01')->Synset('animal.n.01')->Synset('organism.n.01')}
+    VET: {type: HYPERNYM, reason: Synset('veteran.n.02')->Synset('serviceman.n.01')->Synset('skilled_worker.n.01')->Synset('worker.n.01')->Synset('person.n.01')->Synset('organism.n.01')}
+  result: &id001 !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [
+    2]
+- pos: [QUEEN, AZTEC]
+  neg: [DIAMOND]
+  clue: BEING
+  score: 2.0
+  count: 2
+  terms: [QUEEN, AZTEC]
+  reasons:
+    QUEEN: {type: HYPERNYM, reason: Synset('queen.n.04')->Synset('personification.n.01')->Synset('person.n.01')->Synset('organism.n.01')}
+    AZTEC: {type: HYPERNYM, reason: Synset('aztec.n.01')->Synset('nahuatl.n.01')->Synset('indian.n.01')->Synset('amerindian.n.01')->Synset('person.n.01')->Synset('organism.n.01')}
+  result: *id001
+- pos: [APPLE, HAM]
+  neg: [BOX]
+  clue: FOOD
+  score: 2.0
+  count: 2
+  terms: [APPLE, HAM]
+  reasons:
+    APPLE: {type: HYPERNYM, reason: Synset('apple.n.01')->Synset('edible_fruit.n.01')->Synset('produce.n.01')->Synset('food.n.02')}
+    HAM: {type: HYPERNYM, reason: Synset('ham.n.01')->Synset('cut_of_pork.n.01')->Synset('cut.n.06')->Synset('meat.n.01')->Synset('food.n.02')}
+  result: *id001
+- pos: [BRIDGE, MODEL]
+  neg: [DOCTOR]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [BRIDGE, MODEL]
+  reasons:
+    BRIDGE: {type: HYPERNYM, reason: Synset('bridge.n.01')->Synset('structure.n.01')->Synset('artifact.n.01')}
+    MODEL: {type: HYPERNYM, reason: Synset('model.n.04')->Synset('representation.n.02')->Synset('creation.n.02')->Synset('artifact.n.01')}
+  result: *id001
+- pos: [CHICK, DOG]
+  neg: [SPELL]
+  clue: ANIMAL
+  score: 2.0
+  count: 2
+  terms: [CHICK, DOG]
+  reasons:
+    CHICK: {type: HYPERNYM, reason: Synset('chick.n.01')->Synset('young_bird.n.01')->Synset('young.n.01')->Synset('animal.n.01')}
+    DOG: {type: HYPERNYM, reason: Synset('dog.n.01')->Synset('domestic_animal.n.01')->Synset('animal.n.01')}
+  result: *id001
+- pos: [DUCK, KIWI]
+  neg: [FALL]
+  clue: ANIMAL
+  score: 2.0
+  count: 2
+  terms: [DUCK, KIWI]
+  reasons:
+    DUCK: {type: HYPERNYM, reason: Synset('duck.n.01')->Synset('anseriform_bird.n.01')->Synset('waterfowl.n.01')->Synset('aquatic_bird.n.01')->Synset('bird.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+    KIWI: {type: HYPERNYM, reason: Synset('kiwi.n.04')->Synset('ratite.n.01')->Synset('bird.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: *id001
+- pos: [JET, MISSILE]
+  neg: [LEPRECHAUN]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [JET, MISSILE]
+  reasons:
+    JET: {type: HYPERNYM, reason: Synset('jet.n.01')->Synset('airplane.n.01')->Synset('heavier-than-air_craft.n.01')->Synset('aircraft.n.01')->Synset('craft.n.02')->Synset('vehicle.n.01')->Synset('conveyance.n.03')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+    MISSILE: {type: HYPERNYM, reason: Synset('missile.n.01')->Synset('rocket.n.01')->Synset('vehicle.n.01')->Synset('conveyance.n.03')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+  result: *id001
+- pos: [TRIANGLE, FIGURE]
+  neg: [BOOT]
+  clue: FORM
+  score: 2.0
+  count: 2
+  terms: [TRIANGLE, FIGURE]
+  reasons:
+    TRIANGLE: {type: HYPERNYM, reason: Synset('triangle.n.02')->Synset('shape.n.02')}
+    FIGURE: {type: HYPERNYM, reason: Synset('figure.n.06')->Synset('shape.n.02')}
+  result: *id001
+- pos: [DROP, TAP]
+  neg: [COTTON]
+  clue: ACT
+  score: 2.0
+  count: 2
+  terms: [DROP, TAP]
+  reasons:
+    DROP: {type: HYPERNYM, reason: Synset('drop.n.09')->Synset('descent.n.03')->Synset('motion.n.06')->Synset('change.n.03')->Synset('action.n.01')->Synset('act.n.02')}
+    TAP: {type: HYPERNYM, reason: Synset('tap.n.08')->Synset('touch.n.05')->Synset('act.n.02')}
+  result: *id001
+- pos: [WORM, FISH]
+  neg: [BOW]
+  clue: ANIMAL
+  score: 2.0
+  count: 2
+  terms: [WORM, FISH]
+  reasons:
+    WORM: {type: HYPERNYM, reason: Synset('worm.n.01')->Synset('invertebrate.n.01')->Synset('animal.n.01')}
+    FISH: {type: HYPERNYM, reason: Synset('fish.n.01')->Synset('aquatic_vertebrate.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: *id001
+- pos: [HORSE, KNIGHT]
+  neg: [LASER]
+  clue: BEING
+  score: 2.0
+  count: 2
+  terms: [HORSE, KNIGHT]
+  reasons:
+    HORSE: {type: HYPERNYM, reason: Synset('horse.n.01')->Synset('equine.n.01')->Synset('odd-toed_ungulate.n.01')->Synset('ungulate.n.01')->Synset('placental.n.01')->Synset('mammal.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')->Synset('organism.n.01')}
+    KNIGHT: {type: HYPERNYM, reason: Synset('knight.n.01')->Synset('male_aristocrat.n.01')->Synset('aristocrat.n.01')->Synset('leader.n.01')->Synset('person.n.01')->Synset('organism.n.01')}
+  result: *id001
+- pos: [FENCE, YARD]
+  neg: [NEEDLE]
+  clue: CONSTRUCTION
+  score: 2.0
+  count: 2
+  terms: [FENCE, YARD]
+  reasons:
+    FENCE: {type: HYPERNYM, reason: Synset('fence.n.01')->Synset('barrier.n.01')->Synset('obstruction.n.01')->Synset('structure.n.01')}
+    YARD: {type: HYPERNYM, reason: Synset('yard.n.09')->Synset('enclosure.n.01')->Synset('area.n.05')->Synset('structure.n.01')}
+  result: *id001
+- pos: [CRANE, ROBOT]
+  neg: [STICK]
+  clue: DEVICE
+  score: 2.0
+  count: 2
+  terms: [CRANE, ROBOT]
+  reasons:
+    CRANE: {type: HYPERNYM, reason: Synset('crane.n.04')->Synset('lifting_device.n.01')->Synset('device.n.01')}
+    ROBOT: {type: HYPERNYM, reason: Synset('automaton.n.02')->Synset('mechanism.n.05')->Synset('device.n.01')}
+  result: *id001
+- pos: [PLANE, SHIP]
+  neg: [ORGAN]
+  clue: CONVEYANCE
+  score: 2.0
+  count: 2
+  terms: [PLANE, SHIP]
+  reasons:
+    PLANE: {type: HYPERNYM, reason: Synset('airplane.n.01')->Synset('heavier-than-air_craft.n.01')->Synset('aircraft.n.01')->Synset('craft.n.02')->Synset('vehicle.n.01')->Synset('conveyance.n.03')}
+    SHIP: {type: HYPERNYM, reason: Synset('ship.n.01')->Synset('vessel.n.02')->Synset('craft.n.02')->Synset('vehicle.n.01')->Synset('conveyance.n.03')}
+  result: *id001
+- pos: [CAP, PANTS]
+  neg: [CAT]
+  clue: CLOTHING
+  score: 2.0
+  count: 2
+  terms: [CAP, PANTS]
+  reasons:
+    CAP: {type: HYPERNYM, reason: Synset('cap.n.01')->Synset('headdress.n.01')->Synset('clothing.n.01')}
+    PANTS: {type: HYPERNYM, reason: Synset('trouser.n.01')->Synset('garment.n.01')->Synset('clothing.n.01')}
+  result: *id001
+- pos: [TEACHER, DOCTOR]
+  neg: [CZECH]
+  clue: ADULT
+  score: 2.0
+  count: 2
+  terms: [TEACHER, DOCTOR]
+  reasons:
+    TEACHER: {type: HYPERNYM, reason: Synset('teacher.n.01')->Synset('educator.n.01')->Synset('professional.n.01')->Synset('adult.n.01')}
+    DOCTOR: {type: HYPERNYM, reason: Synset('doctor.n.01')->Synset('medical_practitioner.n.01')->Synset('health_professional.n.01')->Synset('professional.n.01')->Synset('adult.n.01')}
+  result: *id001
+- pos: [BERRY, PLATE]
+  neg: [NOVEL]
+  clue: FOOD
+  score: 2.0
+  count: 2
+  terms: [BERRY, PLATE]
+  reasons:
+    BERRY: {type: HYPERNYM, reason: Synset('berry.n.01')->Synset('edible_fruit.n.01')->Synset('produce.n.01')->Synset('food.n.02')}
+    PLATE: {type: HYPERNYM, reason: Synset('plate.n.07')->Synset('cut_of_beef.n.01')->Synset('cut.n.06')->Synset('meat.n.01')->Synset('food.n.02')}
+  result: *id001
+- pos: [POOL, STREAM]
+  neg: [DECK]
+  clue: ACT
+  score: 2.0
+  count: 2
+  terms: [POOL, STREAM]
+  reasons:
+    POOL: {type: HYPERNYM, reason: Synset('pool.n.09')->Synset('table_game.n.01')->Synset('game.n.01')->Synset('activity.n.01')->Synset('act.n.02')}
+    STREAM: {type: HYPERNYM, reason: Synset('flow.n.03')->Synset('motion.n.06')->Synset('change.n.03')->Synset('action.n.01')->Synset('act.n.02')}
+  result: *id001
+- pos: [BEAR, CALF]
+  neg: [ROUND]
+  clue: ANIMAL
+  score: 2.0
+  count: 2
+  terms: [BEAR, CALF]
+  reasons:
+    BEAR: {type: HYPERNYM, reason: Synset('bear.n.01')->Synset('carnivore.n.01')->Synset('placental.n.01')->Synset('mammal.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+    CALF: {type: HYPERNYM, reason: Synset('calf.n.01')->Synset('young_mammal.n.01')->Synset('young.n.01')->Synset('animal.n.01')}
+  result: *id001
+- pos: [SCALE, MICROSCOPE]
+  neg: [SHARK]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [SCALE, MICROSCOPE]
+  reasons:
+    SCALE: {type: HYPERNYM, reason: Synset('scale.n.08')->Synset('indicator.n.03')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+    MICROSCOPE: {type: HYPERNYM, reason: Synset('microscope.n.01')->Synset('magnifier.n.01')->Synset('scientific_instrument.n.01')->Synset('instrument.n.01')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+  result: *id001
+- pos: [KANGAROO, OCTOPUS]
+  neg: [MATCH]
+  clue: ANIMAL
+  score: 2.0
+  count: 2
+  terms: [KANGAROO, OCTOPUS]
+  reasons:
+    KANGAROO: {type: HYPERNYM, reason: Synset('kangaroo.n.01')->Synset('marsupial.n.01')->Synset('metatherian.n.01')->Synset('mammal.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+    OCTOPUS: {type: HYPERNYM, reason: Synset('octopus.n.02')->Synset('octopod.n.01')->Synset('cephalopod.n.01')->Synset('mollusk.n.01')->Synset('invertebrate.n.01')->Synset('animal.n.01')}
+  result: *id001
+- pos: [SCORPION, SEAL]
+  neg: [ROBOT]
+  clue: ANIMAL
+  score: 2.0
+  count: 2
+  terms: [SCORPION, SEAL]
+  reasons:
+    SCORPION: {type: HYPERNYM, reason: Synset('scorpion.n.03')->Synset('arachnid.n.01')->Synset('arthropod.n.01')->Synset('invertebrate.n.01')->Synset('animal.n.01')}
+    SEAL: {type: HYPERNYM, reason: Synset('seal.n.09')->Synset('pinniped_mammal.n.01')->Synset('aquatic_mammal.n.01')->Synset('placental.n.01')->Synset('mammal.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: *id001
+- pos: [CONDUCTOR, FIELD]
+  neg: [CZECH]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [CONDUCTOR, FIELD]
+  reasons:
+    CONDUCTOR: {type: HYPERNYM, reason: Synset('conductor.n.04')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+    FIELD: {type: HYPERNYM, reason: Synset('airfield.n.01')->Synset('facility.n.01')->Synset('artifact.n.01')}
+  result: *id001
+- pos: [PISTOL, PIPE]
+  neg: [TIE]
+  clue: INSTRUMENT
+  score: 2.0
+  count: 2
+  terms: [PISTOL, PIPE]
+  reasons:
+    PISTOL: {type: HYPERNYM, reason: Synset('pistol.n.01')->Synset('firearm.n.01')->Synset('gun.n.01')->Synset('weapon.n.01')->Synset('instrument.n.01')}
+    PIPE: {type: HYPERNYM, reason: Synset('pipe.n.04')->Synset('wind_instrument.n.01')->Synset('musical_instrument.n.01')}
+  result: *id001
+- pos: [DWARF, GHOST]
+  neg: [DEGREE]
+  clue: BEING
+  score: 2.0
+  count: 2
+  terms: [DWARF, GHOST]
+  reasons:
+    DWARF: {type: HYPERNYM, reason: Synset('dwarf.n.03')->Synset('organism.n.01')}
+    GHOST: {type: HYPERNYM, reason: Synset('ghostwriter.n.01')->Synset('writer.n.01')->Synset('communicator.n.01')->Synset('person.n.01')->Synset('organism.n.01')}
+  result: *id001
+- pos: [AMBULANCE, CROSS]
+  neg: [KIWI]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [AMBULANCE, CROSS]
+  reasons:
+    AMBULANCE: {type: HYPERNYM, reason: Synset('ambulance.n.01')->Synset('car.n.01')->Synset('motor_vehicle.n.01')->Synset('self-propelled_vehicle.n.01')->Synset('wheeled_vehicle.n.01')->Synset('container.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+    CROSS: {type: HYPERNYM, reason: Synset('cross.n.01')->Synset('structure.n.01')->Synset('artifact.n.01')}
+  result: *id001
+- pos: [BOX, CHEST]
+  neg: [COVER]
+  clue: CONTAINER
+  score: 2.0
+  count: 2
+  terms: [BOX, CHEST]
+  reasons:
+    BOX: {type: HYPERNYM, reason: Synset('box.n.01')->Synset('container.n.01')}
+    CHEST: {type: HYPERNYM, reason: Synset('chest.n.02')->Synset('box.n.01')->Synset('container.n.01')}
+  result: *id001
+- pos: [PILOT, SOLDIER]
+  neg: [HOLLYWOOD]
+  clue: BEING
+  score: 2.0
+  count: 2
+  terms: [PILOT, SOLDIER]
+  reasons:
+    PILOT: {type: HYPERNYM, reason: Synset('pilot.n.01')->Synset('aviator.n.01')->Synset('skilled_worker.n.01')->Synset('worker.n.01')->Synset('person.n.01')->Synset('organism.n.01')}
+    SOLDIER: {type: HYPERNYM, reason: Synset('soldier.n.01')->Synset('enlisted_person.n.01')->Synset('serviceman.n.01')->Synset('skilled_worker.n.01')->Synset('worker.n.01')->Synset('person.n.01')->Synset('organism.n.01')}
+  result: *id001
+- pos: [COMIC, JACK]
+  neg: [TRACK]
+  clue: BEING
+  score: 2.0
+  count: 2
+  terms: [COMIC, JACK]
+  reasons:
+    COMIC: {type: HYPERNYM, reason: Synset('comedian.n.01')->Synset('performer.n.01')->Synset('entertainer.n.01')->Synset('person.n.01')->Synset('organism.n.01')}
+    JACK: {type: HYPERNYM, reason: Synset('mariner.n.01')->Synset('sailor.n.01')->Synset('skilled_worker.n.01')->Synset('worker.n.01')->Synset('person.n.01')->Synset('organism.n.01')}
+  result: *id001
+- pos: [BOARD, SCREEN]
+  neg: [WAVE]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [BOARD, SCREEN]
+  reasons:
+    BOARD: {type: HYPERNYM, reason: Synset('board.n.03')->Synset('sheet.n.06')->Synset('artifact.n.01')}
+    SCREEN: {type: HYPERNYM, reason: Synset('screen.n.01')->Synset('surface.n.01')->Synset('artifact.n.01')}
+  result: *id001
+- pos: [NOTE, SLIP]
+  neg: [PANTS]
+  clue: ACT
+  score: 2.0
+  count: 2
+  terms: [NOTE, SLIP]
+  reasons:
+    NOTE: {type: HYPERNYM, reason: Synset('note.v.04')->Synset('write_down.v.01')->Synset('write.v.02')->Synset('communicate.v.02')->Synset('interact.v.01')->Synset('act.v.01')}
+    SLIP: {type: HYPERNYM, reason: Synset('slip.n.02')->Synset('mistake.n.01')->Synset('nonaccomplishment.n.01')->Synset('act.n.02')}
+  result: *id001
+- pos: [HOOK, NET]
+  neg: [DEATH]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [HOOK, NET]
+  reasons:
+    HOOK: {type: HYPERNYM, reason: Synset('hook.n.05')->Synset('implement.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+    NET: {type: HYPERNYM, reason: Synset('net.n.06')->Synset('fabric.n.01')->Synset('artifact.n.01')}
+  result: *id001
+- pos: [TIE, POINT]
+  neg: [GOLD]
+  clue: ACT
+  score: 2.0
+  count: 2
+  terms: [TIE, POINT]
+  reasons:
+    TIE: {type: HYPERNYM, reason: Synset('bind.v.02')->Synset('relate.v.05')->Synset('interact.v.01')->Synset('act.v.01')}
+    POINT: {type: HYPERNYM, reason: Synset('indicate.v.02')->Synset('inform.v.01')->Synset('communicate.v.02')->Synset('interact.v.01')->Synset('act.v.01')}
+  result: *id001
+- pos: [PITCH, RACKET]
+  neg: [ROSE]
+  clue: ACTIVITY
+  score: 2.0
+  count: 2
+  terms: [PITCH, RACKET]
+  reasons:
+    PITCH: {type: HYPERNYM, reason: Synset('pitch.n.08')->Synset('all_fours.n.01')->Synset('card_game.n.01')->Synset('game.n.01')->Synset('activity.n.01')}
+    RACKET: {type: HYPERNYM, reason: Synset('racket.n.02')->Synset('enterprise.n.01')->Synset('undertaking.n.01')->Synset('work.n.01')->Synset('activity.n.01')}
+  result: *id001
+skipped_scenarios:
+- pos: [DECK, LUCK]
+  neg: [CAPITAL]
+  clue: ACCUMULATION
+  score: 1.0
+  count: 1
+  terms: [DECK]
+  reasons:
+    DECK: {type: HYPERNYM, reason: Synset('pack_of_cards.n.01')->Synset('pack.n.02')->Synset('collection.n.01')}
+  result: &id002 !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [
+    1]
+- pos: [AMAZON, PIE]
+  neg: [CLUB]
+  clue: ABILITY
+  score: 1.0
+  count: 1
+  terms: [AMAZON]
+  reasons:
+    AMAZON: {type: HYPERNYM, reason: Synset('amazon.n.02')->Synset('mythical_being.n.01')->Synset('imaginary_being.n.01')->Synset('imagination.n.01')->Synset('creativity.n.01')->Synset('ability.n.02')}
+  result: *id002
+- pos: [BOTTLE, WATER]
+  neg: [SPRING]
+  clue: CONTAINER
+  score: 1.0
+  count: 1
+  terms: [BOTTLE]
+  reasons:
+    BOTTLE: {type: HYPERNYM, reason: Synset('bottle.n.01')->Synset('vessel.n.03')->Synset('container.n.01')}
+  result: *id002
+- pos: [FORCE, TOKYO]
+  neg: [PLANE]
+  clue: ACT
+  score: 1.0
+  count: 1
+  terms: [FORCE]
+  reasons:
+    FORCE: {type: HYPERNYM, reason: Synset('force.v.08')->Synset('act.v.01')}
+  result: *id002
+- pos: [CASINO, BEIJING]
+  neg: [LAB]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [CASINO]
+  reasons:
+    CASINO: {type: HYPERNYM, reason: Synset('casino.n.02')->Synset('card_game.n.01')->Synset('game.n.01')->Synset('activity.n.01')->Synset('act.n.02')->Synset('event.n.01')->Synset('psychological_feature.n.01')->Synset('abstraction.n.06')}
+  result: *id002
+- pos: [RABBIT, NINJA]
+  neg: [GHOST]
+  clue: ACQUIRE
+  score: 1.0
+  count: 1
+  terms: [RABBIT]
+  reasons:
+    RABBIT: {type: HYPERNYM, reason: Synset('rabbit.v.01')->Synset('hunt.v.01')->Synset('capture.v.06')->Synset('get.v.01')}
+  result: *id002
+- pos: [WELL, AMERICA]
+  neg: [PUMPKIN]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [WELL]
+  reasons:
+    WELL: {type: HYPERNYM, reason: Synset('well.n.03')->Synset('source.n.02')->Synset('document.n.01')->Synset('writing.n.02')->Synset('written_communication.n.01')->Synset('communication.n.02')->Synset('abstraction.n.06')}
+  result: *id002
+- pos: [GLOVE, COOK]
+  neg: [ALIEN]
+  clue: ARTEFACT
+  score: 1.0
+  count: 1
+  terms: [GLOVE]
+  reasons:
+    GLOVE: {type: HYPERNYM, reason: Synset('glove.n.02')->Synset('handwear.n.01')->Synset('clothing.n.01')->Synset('covering.n.02')->Synset('artifact.n.01')}
+  result: *id002
+- pos: [DINOSAUR, FILM]
+  neg: [ALIEN]
+  clue: ANIMAL
+  score: 1.0
+  count: 1
+  terms: [DINOSAUR]
+  reasons:
+    DINOSAUR: {type: HYPERNYM, reason: Synset('dinosaur.n.01')->Synset('archosaur.n.01')->Synset('diapsid.n.01')->Synset('reptile.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: *id002
+- pos: [PLATYPUS, MOUTH]
+  neg: [CROSS]
+  clue: ANIMAL
+  score: 1.0
+  count: 1
+  terms: [PLATYPUS]
+  reasons:
+    PLATYPUS: {type: HYPERNYM, reason: Synset('platypus.n.01')->Synset('monotreme.n.01')->Synset('prototherian.n.01')->Synset('mammal.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: *id002
+- pos: [OIL, SMUGGLER]
+  neg: [ORGAN]
+  clue: AROUSE
+  score: 1.0
+  count: 1
+  terms: [OIL]
+  reasons:
+    OIL: {type: HYPERNYM, reason: Synset('anoint.v.02')->Synset('bless.v.01')->Synset('raise.v.07')}
+  result: *id002
+- pos: [GERMANY, TURKEY]
+  neg: [LEPRECHAUN]
+  clue: ANIMAL
+  score: 1.0
+  count: 1
+  terms: [TURKEY]
+  reasons:
+    TURKEY: {type: HYPERNYM, reason: Synset('turkey.n.01')->Synset('domestic_fowl.n.01')->Synset('gallinaceous_bird.n.01')->Synset('bird.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: *id002
+- pos: [ENGLAND, LONDON]
+  neg: [LEMON]
+  clue: null
+  score: null
+  count: null
+  terms: null
+  reasons: null
+  result: *id002
+- pos: [PAN, HORSESHOE]
+  neg: [LASER]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [PAN]
+  reasons:
+    PAN: {type: HYPERNYM, reason: Synset('pan.n.04')->Synset('mammal_genus.n.01')->Synset('genus.n.02')->Synset('taxonomic_group.n.01')->Synset('biological_group.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')}
+  result: *id002
+- pos: [MOSCOW, IRON]
+  neg: [SPIDER]
+  clue: APPLIANCE
+  score: 1.0
+  count: 1
+  terms: [IRON]
+  reasons:
+    IRON: {type: HYPERNYM, reason: Synset('iron.n.04')->Synset('home_appliance.n.01')->Synset('appliance.n.02')}
+  result: *id002
+- pos: [STADIUM, CRICKET]
+  neg: [AZTEC]
+  clue: ARTEFACT
+  score: 1.0
+  count: 1
+  terms: [STADIUM]
+  reasons:
+    STADIUM: {type: HYPERNYM, reason: Synset('stadium.n.01')->Synset('structure.n.01')->Synset('artifact.n.01')}
+  result: *id002
+- pos: [GAME, FAN]
+  neg: [QUEEN]
+  clue: ACT
+  score: 1.0
+  count: 1
+  terms: [GAME]
+  reasons:
+    GAME: {type: HYPERNYM, reason: Synset('game.n.01')->Synset('activity.n.01')->Synset('act.n.02')}
+  result: *id002
+- pos: [HONEY, AFRICA]
+  neg: [SNOWMAN]
+  clue: ALTER
+  score: 1.0
+  count: 1
+  terms: [HONEY]
+  reasons:
+    HONEY: {type: HYPERNYM, reason: Synset('honey.v.01')->Synset('sweeten.v.01')->Synset('change_taste.v.01')->Synset('change.v.01')}
+  result: *id002
+- pos: [STRING, CONCERT]
+  neg: [KNIFE]
+  clue: ACCUMULATION
+  score: 1.0
+  count: 1
+  terms: [STRING]
+  reasons:
+    STRING: {type: HYPERNYM, reason: Synset('string.n.09')->Synset('collection.n.01')}
+  result: *id002
+- pos: [OLIVE, ICE CREAM]
+  neg: [NAIL]
+  clue: ATTRIBUTE
+  score: 1.0
+  count: 1
+  terms: [OLIVE]
+  reasons:
+    OLIVE: {type: HYPERNYM, reason: Synset('olive.n.05')->Synset('chromatic_color.n.01')->Synset('color.n.01')->Synset('visual_property.n.01')->Synset('property.n.02')->Synset('attribute.n.02')}
+  result: *id002
+- pos: [ROME, SHAKESPEARE]
+  neg: [PENGUIN]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [ROME]
+  reasons:
+    ROME: {type: HYPERNYM, reason: Synset('rome.n.02')->Synset('leadership.n.02')->Synset('body.n.02')->Synset('social_group.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')}
+  result: *id002
+- pos: [MEXICO, CAPITAL]
+  neg: [BALL]
+  clue: AREA
+  score: 1.0
+  count: 1
+  terms: [CAPITAL]
+  reasons:
+    CAPITAL: {type: HYPERNYM, reason: Synset('capital.n.03')->Synset('seat.n.05')->Synset('center.n.01')->Synset('area.n.01')}
+  result: *id002
+- pos: [PYRAMID, EGYPT]
+  neg: [UNICORN]
+  clue: ACQUIRE
+  score: 1.0
+  count: 1
+  terms: [PYRAMID]
+  reasons:
+    PYRAMID: {type: HYPERNYM, reason: Synset('pyramid.v.01')->Synset('profit.v.01')->Synset('get.v.01')}
+  result: *id002
+- pos: [HELICOPTER, SUPERHERO]
+  neg: [SLUG]
+  clue: AIRCRAFT
+  score: 1.0
+  count: 1
+  terms: [HELICOPTER]
+  reasons:
+    HELICOPTER: {type: HYPERNYM, reason: Synset('helicopter.n.01')->Synset('heavier-than-air_craft.n.01')->Synset('aircraft.n.01')}
+  result: *id002
+- pos: [CZECH, BERMUDA]
+  neg: [PLANE]
+  clue: BALTO-SLAVIC
+  score: 1.0
+  count: 1
+  terms: [CZECH]
+  reasons:
+    CZECH: {type: HYPERNYM, reason: Synset('czech.n.03')->Synset('slavic.n.01')->Synset('balto-slavic.n.01')}
+  result: *id002
+- pos: [CAT, CENTAUR]
+  neg: [EYE]
+  clue: ACT
+  score: 1.0
+  count: 1
+  terms: [CAT]
+  reasons:
+    CAT: {type: HYPERNYM, reason: Synset('computerized_tomography.n.01')->Synset('x-raying.n.01')->Synset('imaging.n.02')->Synset('pictorial_representation.n.01')->Synset('representation.n.10')->Synset('activity.n.01')->Synset('act.n.02')}
+  result: *id002
+- pos: [BEACH, PIRATE]
+  neg: [PANTS]
+  clue: ARRIVE
+  score: 1.0
+  count: 1
+  terms: [BEACH]
+  reasons:
+    BEACH: {type: HYPERNYM, reason: Synset('beach.v.01')->Synset('land.v.01')->Synset('arrive.v.01')}
+  result: *id002
+- pos: [GREECE, FRANCE]
+  neg: [FOREST]
+  clue: COUNTRY
+  score: 1.0
+  count: 1
+  terms: [GREECE]
+  reasons:
+    GREECE: {type: HYPERNYM, reason: Synset('greece.n.02')->Synset('balkan_country.n.01')->Synset('european_country.n.01')->Synset('country.n.02')}
+  result: *id002
+- pos: [TRUNK, GAS]
+  neg: [POINT]
+  clue: AREA
+  score: 1.0
+  count: 1
+  terms: [TRUNK]
+  reasons:
+    TRUNK: {type: HYPERNYM, reason: Synset('luggage_compartment.n.01')->Synset('compartment.n.02')->Synset('room.n.01')->Synset('area.n.05')}
+  result: *id002
+- pos: [CANADA, KING]
+  neg: [WATCH]
+  clue: ATTRIBUTE
+  score: 1.0
+  count: 1
+  terms: [KING]
+  reasons:
+    KING: {type: HYPERNYM, reason: Synset('king.n.04')->Synset('eminence.n.01')->Synset('high_status.n.01')->Synset('status.n.01')->Synset('state.n.02')->Synset('attribute.n.02')}
+  result: *id002
+- pos: [SNOWMAN, SNOW]
+  neg: [QUEEN]
+  clue: CREATION
+  score: 1.0
+  count: 1
+  terms: [SNOWMAN]
+  reasons:
+    SNOWMAN: {type: HYPERNYM, reason: Synset('snowman.n.01')->Synset('figure.n.04')->Synset('model.n.04')->Synset('representation.n.02')->Synset('creation.n.02')}
+  result: *id002
+- pos: [POISON, BED]
+  neg: [THIEF]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [POISON]
+  reasons:
+    POISON: {type: HYPERNYM, reason: Synset('poison.n.02')->Synset('destructiveness.n.01')->Synset('quality.n.01')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: *id002
+- pos: [INDIA, BUG]
+  neg: [HOTEL]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [BUG]
+  reasons:
+    BUG: {type: HYPERNYM, reason: Synset('bug.n.02')->Synset('defect.n.03')->Synset('imperfection.n.01')->Synset('state.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: *id002
+- pos: [BERLIN, STATE]
+  neg: [OIL]
+  clue: AUTO
+  score: 1.0
+  count: 1
+  terms: [BERLIN]
+  reasons:
+    BERLIN: {type: HYPERNYM, reason: Synset('berlin.n.03')->Synset('limousine.n.01')->Synset('car.n.01')}
+  result: *id002
+- pos: [LAWYER, NEW YORK]
+  neg: [CRANE]
+  clue: ADULT
+  score: 1.0
+  count: 1
+  terms: [LAWYER]
+  reasons:
+    LAWYER: {type: HYPERNYM, reason: Synset('lawyer.n.01')->Synset('professional.n.01')->Synset('adult.n.01')}
+  result: *id002
+- pos: [SPY, REVOLUTION]
+  neg: [DATE]
+  clue: AGENT
+  score: 1.0
+  count: 1
+  terms: [SPY]
+  reasons:
+    SPY: {type: HYPERNYM, reason: Synset('spy.n.01')->Synset('secret_agent.n.01')->Synset('agent.n.02')}
+  result: *id002
+- pos: [SATURN, HIMALAYAS]
+  neg: [STICK]
+  clue: null
+  score: null
+  count: null
+  terms: null
+  reasons: null
+  result: *id002
+- pos: [ATLANTIS, MAMMOTH]
+  neg: [PORT]
+  clue: ABILITY
+  score: 1.0
+  count: 1
+  terms: [ATLANTIS]
+  reasons:
+    ATLANTIS: {type: HYPERNYM, reason: Synset('atlantis.n.01')->Synset('imaginary_place.n.01')->Synset('imagination.n.01')->Synset('creativity.n.01')->Synset('ability.n.02')}
+  result: *id002
+- pos: [OPERA, CAST]
+  neg: [FIELD]
+  clue: BUILDING
+  score: 1.0
+  count: 1
+  terms: [OPERA]
+  reasons:
+    OPERA: {type: HYPERNYM, reason: Synset('opera.n.03')->Synset('theater.n.01')->Synset('building.n.01')}
+  result: *id002
+- pos: [LOCH NESS, OLYMPUS]
+  neg: [HIMALAYAS]
+  clue: null
+  score: null
+  count: null
+  terms: null
+  reasons: null
+  result: *id002
+- pos: [MILLIONAIRE, BILL]
+  neg: [OPERA]
+  clue: BEING
+  score: 1.0
+  count: 1
+  terms: [MILLIONAIRE]
+  reasons:
+    MILLIONAIRE: {type: HYPERNYM, reason: Synset('millionaire.n.01')->Synset('rich_person.n.01')->Synset('person.n.01')->Synset('organism.n.01')}
+  result: *id002
+- pos: [PUMPKIN, MOON]
+  neg: [SCORPION]
+  clue: FLORA
+  score: 1.0
+  count: 1
+  terms: [PUMPKIN]
+  reasons:
+    PUMPKIN: {type: HYPERNYM, reason: Synset('pumpkin.n.01')->Synset('squash.n.01')->Synset('vine.n.01')->Synset('vascular_plant.n.01')->Synset('plant.n.02')}
+  result: *id002
+- pos: [PLASTIC, KETCHUP]
+  neg: [APPLE]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [PLASTIC]
+  reasons:
+    PLASTIC: {type: HYPERNYM, reason: Synset('credit_card.n.01')->Synset('positive_identification.n.01')->Synset('identification.n.02')->Synset('evidence.n.02')->Synset('indication.n.01')->Synset('communication.n.02')->Synset('abstraction.n.06')}
+  result: *id002
+- pos: [EUROPE, POUND]
+  neg: [PORT]
+  clue: ACCUMULATION
+  score: 1.0
+  count: 1
+  terms: [EUROPE]
+  reasons:
+    EUROPE: {type: HYPERNYM, reason: Synset('europe.n.03')->Synset('collection.n.01')}
+  result: *id002
+- pos: [JUPITER, MOUNT]
+  neg: [ALIEN]
+  clue: ACT
+  score: 1.0
+  count: 1
+  terms: [MOUNT]
+  reasons:
+    MOUNT: {type: HYPERNYM, reason: Synset('climb.n.03')->Synset('rise.n.02')->Synset('motion.n.06')->Synset('change.n.03')->Synset('action.n.01')->Synset('act.n.02')}
+  result: *id002
+- pos: [ROULETTE, DICE]
+  neg: [GAME]
+  clue: ATTRIBUTE
+  score: 1.0
+  count: 1
+  terms: [ROULETTE]
+  reasons:
+    ROULETTE: {type: HYPERNYM, reason: Synset('roulette.n.01')->Synset('curve.n.01')->Synset('line.n.04')->Synset('shape.n.02')->Synset('attribute.n.02')}
+  result: *id002
+- pos: [ROBIN, NOVEL]
+  neg: [THUMB]
+  clue: ANIMAL
+  score: 1.0
+  count: 1
+  terms: [ROBIN]
+  reasons:
+    ROBIN: {type: HYPERNYM, reason: Synset('robin.n.01')->Synset('thrush.n.03')->Synset('oscine.n.01')->Synset('passerine.n.01')->Synset('bird.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: *id002
+- pos: [AUSTRALIA, TAIL]
+  neg: [SPIDER]
+  clue: ALTER
+  score: 1.0
+  count: 1
+  terms: [TAIL]
+  reasons:
+    TAIL: {type: HYPERNYM, reason: Synset('tail.v.03')->Synset('top.v.08')->Synset('snip.v.02')->Synset('thin_out.v.01')->Synset('reduce.v.01')->Synset('decrease.v.02')->Synset('change.v.01')}
+  result: *id002
+- pos: [GREEN, WASHINGTON]
+  neg: [AUSTRALIA]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [GREEN]
+  reasons:
+    GREEN: {type: HYPERNYM, reason: Synset('green.n.01')->Synset('chromatic_color.n.01')->Synset('color.n.01')->Synset('visual_property.n.01')->Synset('property.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: *id002
+- pos: [AGENT, NIGHT]
+  neg: [CZECH]
+  clue: ACCUMULATION
+  score: 1.0
+  count: 1
+  terms: [AGENT]
+  reasons:
+    AGENT: {type: HYPERNYM, reason: Synset('agentive_role.n.01')->Synset('semantic_role.n.01')->Synset('grammatical_category.n.01')->Synset('class.n.01')->Synset('collection.n.01')}
+  result: *id002
+- pos: [SCUBA DIVER, SUIT]
+  neg: [APPLE]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [SUIT]
+  reasons:
+    SUIT: {type: HYPERNYM, reason: Synset('lawsuit.n.01')->Synset('proceeding.n.01')->Synset('due_process.n.01')->Synset('group_action.n.01')->Synset('event.n.01')->Synset('psychological_feature.n.01')->Synset('abstraction.n.06')}
+  result: *id002
+- pos: [COVER, CAR]
+  neg: [HORSESHOE]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [COVER]
+  reasons:
+    COVER: {type: HYPERNYM, reason: Synset('cover.n.03')->Synset('concealment.n.03')->Synset('activity.n.01')->Synset('act.n.02')->Synset('event.n.01')->Synset('psychological_feature.n.01')->Synset('abstraction.n.06')}
+  result: *id002
+- pos: [LASER, LIGHT]
+  neg: [GLASS]
+  clue: ACTIVENESS
+  score: 1.0
+  count: 1
+  terms: [LIGHT]
+  reasons:
+    LIGHT: {type: HYPERNYM, reason: Synset('sparkle.n.01')->Synset('vitality.n.01')->Synset('energy.n.04')->Synset('liveliness.n.02')->Synset('animation.n.03')->Synset('activeness.n.02')}
+  result: *id002
+- pos: [SOCK, DANCE]
+  neg: [VACUUM]
+  clue: CLOTHING
+  score: 1.0
+  count: 1
+  terms: [SOCK]
+  reasons:
+    SOCK: {type: HYPERNYM, reason: Synset('sock.n.01')->Synset('hosiery.n.01')->Synset('footwear.n.01')->Synset('clothing.n.01')}
+  result: *id002
+- pos: [WAKE, DAY]
+  neg: [LOG]
+  clue: ACT
+  score: 1.0
+  count: 1
+  terms: [WAKE]
+  reasons:
+    WAKE: {type: HYPERNYM, reason: Synset('wake.n.04')->Synset('vigil.n.02')->Synset('rite.n.01')->Synset('religious_ceremony.n.01')->Synset('ceremony.n.03')->Synset('activity.n.01')->Synset('act.n.02')}
+  result: *id002
+- pos: [ANTARCTICA, PENGUIN]
+  neg: [BATTERY]
+  clue: ANIMAL
+  score: 1.0
+  count: 1
+  terms: [PENGUIN]
+  reasons:
+    PENGUIN: {type: HYPERNYM, reason: Synset('penguin.n.01')->Synset('sphenisciform_seabird.n.01')->Synset('seabird.n.01')->Synset('aquatic_bird.n.01')->Synset('bird.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: *id002
+incorrect_scenarios:
+- pos: [BATTERY, FILE]
+  neg: [BEACH]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [BATTERY, FILE]
+  reasons:
+    BATTERY: {type: HYPERNYM, reason: Synset('battery.n.03')->Synset('collection.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')}
+    FILE: {type: HYPERNYM, reason: Synset('file.n.01')->Synset('record.n.01')->Synset('evidence.n.02')->Synset('indication.n.01')->Synset('communication.n.02')->Synset('abstraction.n.06')}
+  result: &id003 !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [
+    0]
+- pos: [VAN, GLASS]
+  neg: [TRUNK]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [VAN, GLASS]
+  reasons:
+    VAN: {type: HYPERNYM, reason: Synset('avant-garde.n.01')->Synset('artistic_movement.n.01')->Synset('movement.n.04')->Synset('social_group.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')}
+    GLASS: {type: HYPERNYM, reason: Synset('glass.n.03')->Synset('containerful.n.01')->Synset('indefinite_quantity.n.01')->Synset('measure.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [LEPRECHAUN, SPIDER]
+  neg: [PARK]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [LEPRECHAUN, SPIDER]
+  reasons:
+    LEPRECHAUN: {type: HYPERNYM, reason: Synset('leprechaun.n.01')->Synset('elf.n.01')->Synset('fairy.n.01')->Synset('spiritual_being.n.01')->Synset('belief.n.01')->Synset('content.n.05')->Synset('cognition.n.01')->Synset('psychological_feature.n.01')->Synset('abstraction.n.06')}
+    SPIDER: {type: HYPERNYM, reason: Synset('spider.n.02')->Synset('program.n.07')->Synset('software.n.01')->Synset('code.n.03')->Synset('coding_system.n.01')->Synset('writing.n.04')->Synset('written_communication.n.01')->Synset('communication.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [DIAMOND, STRIKE]
+  neg: [EYE]
+  clue: FORM
+  score: 2.0
+  count: 2
+  terms: [DIAMOND, STRIKE]
+  reasons:
+    DIAMOND: {type: HYPERNYM, reason: Synset('rhombus.n.01')->Synset('parallelogram.n.01')->Synset('quadrilateral.n.01')->Synset('polygon.n.01')->Synset('plane_figure.n.01')->Synset('figure.n.06')->Synset('shape.n.02')}
+    STRIKE: {type: HYPERNYM, reason: Synset('strike.v.11')->Synset('shape.v.03')}
+  result: *id003
+- pos: [SHOP, CARROT]
+  neg: [PANTS]
+  clue: ACT
+  score: 2.0
+  count: 2
+  terms: [SHOP, CARROT]
+  reasons:
+    SHOP: {type: HYPERNYM, reason: Synset('shop_class.n.01')->Synset('course.n.01')->Synset('education.n.01')->Synset('activity.n.01')->Synset('act.n.02')}
+    CARROT: {type: HYPERNYM, reason: Synset('carrot.n.04')->Synset('reward.n.03')->Synset('blessing.n.01')->Synset('support.n.02')->Synset('aid.n.02')->Synset('activity.n.01')->Synset('act.n.02')}
+  result: *id003
+- pos: [WAR, PORT]
+  neg: [AZTEC]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [WAR, PORT]
+  reasons:
+    WAR: {type: HYPERNYM, reason: Synset('war.n.02')->Synset('hostility.n.02')->Synset('state.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+    PORT: {type: HYPERNYM, reason: Synset('port.n.02')->Synset('fortified_wine.n.01')->Synset('wine.n.01')->Synset('alcohol.n.01')->Synset('beverage.n.01')->Synset('liquid.n.01')->Synset('fluid.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [COPPER, PRESS]
+  neg: [LEPRECHAUN]
+  clue: ATTRIBUTE
+  score: 2.0
+  count: 2
+  terms: [COPPER, PRESS]
+  reasons:
+    COPPER: {type: HYPERNYM, reason: Synset('copper.n.04')->Synset('reddish_brown.n.01')->Synset('brown.n.01')->Synset('chromatic_color.n.01')->Synset('color.n.01')->Synset('visual_property.n.01')->Synset('property.n.02')->Synset('attribute.n.02')}
+    PRESS: {type: HYPERNYM, reason: Synset('imperativeness.n.01')->Synset('urgency.n.01')->Synset('necessity.n.01')->Synset('need.n.01')->Synset('condition.n.01')->Synset('state.n.02')->Synset('attribute.n.02')}
+  result: *id003
+- pos: [CLOAK, AIR]
+  neg: [FORK]
+  clue: TOUCH
+  score: 2.0
+  count: 2
+  terms: [CLOAK, AIR]
+  reasons:
+    CLOAK: {type: HYPERNYM, reason: Synset('clothe.v.03')->Synset('cover.v.02')->Synset('touch.v.05')}
+    AIR: {type: HYPERNYM, reason: Synset('air_out.v.01')->Synset('expose.v.01')->Synset('subject.v.01')->Synset('affect.v.01')}
+  result: *id003
+- pos: [UNDERTAKER, FOOT]
+  neg: [MARCH]
+  clue: BEING
+  score: 2.0
+  count: 2
+  terms: [UNDERTAKER, FOOT]
+  reasons:
+    UNDERTAKER: {type: HYPERNYM, reason: Synset('mortician.n.01')->Synset('skilled_worker.n.01')->Synset('worker.n.01')->Synset('person.n.01')->Synset('organism.n.01')}
+    FOOT: {type: HYPERNYM, reason: Synset('foot.n.08')->Synset('secret_agent.n.01')->Synset('agent.n.02')->Synset('representative.n.01')->Synset('negotiator.n.01')->Synset('communicator.n.01')->Synset('person.n.01')->Synset('organism.n.01')}
+  result: *id003
+- pos: [KID, GRASS]
+  neg: [SOCK]
+  clue: ACT
+  score: 2.0
+  count: 2
+  terms: [KID, GRASS]
+  reasons:
+    KID: {type: HYPERNYM, reason: Synset('kid.v.02')->Synset('tease.v.02')->Synset('mock.v.01')->Synset('treat.v.01')->Synset('interact.v.01')->Synset('act.v.01')}
+    GRASS: {type: HYPERNYM, reason: Synset('denounce.v.04')->Synset('inform.v.01')->Synset('communicate.v.02')->Synset('interact.v.01')->Synset('act.v.01')}
+  result: *id003
+- pos: [COMPOUND, TIME]
+  neg: [VET]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [COMPOUND, TIME]
+  reasons:
+    COMPOUND: {type: HYPERNYM, reason: Synset('compound.n.02')->Synset('chemical.n.01')->Synset('material.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+    TIME: {type: HYPERNYM, reason: Synset('time.n.05')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [PIT, HOLE]
+  neg: [STREAM]
+  clue: ALTER
+  score: 2.0
+  count: 2
+  terms: [PIT, HOLE]
+  reasons:
+    PIT: {type: HYPERNYM, reason: Synset('scar.v.01')->Synset('deface.v.01')->Synset('mar.v.01')->Synset('damage.v.01')->Synset('change.v.01')}
+    HOLE: {type: HYPERNYM, reason: Synset('hole.v.02')->Synset('hollow.v.02')->Synset('empty.v.01')->Synset('change.v.01')}
+  result: *id003
+- pos: [UNICORN, WITCH]
+  neg: [TABLE]
+  clue: ABILITY
+  score: 2.0
+  count: 2
+  terms: [UNICORN, WITCH]
+  reasons:
+    UNICORN: {type: HYPERNYM, reason: Synset('unicorn.n.01')->Synset('imaginary_being.n.01')->Synset('imagination.n.01')->Synset('creativity.n.01')->Synset('ability.n.02')}
+    WITCH: {type: HYPERNYM, reason: Synset('witch.n.02')->Synset('imaginary_being.n.01')->Synset('imagination.n.01')->Synset('creativity.n.01')->Synset('ability.n.02')}
+  result: *id003
+- pos: [TOWER, GIANT]
+  neg: [THUMB]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [TOWER, GIANT]
+  reasons:
+    TOWER: {type: HYPERNYM, reason: Synset('column.n.04')->Synset('shape.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+    GIANT: {type: HYPERNYM, reason: Synset('giant.n.03')->Synset('enterprise.n.02')->Synset('organization.n.01')->Synset('social_group.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [BANK, SCHOOL]
+  neg: [TABLET]
+  clue: AMOUNT
+  score: 2.0
+  count: 2
+  terms: [BANK, SCHOOL]
+  reasons:
+    BANK: {type: HYPERNYM, reason: Synset('bank.n.05')->Synset('reserve.n.02')->Synset('accumulation.n.04')->Synset('net_income.n.01')->Synset('income.n.01')->Synset('financial_gain.n.01')->Synset('gain.n.04')->Synset('sum.n.01')}
+    SCHOOL: {type: HYPERNYM, reason: Synset('school.n.05')->Synset('time_period.n.01')->Synset('fundamental_quantity.n.01')->Synset('measure.n.02')}
+  result: *id003
+- pos: [HEAD, PRINCESS]
+  neg: [CONTRACT]
+  clue: BEING
+  score: 2.0
+  count: 2
+  terms: [HEAD, PRINCESS]
+  reasons:
+    HEAD: {type: HYPERNYM, reason: Synset('head.n.14')->Synset('individual.n.02')->Synset('organism.n.01')}
+    PRINCESS: {type: HYPERNYM, reason: Synset('princess.n.01')->Synset('aristocrat.n.01')->Synset('leader.n.01')->Synset('person.n.01')->Synset('organism.n.01')}
+  result: *id003
+- pos: [PLOT, ANGEL]
+  neg: [VAN]
+  clue: COGNITION
+  score: 2.0
+  count: 2
+  terms: [PLOT, ANGEL]
+  reasons:
+    PLOT: {type: HYPERNYM, reason: Synset('plot.n.01')->Synset('scheme.n.01')->Synset('plan_of_action.n.01')->Synset('plan.n.01')->Synset('idea.n.01')->Synset('content.n.05')->Synset('cognition.n.01')}
+    ANGEL: {type: HYPERNYM, reason: Synset('angel.n.01')->Synset('spiritual_being.n.01')->Synset('belief.n.01')->Synset('content.n.05')->Synset('cognition.n.01')}
+  result: *id003
+- pos: [CODE, POST]
+  neg: [ICE CREAM]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [CODE, POST]
+  reasons:
+    CODE: {type: HYPERNYM, reason: Synset('code.n.01')->Synset('written_communication.n.01')->Synset('communication.n.02')->Synset('abstraction.n.06')}
+    POST: {type: HYPERNYM, reason: Synset('mail.n.04')->Synset('collection.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [PHOENIX, EAGLE]
+  neg: [BUFFALO]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [PHOENIX, EAGLE]
+  reasons:
+    PHOENIX: {type: HYPERNYM, reason: Synset('phoenix.n.02')->Synset('monocot_genus.n.01')->Synset('genus.n.02')->Synset('taxonomic_group.n.01')->Synset('biological_group.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')}
+    EAGLE: {type: HYPERNYM, reason: Synset('eagle.n.02')->Synset('score.n.03')->Synset('number.n.02')->Synset('definite_quantity.n.01')->Synset('measure.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [MINT, JAM]
+  neg: [ROBOT]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [MINT, JAM]
+  reasons:
+    MINT: {type: HYPERNYM, reason: Synset('batch.n.02')->Synset('large_indefinite_quantity.n.01')->Synset('indefinite_quantity.n.01')->Synset('measure.n.02')->Synset('abstraction.n.06')}
+    JAM: {type: HYPERNYM, reason: Synset('fix.n.01')->Synset('difficulty.n.03')->Synset('condition.n.01')->Synset('state.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [CONTRACT, DEGREE]
+  neg: [CLUB]
+  clue: COMMUNICATION
+  score: 2.0
+  count: 2
+  terms: [CONTRACT, DEGREE]
+  reasons:
+    CONTRACT: {type: HYPERNYM, reason: Synset('contract.n.02')->Synset('bid.n.04')->Synset('statement.n.01')->Synset('message.n.02')->Synset('communication.n.02')}
+    DEGREE: {type: HYPERNYM, reason: Synset('academic_degree.n.01')->Synset('award.n.02')->Synset('symbol.n.01')->Synset('signal.n.01')->Synset('communication.n.02')}
+  result: *id003
+- pos: [STOCK, BOND]
+  neg: [BUTTON]
+  clue: ATTRIBUTE
+  score: 2.0
+  count: 2
+  terms: [STOCK, BOND]
+  reasons:
+    STOCK: {type: HYPERNYM, reason: Synset('stock.n.09')->Synset('repute.n.01')->Synset('honor.n.02')->Synset('standing.n.01')->Synset('status.n.01')->Synset('state.n.02')->Synset('attribute.n.02')}
+    BOND: {type: HYPERNYM, reason: Synset('adhesiveness.n.01')->Synset('stickiness.n.01')->Synset('viscosity.n.01')->Synset('consistency.n.01')->Synset('property.n.02')->Synset('attribute.n.02')}
+  result: *id003
+- pos: [SPIKE, BLOCK]
+  neg: [TAIL]
+  clue: CONSTRUCTION
+  score: 2.0
+  count: 2
+  terms: [SPIKE, BLOCK]
+  reasons:
+    SPIKE: {type: HYPERNYM, reason: Synset('spike.n.08')->Synset('projection.n.04')->Synset('structure.n.01')}
+    BLOCK: {type: HYPERNYM, reason: Synset('block.n.05')->Synset('housing.n.01')->Synset('structure.n.01')}
+  result: *id003
+- pos: [BOMB, WAVE]
+  neg: [LINK]
+  clue: HAPPENING
+  score: 2.0
+  count: 2
+  terms: [BOMB, WAVE]
+  reasons:
+    BOMB: {type: HYPERNYM, reason: Synset('turkey.n.05')->Synset('flop.n.03')->Synset('failure.n.02')->Synset('happening.n.01')}
+    WAVE: {type: HYPERNYM, reason: Synset('wave.n.01')->Synset('movement.n.03')->Synset('happening.n.01')}
+  result: *id003
+- pos: [CELL, ORGAN]
+  neg: [STRIKE]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [CELL, ORGAN]
+  reasons:
+    CELL: {type: HYPERNYM, reason: Synset('cell.n.03')->Synset('electrical_device.n.01')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+    ORGAN: {type: HYPERNYM, reason: Synset('electric_organ.n.01')->Synset('electronic_instrument.n.01')->Synset('musical_instrument.n.01')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+  result: *id003
+- pos: [CHINA, WHALE]
+  neg: [SNOW]
+  clue: UNIT
+  score: 2.0
+  count: 2
+  terms: [CHINA, WHALE]
+  reasons:
+    CHINA: {type: HYPERNYM, reason: Synset('chinaware.n.01')->Synset('crockery.n.01')->Synset('tableware.n.01')->Synset('ware.n.01')->Synset('article.n.02')->Synset('artifact.n.01')->Synset('whole.n.02')}
+    WHALE: {type: HYPERNYM, reason: Synset('giant.n.04')->Synset('large_person.n.01')->Synset('person.n.01')->Synset('organism.n.01')->Synset('living_thing.n.01')->Synset('whole.n.02')}
+  result: *id003
+- pos: [FAIR, POLICE]
+  neg: [RAY]
+  clue: GROUP
+  score: 2.0
+  count: 2
+  terms: [FAIR, POLICE]
+  reasons:
+    FAIR: {type: HYPERNYM, reason: Synset('fair.n.02')->Synset('gathering.n.01')->Synset('social_group.n.01')->Synset('group.n.01')}
+    POLICE: {type: HYPERNYM, reason: Synset('police.n.01')->Synset('force.n.04')->Synset('organization.n.01')->Synset('social_group.n.01')->Synset('group.n.01')}
+  result: *id003
+- pos: [TABLET, CHURCH]
+  neg: [STADIUM]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [TABLET, CHURCH]
+  reasons:
+    TABLET: {type: HYPERNYM, reason: Synset('pad.n.01')->Synset('paper.n.01')->Synset('material.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+    CHURCH: {type: HYPERNYM, reason: Synset('church.n.04')->Synset('body.n.02')->Synset('social_group.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [KNIFE, DEATH]
+  neg: [PHOENIX]
+  clue: ATTRIBUTE
+  score: 2.0
+  count: 2
+  terms: [KNIFE, DEATH]
+  reasons:
+    KNIFE: {type: HYPERNYM, reason: Synset('tongue.n.03')->Synset('projection.n.05')->Synset('convex_shape.n.01')->Synset('solid.n.03')->Synset('shape.n.02')->Synset('attribute.n.02')}
+    DEATH: {type: HYPERNYM, reason: Synset('death.n.03')->Synset('state.n.02')->Synset('attribute.n.02')}
+  result: *id003
+- pos: [MINE, TRACK]
+  neg: [MOUTH]
+  clue: INSTRUMENTALITY
+  score: 2.0
+  count: 2
+  terms: [MINE, TRACK]
+  reasons:
+    MINE: {type: HYPERNYM, reason: Synset('mine.n.02')->Synset('explosive_device.n.01')->Synset('device.n.01')->Synset('instrumentality.n.03')}
+    TRACK: {type: HYPERNYM, reason: Synset('track.n.09')->Synset('bar.n.03')->Synset('implement.n.01')->Synset('instrumentality.n.03')}
+  result: *id003
+- pos: [BOOM, CRASH]
+  neg: [BLOCK]
+  clue: GO
+  score: 2.0
+  count: 2
+  terms: [BOOM, CRASH]
+  reasons:
+    BOOM: {type: HYPERNYM, reason: Synset('boom.v.01')->Synset('sound.v.02')}
+    CRASH: {type: HYPERNYM, reason: Synset('crash.v.07')->Synset('sound.v.02')}
+  result: *id003
+- pos: [GOLD, CARD]
+  neg: [TAG]
+  clue: COMPONENT
+  score: 2.0
+  count: 2
+  terms: [GOLD, CARD]
+  reasons:
+    GOLD: {type: HYPERNYM, reason: Synset('gold.n.03')->Synset('noble_metal.n.01')->Synset('metallic_element.n.01')->Synset('chemical_element.n.01')->Synset('substance.n.01')->Synset('part.n.01')}
+    CARD: {type: HYPERNYM, reason: Synset('card.n.01')->Synset('paper.n.01')->Synset('material.n.01')->Synset('substance.n.01')->Synset('part.n.01')}
+  result: *id003
+- pos: [LIFE, ALIEN]
+  neg: [ALPS]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [LIFE, ALIEN]
+  reasons:
+    LIFE: {type: HYPERNYM, reason: Synset('life.n.13')->Synset('motivation.n.01')->Synset('psychological_feature.n.01')->Synset('abstraction.n.06')}
+    ALIEN: {type: HYPERNYM, reason: Synset('extraterrestrial_being.n.01')->Synset('hypothetical_creature.n.01')->Synset('imaginary_being.n.01')->Synset('imagination.n.01')->Synset('creativity.n.01')->Synset('ability.n.02')->Synset('cognition.n.01')->Synset('psychological_feature.n.01')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [HAND, MOLE]
+  neg: [BAND]
+  clue: AMOUNT
+  score: 2.0
+  count: 2
+  terms: [HAND, MOLE]
+  reasons:
+    HAND: {type: HYPERNYM, reason: Synset('hand.n.09')->Synset('handbreadth.n.01')->Synset('linear_unit.n.01')->Synset('unit_of_measurement.n.01')->Synset('definite_quantity.n.01')->Synset('measure.n.02')}
+    MOLE: {type: HYPERNYM, reason: Synset('gram_molecule.n.01')->Synset('metric_weight_unit.n.01')->Synset('mass_unit.n.01')->Synset('unit_of_measurement.n.01')->Synset('definite_quantity.n.01')->Synset('measure.n.02')}
+  result: *id003
+- pos: [CROWN, LEAD]
+  neg: [KNIFE]
+  clue: AMOUNT
+  score: 2.0
+  count: 2
+  terms: [CROWN, LEAD]
+  reasons:
+    CROWN: {type: HYPERNYM, reason: Synset('crown.n.06')->Synset('coin.n.01')->Synset('coinage.n.01')->Synset('currency.n.01')->Synset('medium_of_exchange.n.01')->Synset('standard.n.01')->Synset('system_of_measurement.n.01')->Synset('measure.n.02')}
+    LEAD: {type: HYPERNYM, reason: Synset('lead.n.07')->Synset('score.n.03')->Synset('number.n.02')->Synset('definite_quantity.n.01')->Synset('measure.n.02')}
+  result: *id003
+- pos: [STRAW, GROUND]
+  neg: [DANCE]
+  clue: COLOR
+  score: 2.0
+  count: 2
+  terms: [STRAW, GROUND]
+  reasons:
+    STRAW: {type: HYPERNYM, reason: Synset('pale_yellow.n.01')->Synset('yellow.n.01')->Synset('chromatic_color.n.01')->Synset('color.n.01')}
+    GROUND: {type: HYPERNYM, reason: Synset('flat_coat.n.01')->Synset('coat_of_paint.n.01')->Synset('paint.n.01')->Synset('coloring_material.n.01')}
+  result: *id003
+- pos: [PUPIL, EYE]
+  neg: [TRIANGLE]
+  clue: HOLE
+  score: 2.0
+  count: 2
+  terms: [PUPIL, EYE]
+  reasons:
+    PUPIL: {type: HYPERNYM, reason: Synset('pupil.n.02')->Synset('aperture.n.02')->Synset('hole.n.01')}
+    EYE: {type: HYPERNYM, reason: Synset('eye.n.05')->Synset('hole.n.02')}
+  result: *id003
+- pos: [SOUND, PIANO]
+  neg: [KING]
+  clue: PROPERTY
+  score: 2.0
+  count: 2
+  terms: [SOUND, PIANO]
+  reasons:
+    SOUND: {type: HYPERNYM, reason: Synset('sound.n.01')->Synset('sound_property.n.01')->Synset('property.n.02')}
+    PIANO: {type: HYPERNYM, reason: Synset('piano.n.02')->Synset('softness.n.05')->Synset('sound_property.n.01')->Synset('property.n.02')}
+  result: *id003
+- pos: [FOREST, PALM]
+  neg: [ANTARCTICA]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [FOREST, PALM]
+  reasons:
+    FOREST: {type: HYPERNYM, reason: Synset('forest.n.01')->Synset('vegetation.n.01')->Synset('collection.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')}
+    PALM: {type: HYPERNYM, reason: Synset('palm.n.02')->Synset('linear_unit.n.01')->Synset('unit_of_measurement.n.01')->Synset('definite_quantity.n.01')->Synset('measure.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [WEB, MATCH]
+  neg: [DICE]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [WEB, MATCH]
+  reasons:
+    WEB: {type: HYPERNYM, reason: Synset('network.n.01')->Synset('system.n.02')->Synset('group.n.01')->Synset('abstraction.n.06')}
+    MATCH: {type: HYPERNYM, reason: Synset('match.n.02')->Synset('contest.n.01')->Synset('social_event.n.01')->Synset('event.n.01')->Synset('psychological_feature.n.01')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [LIMOUSINE, PART]
+  neg: [PHOENIX]
+  clue: OBJECT
+  score: 2.0
+  count: 2
+  terms: [LIMOUSINE, PART]
+  reasons:
+    LIMOUSINE: {type: HYPERNYM, reason: Synset('limousine.n.01')->Synset('car.n.01')->Synset('motor_vehicle.n.01')->Synset('self-propelled_vehicle.n.01')->Synset('wheeled_vehicle.n.01')->Synset('container.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')->Synset('whole.n.02')->Synset('object.n.01')}
+    PART: {type: HYPERNYM, reason: Synset('part.n.02')->Synset('object.n.01')}
+  result: *id003
+- pos: [ROCK, LOG]
+  neg: [MILLIONAIRE]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [ROCK, LOG]
+  reasons:
+    ROCK: {type: HYPERNYM, reason: Synset('rock.n.02')->Synset('material.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+    LOG: {type: HYPERNYM, reason: Synset('log.n.03')->Synset('written_record.n.01')->Synset('record.n.01')->Synset('evidence.n.02')->Synset('indication.n.01')->Synset('communication.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [SATELLITE, SPACE]
+  neg: [MICROSCOPE]
+  clue: MOVE
+  score: 2.0
+  count: 2
+  terms: [SATELLITE, SPACE]
+  reasons:
+    SATELLITE: {type: HYPERNYM, reason: Synset('satellite.v.01')->Synset('air.v.03')->Synset('publicize.v.01')->Synset('tell.v.02')->Synset('inform.v.01')->Synset('communicate.v.02')->Synset('interact.v.01')->Synset('act.v.01')}
+    SPACE: {type: HYPERNYM, reason: Synset('space.v.01')->Synset('put.v.01')->Synset('move.v.02')}
+  result: *id003
+- pos: [BOOT, BELT]
+  neg: [NUT]
+  clue: ACT
+  score: 2.0
+  count: 2
+  terms: [BOOT, BELT]
+  reasons:
+    BOOT: {type: HYPERNYM, reason: Synset('kick.n.01')->Synset('blow.n.01')->Synset('stroke.n.12')->Synset('motion.n.03')->Synset('change.n.03')->Synset('action.n.01')->Synset('act.n.02')}
+    BELT: {type: HYPERNYM, reason: Synset('belt_out.v.01')->Synset('sing.v.02')->Synset('talk.v.02')->Synset('communicate.v.02')->Synset('interact.v.01')->Synset('act.v.01')}
+  result: *id003
+- pos: [LITTER, VACUUM]
+  neg: [THUMB]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [LITTER, VACUUM]
+  reasons:
+    LITTER: {type: HYPERNYM, reason: Synset('litter.n.01')->Synset('animal_group.n.01')->Synset('biological_group.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')}
+    VACUUM: {type: HYPERNYM, reason: Synset('vacuum.n.01')->Synset('emptiness.n.01')->Synset('condition.n.01')->Synset('state.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [TUBE, SHOT]
+  neg: [GERMANY]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [TUBE, SHOT]
+  reasons:
+    TUBE: {type: HYPERNYM, reason: Synset('pipe.n.03')->Synset('cylinder.n.02')->Synset('round_shape.n.01')->Synset('shape.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+    SHOT: {type: HYPERNYM, reason: Synset('nip.n.01')->Synset('small_indefinite_quantity.n.01')->Synset('indefinite_quantity.n.01')->Synset('measure.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [DATE, MARCH]
+  neg: [GAME]
+  clue: ASSEMBLAGE
+  score: 2.0
+  count: 2
+  terms: [DATE, MARCH]
+  reasons:
+    DATE: {type: HYPERNYM, reason: Synset('date.n.03')->Synset('meeting.n.02')->Synset('social_gathering.n.01')->Synset('gathering.n.01')}
+    MARCH: {type: HYPERNYM, reason: Synset('march.n.04')->Synset('procession.n.02')->Synset('collection.n.01')}
+  result: *id003
+- pos: [MOUSE, WATCH]
+  neg: [KETCHUP]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [MOUSE, WATCH]
+  reasons:
+    MOUSE: {type: HYPERNYM, reason: Synset('shiner.n.01')->Synset('bruise.n.01')->Synset('injury.n.01')->Synset('ill_health.n.01')->Synset('pathological_state.n.01')->Synset('physical_condition.n.01')->Synset('condition.n.01')->Synset('state.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+    WATCH: {type: HYPERNYM, reason: Synset('watch.n.04')->Synset('time_period.n.01')->Synset('fundamental_quantity.n.01')->Synset('measure.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [HEART, PAPER]
+  neg: [IRON]
+  clue: MATERIAL
+  score: 2.0
+  count: 2
+  terms: [HEART, PAPER]
+  reasons:
+    HEART: {type: HYPERNYM, reason: Synset('heart.n.10')->Synset('playing_card.n.01')->Synset('card.n.01')->Synset('paper.n.01')->Synset('material.n.01')}
+    PAPER: {type: HYPERNYM, reason: Synset('paper.n.01')->Synset('material.n.01')}
+  result: *id003
+- pos: [BUCK, LION]
+  neg: [PHOENIX]
+  clue: ANIMAL
+  score: 2.0
+  count: 2
+  terms: [BUCK, LION]
+  reasons:
+    BUCK: {type: HYPERNYM, reason: Synset('buck.n.05')->Synset('placental.n.01')->Synset('mammal.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+    LION: {type: HYPERNYM, reason: Synset('lion.n.01')->Synset('big_cat.n.01')->Synset('feline.n.01')->Synset('carnivore.n.01')->Synset('placental.n.01')->Synset('mammal.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: *id003
+- pos: [SOUL, BEAT]
+  neg: [DIAMOND]
+  clue: ACT
+  score: 2.0
+  count: 2
+  terms: [SOUL, BEAT]
+  reasons:
+    SOUL: {type: HYPERNYM, reason: Synset('soul.n.04')->Synset('embodiment.n.03')->Synset('objectification.n.01')->Synset('realization.n.02')->Synset('creating_by_mental_acts.n.01')->Synset('creation.n.01')->Synset('activity.n.01')->Synset('act.n.02')}
+    BEAT: {type: HYPERNYM, reason: Synset('beat.n.09')->Synset('stroke.n.12')->Synset('motion.n.03')->Synset('change.n.03')->Synset('action.n.01')->Synset('act.n.02')}
+  result: *id003
+- pos: [NURSE, SPINE]
+  neg: [TOKYO]
+  clue: ENTITY
+  score: 2.0
+  count: 2
+  terms: [NURSE, SPINE]
+  reasons:
+    NURSE: {type: HYPERNYM, reason: Synset('nanny.n.01')->Synset('woman.n.01')->Synset('adult.n.01')->Synset('person.n.01')->Synset('causal_agent.n.01')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+    SPINE: {type: HYPERNYM, reason: Synset('spine.n.04')->Synset('part.n.02')->Synset('object.n.01')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+  result: *id003
+- pos: [DISEASE, CHECK]
+  neg: [EYE]
+  clue: ATTRIBUTE
+  score: 2.0
+  count: 2
+  terms: [DISEASE, CHECK]
+  reasons:
+    DISEASE: {type: HYPERNYM, reason: Synset('disease.n.01')->Synset('illness.n.01')->Synset('ill_health.n.01')->Synset('pathological_state.n.01')->Synset('physical_condition.n.01')->Synset('condition.n.01')->Synset('state.n.02')->Synset('attribute.n.02')}
+    CHECK: {type: HYPERNYM, reason: Synset('arrest.n.02')->Synset('inaction.n.01')->Synset('state.n.02')->Synset('attribute.n.02')}
+  result: *id003
+- pos: [NAIL, ENGINE]
+  neg: [PYRAMID]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [NAIL, ENGINE]
+  reasons:
+    NAIL: {type: HYPERNYM, reason: Synset('nail.n.02')->Synset('fastener.n.02')->Synset('restraint.n.06')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+    ENGINE: {type: HYPERNYM, reason: Synset('engine.n.04')->Synset('instrument.n.01')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+  result: *id003
+- pos: [RING, THUMB]
+  neg: [SHOE]
+  clue: DECORATION
+  score: 2.0
+  count: 2
+  terms: [RING, THUMB]
+  reasons:
+    RING: {type: HYPERNYM, reason: Synset('ring.n.08')->Synset('jewelry.n.01')->Synset('adornment.n.01')->Synset('decoration.n.01')}
+    THUMB: {type: HYPERNYM, reason: Synset('ovolo.n.01')->Synset('molding.n.02')->Synset('decoration.n.01')}
+  result: *id003
+- pos: [HOLLYWOOD, SHARK]
+  neg: [BEIJING]
+  clue: ENTITY
+  score: 2.0
+  count: 2
+  terms: [HOLLYWOOD, SHARK]
+  reasons:
+    HOLLYWOOD: {type: HYPERNYM, reason: Synset('hollywood.n.02')->Synset('spirit.n.02')->Synset('atmosphere.n.01')->Synset('condition.n.01')->Synset('state.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')->Synset('entity.n.01')}
+    SHARK: {type: HYPERNYM, reason: Synset('shark.n.03')->Synset('expert.n.01')->Synset('person.n.01')->Synset('causal_agent.n.01')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+  result: *id003
+- pos: [COTTON, NUT]
+  neg: [DOCTOR]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [COTTON, NUT]
+  reasons:
+    COTTON: {type: HYPERNYM, reason: Synset('cotton.n.02')->Synset('fabric.n.01')->Synset('artifact.n.01')}
+    NUT: {type: HYPERNYM, reason: Synset('nut.n.03')->Synset('block.n.01')->Synset('artifact.n.01')}
+  result: *id003
+- pos: [POLE, LINE]
+  neg: [MOUNT]
+  clue: AMOUNT
+  score: 2.0
+  count: 2
+  terms: [POLE, LINE]
+  reasons:
+    POLE: {type: HYPERNYM, reason: Synset('perch.n.02')->Synset('linear_unit.n.01')->Synset('unit_of_measurement.n.01')->Synset('definite_quantity.n.01')->Synset('measure.n.02')}
+    LINE: {type: HYPERNYM, reason: Synset('agate_line.n.01')->Synset('area_unit.n.01')->Synset('unit_of_measurement.n.01')->Synset('definite_quantity.n.01')->Synset('measure.n.02')}
+  result: *id003
+- pos: [LINK, PLAY]
+  neg: [ROBOT]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [LINK, PLAY]
+  reasons:
+    LINK: {type: HYPERNYM, reason: Synset('connection.n.06')->Synset('shape.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+    PLAY: {type: HYPERNYM, reason: Synset('playing_period.n.01')->Synset('measure.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [SERVER, TRIP]
+  neg: [BOX]
+  clue: CAUSE
+  score: 2.0
+  count: 2
+  terms: [SERVER, TRIP]
+  reasons:
+    SERVER: {type: HYPERNYM, reason: Synset('server.n.02')->Synset('player.n.01')->Synset('contestant.n.01')->Synset('person.n.01')->Synset('causal_agent.n.01')}
+    TRIP: {type: HYPERNYM, reason: Synset('trip.v.04')->Synset('initiate.v.02')->Synset('cause.v.01')}
+  result: *id003
+- pos: [SLUG, BUFFALO]
+  neg: [MAMMOTH]
+  clue: FOOD
+  score: 2.0
+  count: 2
+  terms: [SLUG, BUFFALO]
+  reasons:
+    SLUG: {type: HYPERNYM, reason: Synset('slug.n.05')->Synset('alcohol.n.01')->Synset('beverage.n.01')->Synset('food.n.01')}
+    BUFFALO: {type: HYPERNYM, reason: Synset('buffalo.n.03')->Synset('game.n.07')->Synset('meat.n.01')->Synset('food.n.02')}
+  result: *id003
+- pos: [BUTTON, WASHER]
+  neg: [POUND]
+  clue: CONSTRAINT
+  score: 2.0
+  count: 2
+  terms: [BUTTON, WASHER]
+  reasons:
+    BUTTON: {type: HYPERNYM, reason: Synset('button.n.01')->Synset('fastener.n.02')->Synset('restraint.n.06')}
+    WASHER: {type: HYPERNYM, reason: Synset('washer.n.02')->Synset('seal.n.08')->Synset('fastener.n.02')->Synset('restraint.n.06')}
+  result: *id003
+- pos: [CHANGE, SPRING]
+  neg: [DUCK]
+  clue: ACT
+  score: 2.0
+  count: 2
+  terms: [CHANGE, SPRING]
+  reasons:
+    CHANGE: {type: HYPERNYM, reason: Synset('change.n.03')->Synset('action.n.01')->Synset('act.n.02')}
+    SPRING: {type: HYPERNYM, reason: Synset('leap.n.01')->Synset('jump.n.06')->Synset('propulsion.n.02')->Synset('act.n.02')}
+  result: *id003
+- pos: [FIRE, BELL]
+  neg: [SNOW]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [FIRE, BELL]
+  reasons:
+    FIRE: {type: HYPERNYM, reason: Synset('fire.n.01')->Synset('happening.n.01')->Synset('event.n.01')->Synset('psychological_feature.n.01')->Synset('abstraction.n.06')}
+    BELL: {type: HYPERNYM, reason: Synset('bell.n.04')->Synset('time_unit.n.01')->Synset('measure.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [PIN, MERCURY]
+  neg: [TURKEY]
+  clue: PART
+  score: 2.0
+  count: 2
+  terms: [PIN, MERCURY]
+  reasons:
+    PIN: {type: HYPERNYM, reason: Synset('pin.n.05')->Synset('leg.n.01')->Synset('limb.n.01')->Synset('extremity.n.01')->Synset('external_body_part.n.01')->Synset('body_part.n.01')->Synset('part.n.03')}
+    MERCURY: {type: HYPERNYM, reason: Synset('mercury.n.01')->Synset('metallic_element.n.01')->Synset('chemical_element.n.01')->Synset('substance.n.01')->Synset('part.n.01')}
+  result: *id003
+- pos: [ARM, FACE]
+  neg: [WAVE]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [ARM, FACE]
+  reasons:
+    ARM: {type: HYPERNYM, reason: Synset('arm.n.02')->Synset('projection.n.04')->Synset('structure.n.01')->Synset('artifact.n.01')}
+    FACE: {type: HYPERNYM, reason: Synset('face.n.04')->Synset('surface.n.01')->Synset('artifact.n.01')}
+  result: *id003
+- pos: [MASS, TRAIN]
+  neg: [CARROT]
+  clue: ACCUMULATION
+  score: 2.0
+  count: 2
+  terms: [MASS, TRAIN]
+  reasons:
+    MASS: {type: HYPERNYM, reason: Synset('mass.n.03')->Synset('collection.n.01')}
+    TRAIN: {type: HYPERNYM, reason: Synset('caravan.n.01')->Synset('procession.n.02')->Synset('collection.n.01')}
+  result: *id003
+- pos: [ICE, RULER]
+  neg: [INDIA]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [ICE, RULER]
+  reasons:
+    ICE: {type: HYPERNYM, reason: Synset('frosting.n.01')->Synset('topping.n.01')->Synset('garnish.n.01')->Synset('decoration.n.01')->Synset('artifact.n.01')}
+    RULER: {type: HYPERNYM, reason: Synset('rule.n.12')->Synset('measuring_stick.n.01')->Synset('measuring_instrument.n.01')->Synset('instrument.n.01')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+  result: *id003
+- pos: [BAT, HAWK]
+  neg: [SOCK]
+  clue: ACT
+  score: 2.0
+  count: 2
+  terms: [BAT, HAWK]
+  reasons:
+    BAT: {type: HYPERNYM, reason: Synset('bat.n.02')->Synset('turn.n.03')->Synset('activity.n.01')->Synset('act.n.02')}
+    HAWK: {type: HYPERNYM, reason: Synset('peddle.v.01')->Synset('deal.v.06')->Synset('transact.v.01')->Synset('interact.v.01')->Synset('act.v.01')}
+  result: *id003
+- pos: [FLUTE, WIND]
+  neg: [CRANE]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [FLUTE, WIND]
+  reasons:
+    FLUTE: {type: HYPERNYM, reason: Synset('flute.n.03')->Synset('groove.n.01')->Synset('depression.n.08')->Synset('concave_shape.n.01')->Synset('solid.n.03')->Synset('shape.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+    WIND: {type: HYPERNYM, reason: Synset('tip.n.03')->Synset('guidance.n.01')->Synset('message.n.02')->Synset('communication.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [COURT, SCIENTIST]
+  neg: [AFRICA]
+  clue: ENTITY
+  score: 2.0
+  count: 2
+  terms: [COURT, SCIENTIST]
+  reasons:
+    COURT: {type: HYPERNYM, reason: Synset('court.n.01')->Synset('assembly.n.04')->Synset('gathering.n.01')->Synset('social_group.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')->Synset('entity.n.01')}
+    SCIENTIST: {type: HYPERNYM, reason: Synset('scientist.n.01')->Synset('person.n.01')->Synset('causal_agent.n.01')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+  result: *id003
+- pos: [LAB, TEMPLE]
+  neg: [AFRICA]
+  clue: ENTITY
+  score: 2.0
+  count: 2
+  terms: [LAB, TEMPLE]
+  reasons:
+    LAB: {type: HYPERNYM, reason: Synset('lab.n.01')->Synset('workplace.n.01')->Synset('geographic_point.n.01')->Synset('point.n.02')->Synset('location.n.01')->Synset('object.n.01')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+    TEMPLE: {type: HYPERNYM, reason: Synset('temple.n.02')->Synset('feature.n.02')->Synset('body_part.n.01')->Synset('part.n.03')->Synset('thing.n.12')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+  result: *id003
+- pos: [EMBASSY, HOTEL]
+  neg: [JUPITER]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [EMBASSY, HOTEL]
+  reasons:
+    EMBASSY: {type: HYPERNYM, reason: Synset('embassy.n.01')->Synset('diplomatic_building.n.01')->Synset('government_building.n.01')->Synset('building.n.01')->Synset('structure.n.01')->Synset('artifact.n.01')}
+    HOTEL: {type: HYPERNYM, reason: Synset('hotel.n.01')->Synset('building.n.01')->Synset('structure.n.01')->Synset('artifact.n.01')}
+  result: *id003
+- pos: [CHOCOLATE, SHADOW]
+  neg: [BEAR]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [CHOCOLATE, SHADOW]
+  reasons:
+    CHOCOLATE: {type: HYPERNYM, reason: Synset('cocoa.n.01')->Synset('beverage.n.01')->Synset('liquid.n.01')->Synset('fluid.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+    SHADOW: {type: HYPERNYM, reason: Synset('trace.n.02')->Synset('indication.n.01')->Synset('communication.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [FALL, MAPLE]
+  neg: [POISON]
+  clue: OBJECT
+  score: 2.0
+  count: 2
+  terms: [FALL, MAPLE]
+  reasons:
+    FALL: {type: HYPERNYM, reason: Synset('descent.n.05')->Synset('slope.n.01')->Synset('geological_formation.n.01')->Synset('object.n.01')}
+    MAPLE: {type: HYPERNYM, reason: Synset('maple.n.02')->Synset('angiospermous_tree.n.01')->Synset('tree.n.01')->Synset('woody_plant.n.01')->Synset('vascular_plant.n.01')->Synset('plant.n.02')->Synset('organism.n.01')->Synset('living_thing.n.01')->Synset('whole.n.02')->Synset('object.n.01')}
+  result: *id003
+- pos: [STAFF, HOSPITAL]
+  neg: [CASINO]
+  clue: GROUP
+  score: 2.0
+  count: 2
+  terms: [STAFF, HOSPITAL]
+  reasons:
+    STAFF: {type: HYPERNYM, reason: Synset('staff.n.03')->Synset('body.n.02')->Synset('social_group.n.01')->Synset('group.n.01')}
+    HOSPITAL: {type: HYPERNYM, reason: Synset('hospital.n.02')->Synset('medical_institution.n.01')->Synset('institution.n.01')->Synset('organization.n.01')->Synset('social_group.n.01')->Synset('group.n.01')}
+  result: *id003
+- pos: [FIGHTER, BAR]
+  neg: [PLAY]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [FIGHTER, BAR]
+  reasons:
+    FIGHTER: {type: HYPERNYM, reason: Synset('fighter.n.02')->Synset('warplane.n.01')->Synset('military_vehicle.n.01')->Synset('vehicle.n.01')->Synset('conveyance.n.03')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+    BAR: {type: HYPERNYM, reason: Synset('cake.n.01')->Synset('block.n.01')->Synset('artifact.n.01')}
+  result: *id003
+- pos: [HORN, IVORY]
+  neg: [OCTOPUS]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [HORN, IVORY]
+  reasons:
+    HORN: {type: HYPERNYM, reason: Synset('horn.n.03')->Synset('alarm.n.03')->Synset('signal.n.01')->Synset('communication.n.02')->Synset('abstraction.n.06')}
+    IVORY: {type: HYPERNYM, reason: Synset('ivory.n.01')->Synset('dentine.n.01')->Synset('animal_material.n.01')->Synset('material.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [TOOTH, NEEDLE]
+  neg: [PUMPKIN]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [TOOTH, NEEDLE]
+  reasons:
+    TOOTH: {type: HYPERNYM, reason: Synset('tooth.n.02')->Synset('projection.n.04')->Synset('structure.n.01')->Synset('artifact.n.01')}
+    NEEDLE: {type: HYPERNYM, reason: Synset('needle.n.03')->Synset('implement.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+  result: *id003
+- pos: [THEATER, STAR]
+  neg: [SERVER]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [THEATER, STAR]
+  reasons:
+    THEATER: {type: HYPERNYM, reason: Synset('dramaturgy.n.01')->Synset('communication.n.01')->Synset('act.n.02')->Synset('event.n.01')->Synset('psychological_feature.n.01')->Synset('abstraction.n.06')}
+    STAR: {type: HYPERNYM, reason: Synset('star.n.05')->Synset('plane_figure.n.01')->Synset('figure.n.06')->Synset('shape.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [TABLE, FORK]
+  neg: [CAT]
+  clue: MOVE
+  score: 2.0
+  count: 2
+  terms: [TABLE, FORK]
+  reasons:
+    TABLE: {type: HYPERNYM, reason: Synset('postpone.v.01')->Synset('delay.v.02')->Synset('wait.v.02')->Synset('act.v.01')}
+    FORK: {type: HYPERNYM, reason: Synset('pitchfork.v.01')->Synset('lift.v.02')->Synset('move.v.02')}
+  result: *id003
+- pos: [KEY, LOCK]
+  neg: [FILE]
+  clue: AREA
+  score: 2.0
+  count: 2
+  terms: [KEY, LOCK]
+  reasons:
+    KEY: {type: HYPERNYM, reason: Synset('key.n.09')->Synset('space.n.03')->Synset('area.n.01')}
+    LOCK: {type: HYPERNYM, reason: Synset('lock.n.04')->Synset('enclosure.n.01')->Synset('area.n.05')}
+  result: *id003
+- pos: [ROUND, BOW]
+  neg: [CROSS]
+  clue: ACT
+  score: 2.0
+  count: 2
+  terms: [ROUND, BOW]
+  reasons:
+    ROUND: {type: HYPERNYM, reason: Synset('round.n.06')->Synset('habitude.n.01')->Synset('practice.n.01')->Synset('activity.n.01')->Synset('act.n.02')}
+    BOW: {type: HYPERNYM, reason: Synset('bow.n.06')->Synset('reverence.n.03')->Synset('action.n.01')->Synset('act.n.02')}
+  result: *id003
+- pos: [ALPS, COLD]
+  neg: [EGYPT]
+  clue: ENTITY
+  score: 2.0
+  count: 2
+  terms: [ALPS, COLD]
+  reasons:
+    ALPS: {type: HYPERNYM, reason: Synset('alp.n.01')->Synset('mountain.n.01')->Synset('natural_elevation.n.01')->Synset('geological_formation.n.01')->Synset('object.n.01')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+    COLD: {type: HYPERNYM, reason: Synset('coldness.n.03')->Synset('temperature.n.01')->Synset('fundamental_quantity.n.01')->Synset('measure.n.02')->Synset('abstraction.n.06')->Synset('entity.n.01')}
+  result: *id003
+- pos: [SHOE, ROOT]
+  neg: [STAFF]
+  clue: CHANGE
+  score: 2.0
+  count: 2
+  terms: [SHOE, ROOT]
+  reasons:
+    SHOE: {type: HYPERNYM, reason: Synset('shoe.v.01')->Synset('dress.v.02')->Synset('change_state.v.01')->Synset('change.v.02')}
+    ROOT: {type: HYPERNYM, reason: Synset('settle.v.07')->Synset('stabilize.v.03')->Synset('change.v.02')}
+  result: *id003
+- pos: [DRAGON, SPELL]
+  neg: [AMBULANCE]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [DRAGON, SPELL]
+  reasons:
+    DRAGON: {type: HYPERNYM, reason: Synset('dragon.n.01')->Synset('mythical_monster.n.01')->Synset('monster.n.01')->Synset('imaginary_being.n.01')->Synset('imagination.n.01')->Synset('creativity.n.01')->Synset('ability.n.02')->Synset('cognition.n.01')->Synset('psychological_feature.n.01')->Synset('abstraction.n.06')}
+    SPELL: {type: HYPERNYM, reason: Synset('spell.n.04')->Synset('speech.n.02')->Synset('auditory_communication.n.01')->Synset('communication.n.02')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [ROSE, TORCH]
+  neg: [PARACHUTE]
+  clue: BEING
+  score: 2.0
+  count: 2
+  terms: [ROSE, TORCH]
+  reasons:
+    ROSE: {type: HYPERNYM, reason: Synset('rose.n.01')->Synset('shrub.n.01')->Synset('woody_plant.n.01')->Synset('vascular_plant.n.01')->Synset('plant.n.02')->Synset('organism.n.01')}
+    TORCH: {type: HYPERNYM, reason: Synset('common_mullein.n.01')->Synset('mullein.n.01')->Synset('herb.n.01')->Synset('vascular_plant.n.01')->Synset('plant.n.02')->Synset('organism.n.01')}
+  result: *id003
+- pos: [TAG, RAY]
+  neg: [THEATER]
+  clue: GO
+  score: 2.0
+  count: 2
+  terms: [TAG, RAY]
+  reasons:
+    TAG: {type: HYPERNYM, reason: Synset('chase.v.01')->Synset('pursue.v.02')->Synset('travel.v.01')}
+    RAY: {type: HYPERNYM, reason: Synset('radiate.v.03')->Synset('run.v.03')}
+  result: *id003
+- pos: [CIRCLE, MARBLE]
+  neg: [CLOAK]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [CIRCLE, MARBLE]
+  reasons:
+    CIRCLE: {type: HYPERNYM, reason: Synset('set.n.05')->Synset('social_group.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')}
+    MARBLE: {type: HYPERNYM, reason: Synset('marble.n.01')->Synset('rock.n.02')->Synset('material.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+  result: *id003
+- pos: [SQUARE, CENTER]
+  neg: [SPINE]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [SQUARE, CENTER]
+  reasons:
+    SQUARE: {type: HYPERNYM, reason: Synset('square.n.07')->Synset('artifact.n.01')}
+    CENTER: {type: HYPERNYM, reason: Synset('center.n.03')->Synset('building.n.01')->Synset('structure.n.01')->Synset('artifact.n.01')}
+  result: *id003
+correct: 34
+skipped: 56
+incorrect: 90

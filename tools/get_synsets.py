@@ -1,13 +1,15 @@
 import sys
+
 from nltk.corpus import wordnet
 
 
 def main():
     synsets = wordnet.synsets(sys.argv[1])
     for synset in synsets:
+        print(synset)
         print("Definition: ", synset.definition())
         print("Hypernyms:", synset.hypernyms())
-        print("Hyponyms:", synset.hyponyms(), '\n')
+        print("Hyponyms:", synset.hyponyms(), "\n")
 
 
 if __name__ == "__main__":
