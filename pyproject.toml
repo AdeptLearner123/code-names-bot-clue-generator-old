@@ -15,6 +15,7 @@ nltk = "^3.7"
 
 [tool.poetry.scripts]
 format                  = "tasks:format"
+setup                   = "tasks:setup"
 
 create-eval-triplets    = "evaluation.triplet_generator:main"
 eval-triplets           = "evaluation.triplet_evaluator:main"
@@ -22,8 +23,9 @@ eval-triplets           = "evaluation.triplet_evaluator:main"
 explore-clues           = "tools.explore_clues:main"
 get-synsets             = "tools.get_synsets:main"
 get-hypernyms           = "tools.get_hypernyms:main"
+get-oxford-definition   = "tools.get_oxford_definition:main"
 
-generate-hypernym-clues = "code_names_bot_clue_generator.hypernym_scores.generate_hypernym_clues:main"
+generate-hypernym-clues = "code_names_bot_clue_generator.hypernym_clues.generate_hypernym_clues:main"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]

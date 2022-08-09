@@ -9,6 +9,11 @@ from evaluation.clue_generator import ClueGenerator
 from .scenario import ScenarioSet
 
 
+class NoAliasDumper(yaml.Dumper):
+    def ignore_aliases(self, data):
+        return True
+
+
 class ScenarioResult(Enum):
     INCORRECT = 0
     SKIPPED = 1
@@ -80,10 +85,16 @@ def print_clue_details(pos_terms, neg_terms, clue, clue_score, clue_count, clue_
     )
     print("--- POSITIVE ---")
     for pos_term in pos_terms:
-        print(pos_term, clue_reasons[pos_term]["type"], clue_reasons[pos_term]["reason"])
+        if pos_term not in clue_reasons:
+            print(pos_term, "NA")
+        else:
+            print(pos_term, clue_reasons[pos_term]["type"], clue_reasons[pos_term]["reason"])
     print("--- NEGATIVE ---")
     for neg_term in neg_terms:
-        print(neg_term, clue_reasons[neg_term]["type"], clue_reasons[neg_term]["reason"])
+        if neg_term not in clue_reasons:
+            print(neg_term, "NA")
+        else:
+            print(neg_term, clue_reasons[neg_term]["type"], clue_reasons[neg_term]["reason"])
 
 
 def main():
@@ -132,7 +143,7 @@ def main():
     report["incorrect"] = incorrect
     with open(HYPERNYM_EVAL_REPORT_PATH, "w") as out_file:
         yaml.dump(
-            report, out_file, default_flow_style=None, sort_keys=False
+            report, out_file, default_flow_style=None, sort_keys=False, Dumper=NoAliasDumper
         )
 
 

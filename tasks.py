@@ -23,6 +23,12 @@ def _command(command: Union[List[str], str], shell: bool = False):
         sys.exit(command_exit_code)
 
 
+def setup():
+    import nltk
+    nltk.download("wordnet")
+    nltk.download('punkt')
+
+
 def format():
     _command(["black", "."])
     _command(["isort", "."])

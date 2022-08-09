@@ -1,4 +1,6 @@
 from nltk.corpus import wordnet
+from nltk.tokenize import word_tokenize
+from nltk.stem import WordNetLemmatizer 
 from tqdm import tqdm
 
 from code_names_bot_clue_generator.clues.clues_database import CluesDatabase
@@ -12,9 +14,9 @@ def main():
 
     terms = list(open(TERMS_PATH, "r").read().splitlines())
     for term in tqdm(terms):
-        _, result_words = get_term_hypernyms(term)
-        for clue in result_words:
-            depth, path = result_words[clue]
+        hypernym_words = get_hypernym_clues(term)
+        for clue in hypernym_words:
+            depth, path = hypernym_words[clue]
 
             if "_" not in clue:  # Only single-word clues are valid
                 clue = clue.upper()
@@ -22,7 +24,13 @@ def main():
     scores_database.commit()
 
 
-def get_term_hypernyms(term):
+def get_hypernym_clues(term):
+    hypernym_synsets = get_all_hypernyms(term)
+    hypernym_synsets = filter_hypernyms(term, hypernym_synsets)
+    return get_synset_words(hypernym_synsets)
+
+
+def get_all_hypernyms(term):
     queue = []
     result_synsets = dict()
 
@@ -42,16 +50,49 @@ def get_term_hypernyms(term):
         for parent_hypernym in hypernym.hypernyms():
             queue.append((parent_hypernym, depth + 1, f"{path}->{parent_hypernym}"))
 
+    return result_synsets
+
+
+def filter_hypernyms(term, hypernym_synsets):
+    filtered_synsets = dict()
+    lemmatizer = WordNetLemmatizer()
+
+    synset_queue = []
+    for synset in wordnet.synsets(term):
+        synset_queue.append(synset)
+
+    while len(synset_queue) > 0:
+        synset = synset_queue.pop(0)
+
+        if synset not in wordnet.synsets(term):
+            filtered_synsets[synset] = hypernym_synsets[synset]
+        
+        definition = synset.definition().lower()
+        definition_words = word_tokenize(definition)
+        definition_words = list(map(lambda word: lemmatizer.lemmatize(word), definition_words))
+
+        for hypernym_synset in hypernym_synsets:
+            if hypernym_synset == synset or hypernym_synset in filtered_synsets or hypernym_synset in synset_queue:
+                continue
+            hypernym_name = hypernym_synset.name().split('.')[0].lower()
+            if hypernym_name in definition_words:
+                if hypernym_name == "abstraction":
+                    print("Adding abstraction ", definition, synset.name())
+                synset_queue.append(hypernym_synset)
+    
+    return filtered_synsets
+
+
+def get_synset_words(hypernym_synsets):
     result_words = dict()
-    for hypernym in result_synsets:
-        depth, path = result_synsets[hypernym]
+    for hypernym in hypernym_synsets:
+        depth, path = hypernym_synsets[hypernym]
 
         words = map(lambda lemma: lemma.name(), hypernym.lemmas())
         for lemma in words:
             if lemma not in result_words or result_words[lemma][0] > depth:
                 result_words[lemma] = (depth, path)
-
-    return result_synsets, result_words
+    return result_words
 
 
 if __name__ == "__main__":
