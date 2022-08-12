@@ -3,7 +3,7 @@ import random
 from enum import Enum
 import yaml
 
-from config import EVALUATION_TRIPLETS_PATH, HYPERNYM_SCORES_PATH, HYPERNYM_EVAL_REPORT_PATH
+from config import TRAIN_TRIPLETS_PATH, HYPERNYM_SCORES_PATH, HYPERNYM_EVAL_REPORT_PATH
 from evaluation.clue_generator import ClueGenerator
 
 from .scenario import ScenarioSet
@@ -54,14 +54,14 @@ def test_scenario(triplet, clue_generator):
     }
 
     if clue is None or clue_count == 1:
-        scenario_report["result"] = ScenarioResult.SKIPPED
+        scenario_report["result"] = ScenarioResult.SKIPPED.name
         return ScenarioResult.SKIPPED, scenario_report
 
     if clue in triplet.clues:
-        scenario_report["result"] = ScenarioResult.CORRECT
+        scenario_report["result"] = ScenarioResult.CORRECT.name
         return ScenarioResult.CORRECT, scenario_report
     elif clue in triplet.nonclues:
-        scenario_report["result"] = ScenarioResult.INCORRECT
+        scenario_report["result"] = ScenarioResult.INCORRECT.name
         return ScenarioResult.INCORRECT, scenario_report
 
     correct = get_guess(clue, triplet)
@@ -71,7 +71,7 @@ def test_scenario(triplet, clue_generator):
     else:
         triplet.nonclues.append(clue)
 
-    result = ScenarioResult.CORRECT if correct else ScenarioResult.INCORRECT
+    result = ScenarioResult.CORRECT.name if correct else ScenarioResult.INCORRECT.name
     scenario_report["result"] = result
 
     print_clue_details(triplet.positive, triplet.negative, clue, clue_score, clue_count, clue_terms, clue_reasons)
@@ -98,7 +98,7 @@ def print_clue_details(pos_terms, neg_terms, clue, clue_score, clue_count, clue_
 
 
 def main():
-    with open(EVALUATION_TRIPLETS_PATH, "r") as in_file:
+    with open(TRAIN_TRIPLETS_PATH, "r") as in_file:
         evaluation_triplets = ScenarioSet.from_yaml_obj(yaml.safe_load(in_file))
 
     clue_generator = ClueGenerator(HYPERNYM_SCORES_PATH)
@@ -128,7 +128,7 @@ def main():
             incorrect += 1
             report["incorrect_scenarios"].append(scenario_report)
 
-        with open(EVALUATION_TRIPLETS_PATH, "w") as out_file:
+        with open(TRAIN_TRIPLETS_PATH, "w") as out_file:
             yaml.dump(
                 evaluation_triplets.to_yaml_obj(), out_file, default_flow_style=None, sort_keys=False
             )

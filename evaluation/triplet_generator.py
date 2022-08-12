@@ -2,7 +2,7 @@ import random
 
 import yaml
 
-from config import EVALUATION_TRIPLETS_PATH, TERMS_PATH
+from config import TRAIN_TRIPLETS_PATH, TEST_TRIPLETS_PATH, TERMS_PATH
 
 from .scenario import Scenario, ScenarioSet
 
@@ -27,7 +27,7 @@ def print_options_list(options):
 def main():
     terms = list(open(TERMS_PATH, "r").read().splitlines())
 
-    with open(EVALUATION_TRIPLETS_PATH, "r") as in_file:
+    with open(TEST_TRIPLETS_PATH, "r") as in_file:
         evaluation_triplets = ScenarioSet.from_yaml_obj(yaml.safe_load(in_file))
 
     pruned_terms = prune_positive_terms(terms, evaluation_triplets)
@@ -60,10 +60,11 @@ def main():
         evaluation_triplets.scenarios.append(new_scenario)
         pruned_terms = list(set(pruned_terms) - set(new_scenario.positive))
 
-        with open(EVALUATION_TRIPLETS_PATH, "w") as out_file:
+        with open(TEST_TRIPLETS_PATH, "w") as out_file:
             yaml.dump(
                 evaluation_triplets.to_yaml_obj(),
                 out_file,
+                sort_keys=False,
                 default_flow_style=None,
                 Dumper=NoAliasDumper,
             )
