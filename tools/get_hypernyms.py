@@ -9,7 +9,7 @@ from code_names_bot_clue_generator.hypernym_clues.generate_hypernym_clues import
 def print_path_map(map):
     for key in map:
         depth, path = map[key]
-        print(key, depth, path)
+        print(key, depth, "->".join([synset.name() for synset in path]))
 
 
 def main():
@@ -21,7 +21,7 @@ def main():
     print()
 
     print("--- Filtered ---")
-    hypernym_synsets = filter_hypernyms(term, hypernym_synsets)
+    hypernym_synsets = filter_hypernyms(hypernym_synsets)
     print_path_map(hypernym_synsets)
     print()
 

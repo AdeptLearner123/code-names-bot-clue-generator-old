@@ -1,0 +1,1704 @@
+correct_scenarios:
+- pos: [BATTERY, FILE]
+  neg: [BEACH]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [BATTERY, FILE]
+  reasons:
+    BATTERY: {type: HYPERNYM, reason: Synset('battery.n.02')->Synset('electrical_device.n.01')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+    FILE: {type: HYPERNYM, reason: Synset('file.n.03')->Synset('office_furniture.n.01')->Synset('furniture.n.01')->Synset('furnishing.n.02')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [BRIDGE, MODEL]
+  neg: [DOCTOR]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [BRIDGE, MODEL]
+  reasons:
+    BRIDGE: {type: HYPERNYM, reason: Synset('bridge.n.01')->Synset('structure.n.01')->Synset('artifact.n.01')}
+    MODEL: {type: HYPERNYM, reason: Synset('model.n.04')->Synset('representation.n.02')->Synset('creation.n.02')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [CHICK, DOG]
+  neg: [SPELL]
+  clue: ANIMAL
+  score: 2.0
+  count: 2
+  terms: [CHICK, DOG]
+  reasons:
+    CHICK: {type: HYPERNYM, reason: Synset('chick.n.01')->Synset('young_bird.n.01')->Synset('young.n.01')->Synset('animal.n.01')}
+    DOG: {type: HYPERNYM, reason: Synset('dog.n.01')->Synset('domestic_animal.n.01')->Synset('animal.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [DUCK, KIWI]
+  neg: [FALL]
+  clue: ANIMAL
+  score: 2.0
+  count: 2
+  terms: [DUCK, KIWI]
+  reasons:
+    DUCK: {type: HYPERNYM, reason: Synset('duck.n.01')->Synset('anseriform_bird.n.01')->Synset('waterfowl.n.01')->Synset('aquatic_bird.n.01')->Synset('bird.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+    KIWI: {type: HYPERNYM, reason: Synset('kiwi.n.04')->Synset('ratite.n.01')->Synset('bird.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [TRIANGLE, FIGURE]
+  neg: [BOOT]
+  clue: FORM
+  score: 2.0
+  count: 2
+  terms: [TRIANGLE, FIGURE]
+  reasons:
+    TRIANGLE: {type: HYPERNYM, reason: Synset('triangle.n.02')->Synset('shape.n.02')}
+    FIGURE: {type: HYPERNYM, reason: Synset('figure.n.06')->Synset('shape.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [BANK, SCHOOL]
+  neg: [TABLET]
+  clue: ESTABLISHMENT
+  score: 2.0
+  count: 2
+  terms: [BANK, SCHOOL]
+  reasons:
+    BANK: {type: HYPERNYM, reason: Synset('depository_financial_institution.n.01')->Synset('financial_institution.n.01')->Synset('institution.n.01')}
+    SCHOOL: {type: HYPERNYM, reason: Synset('school.n.01')->Synset('educational_institution.n.01')->Synset('institution.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [DROP, TAP]
+  neg: [COTTON]
+  clue: ACT
+  score: 2.0
+  count: 2
+  terms: [DROP, TAP]
+  reasons:
+    DROP: {type: HYPERNYM, reason: Synset('drop.n.09')->Synset('descent.n.03')->Synset('motion.n.06')->Synset('change.n.03')->Synset('action.n.01')->Synset('act.n.02')}
+    TAP: {type: HYPERNYM, reason: Synset('tap.n.08')->Synset('touch.n.05')->Synset('act.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [WORM, FISH]
+  neg: [BOW]
+  clue: ANIMAL
+  score: 2.0
+  count: 2
+  terms: [WORM, FISH]
+  reasons:
+    WORM: {type: HYPERNYM, reason: Synset('worm.n.01')->Synset('invertebrate.n.01')->Synset('animal.n.01')}
+    FISH: {type: HYPERNYM, reason: Synset('fish.n.01')->Synset('aquatic_vertebrate.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [HORSE, KNIGHT]
+  neg: [LASER]
+  clue: CHESSMAN
+  score: 2.0
+  count: 2
+  terms: [HORSE, KNIGHT]
+  reasons:
+    HORSE: {type: HYPERNYM, reason: Synset('knight.n.02')->Synset('chessman.n.01')}
+    KNIGHT: {type: HYPERNYM, reason: Synset('knight.n.02')->Synset('chessman.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [FENCE, YARD]
+  neg: [NEEDLE]
+  clue: CONSTRUCTION
+  score: 2.0
+  count: 2
+  terms: [FENCE, YARD]
+  reasons:
+    FENCE: {type: HYPERNYM, reason: Synset('fence.n.01')->Synset('barrier.n.01')->Synset('obstruction.n.01')->Synset('structure.n.01')}
+    YARD: {type: HYPERNYM, reason: Synset('yard.n.09')->Synset('enclosure.n.01')->Synset('area.n.05')->Synset('structure.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [PLANE, SHIP]
+  neg: [ORGAN]
+  clue: CONVEYANCE
+  score: 2.0
+  count: 2
+  terms: [PLANE, SHIP]
+  reasons:
+    PLANE: {type: HYPERNYM, reason: Synset('airplane.n.01')->Synset('heavier-than-air_craft.n.01')->Synset('aircraft.n.01')->Synset('craft.n.02')->Synset('vehicle.n.01')->Synset('conveyance.n.03')}
+    SHIP: {type: HYPERNYM, reason: Synset('ship.n.01')->Synset('vessel.n.02')->Synset('craft.n.02')->Synset('vehicle.n.01')->Synset('conveyance.n.03')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [CAP, PANTS]
+  neg: [CAT]
+  clue: CLOTHING
+  score: 2.0
+  count: 2
+  terms: [CAP, PANTS]
+  reasons:
+    CAP: {type: HYPERNYM, reason: Synset('cap.n.01')->Synset('headdress.n.01')->Synset('clothing.n.01')}
+    PANTS: {type: HYPERNYM, reason: Synset('trouser.n.01')->Synset('garment.n.01')->Synset('clothing.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [BOOM, CRASH]
+  neg: [BLOCK]
+  clue: EVENT
+  score: 2.0
+  count: 2
+  terms: [BOOM, CRASH]
+  reasons:
+    BOOM: {type: HYPERNYM, reason: Synset('boom.n.03')->Synset('happening.n.01')->Synset('event.n.01')}
+    CRASH: {type: HYPERNYM, reason: Synset('crash.n.03')->Synset('happening.n.01')->Synset('event.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [BEAR, CALF]
+  neg: [ROUND]
+  clue: ANIMAL
+  score: 2.0
+  count: 2
+  terms: [BEAR, CALF]
+  reasons:
+    BEAR: {type: HYPERNYM, reason: Synset('bear.n.01')->Synset('carnivore.n.01')->Synset('placental.n.01')->Synset('mammal.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+    CALF: {type: HYPERNYM, reason: Synset('calf.n.01')->Synset('young_mammal.n.01')->Synset('young.n.01')->Synset('animal.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [SCALE, MICROSCOPE]
+  neg: [SHARK]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [SCALE, MICROSCOPE]
+  reasons:
+    SCALE: {type: HYPERNYM, reason: Synset('scale.n.08')->Synset('indicator.n.03')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+    MICROSCOPE: {type: HYPERNYM, reason: Synset('microscope.n.01')->Synset('magnifier.n.01')->Synset('scientific_instrument.n.01')->Synset('instrument.n.01')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [KANGAROO, OCTOPUS]
+  neg: [MATCH]
+  clue: ANIMAL
+  score: 2.0
+  count: 2
+  terms: [KANGAROO, OCTOPUS]
+  reasons:
+    KANGAROO: {type: HYPERNYM, reason: Synset('kangaroo.n.01')->Synset('marsupial.n.01')->Synset('metatherian.n.01')->Synset('mammal.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+    OCTOPUS: {type: HYPERNYM, reason: Synset('octopus.n.02')->Synset('octopod.n.01')->Synset('cephalopod.n.01')->Synset('mollusk.n.01')->Synset('invertebrate.n.01')->Synset('animal.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [SCORPION, SEAL]
+  neg: [ROBOT]
+  clue: ANIMAL
+  score: 2.0
+  count: 2
+  terms: [SCORPION, SEAL]
+  reasons:
+    SCORPION: {type: HYPERNYM, reason: Synset('scorpion.n.03')->Synset('arachnid.n.01')->Synset('arthropod.n.01')->Synset('invertebrate.n.01')->Synset('animal.n.01')}
+    SEAL: {type: HYPERNYM, reason: Synset('seal.n.09')->Synset('pinniped_mammal.n.01')->Synset('aquatic_mammal.n.01')->Synset('placental.n.01')->Synset('mammal.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [FOREST, PALM]
+  neg: [ANTARCTICA]
+  clue: PLANT
+  score: 2.0
+  count: 2
+  terms: [FOREST, PALM]
+  reasons:
+    FOREST: {type: HYPERNYM, reason: Synset('afforest.v.01')->Synset('plant.v.01')}
+    PALM: {type: HYPERNYM, reason: Synset('palm.n.03')->Synset('tree.n.01')->Synset('woody_plant.n.01')->Synset('vascular_plant.n.01')->Synset('plant.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [DWARF, GHOST]
+  neg: [DEGREE]
+  clue: INDIVIDUAL
+  score: 2.0
+  count: 2
+  terms: [DWARF, GHOST]
+  reasons:
+    DWARF: {type: HYPERNYM, reason: Synset('dwarf.n.01')->Synset('small_person.n.01')->Synset('person.n.01')}
+    GHOST: {type: HYPERNYM, reason: Synset('ghostwriter.n.01')->Synset('writer.n.01')->Synset('communicator.n.01')->Synset('person.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [MOUSE, WATCH]
+  neg: [KETCHUP]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [MOUSE, WATCH]
+  reasons:
+    MOUSE: {type: HYPERNYM, reason: Synset('mouse.n.04')->Synset('electronic_device.n.01')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+    WATCH: {type: HYPERNYM, reason: Synset('watch.n.01')->Synset('timepiece.n.01')->Synset('measuring_instrument.n.01')->Synset('instrument.n.01')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [BOX, CHEST]
+  neg: [COVER]
+  clue: CONTAINER
+  score: 2.0
+  count: 2
+  terms: [BOX, CHEST]
+  reasons:
+    BOX: {type: HYPERNYM, reason: Synset('box.n.01')->Synset('container.n.01')}
+    CHEST: {type: HYPERNYM, reason: Synset('chest.n.02')->Synset('box.n.01')->Synset('container.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [COMIC, JACK]
+  neg: [TRACK]
+  clue: INDIVIDUAL
+  score: 2.0
+  count: 2
+  terms: [COMIC, JACK]
+  reasons:
+    COMIC: {type: HYPERNYM, reason: Synset('comedian.n.01')->Synset('performer.n.01')->Synset('entertainer.n.01')->Synset('person.n.01')}
+    JACK: {type: HYPERNYM, reason: Synset('mariner.n.01')->Synset('sailor.n.01')->Synset('skilled_worker.n.01')->Synset('worker.n.01')->Synset('person.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [BUTTON, WASHER]
+  neg: [POUND]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [BUTTON, WASHER]
+  reasons:
+    BUTTON: {type: HYPERNYM, reason: Synset('button.n.07')->Synset('artifact.n.01')}
+    WASHER: {type: HYPERNYM, reason: Synset('washer.n.02')->Synset('seal.n.08')->Synset('fastener.n.02')->Synset('restraint.n.06')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [BOARD, SCREEN]
+  neg: [WAVE]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [BOARD, SCREEN]
+  reasons:
+    BOARD: {type: HYPERNYM, reason: Synset('board.n.03')->Synset('sheet.n.06')->Synset('artifact.n.01')}
+    SCREEN: {type: HYPERNYM, reason: Synset('screen.n.01')->Synset('surface.n.01')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [EMBASSY, HOTEL]
+  neg: [JUPITER]
+  clue: BUILDING
+  score: 2.0
+  count: 2
+  terms: [EMBASSY, HOTEL]
+  reasons:
+    EMBASSY: {type: HYPERNYM, reason: Synset('embassy.n.01')->Synset('diplomatic_building.n.01')->Synset('government_building.n.01')->Synset('building.n.01')}
+    HOTEL: {type: HYPERNYM, reason: Synset('hotel.n.01')->Synset('building.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+- pos: [HOOK, NET]
+  neg: [DEATH]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [HOOK, NET]
+  reasons:
+    HOOK: {type: HYPERNYM, reason: Synset('hook.n.05')->Synset('implement.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+    NET: {type: HYPERNYM, reason: Synset('net.n.06')->Synset('fabric.n.01')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [2]
+skipped_scenarios:
+- pos: [FLY, VET]
+  neg: [BEIJING]
+  clue: ACT
+  score: 1.0
+  count: 1
+  terms: [FLY]
+  reasons:
+    FLY: {type: HYPERNYM, reason: Synset('fly.n.04')->Synset('hit.n.02')->Synset('touch.n.05')->Synset('act.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [AMAZON, PIE]
+  neg: [CLUB]
+  clue: ABILITY
+  score: 1.0
+  count: 1
+  terms: [AMAZON]
+  reasons:
+    AMAZON: {type: HYPERNYM, reason: Synset('amazon.n.02')->Synset('mythical_being.n.01')->Synset('imaginary_being.n.01')->Synset('imagination.n.01')->Synset('creativity.n.01')->Synset('ability.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [QUEEN, AZTEC]
+  neg: [DIAMOND]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [QUEEN]
+  reasons:
+    QUEEN: {type: HYPERNYM, reason: Synset('queen.n.07')->Synset('face_card.n.01')->Synset('playing_card.n.01')->Synset('card.n.01')->Synset('paper.n.01')->Synset('material.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [BOTTLE, WATER]
+  neg: [SPRING]
+  clue: CONTAINER
+  score: 1.0
+  count: 1
+  terms: [BOTTLE]
+  reasons:
+    BOTTLE: {type: HYPERNYM, reason: Synset('bottle.n.01')->Synset('vessel.n.03')->Synset('container.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [FORCE, TOKYO]
+  neg: [PLANE]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [FORCE]
+  reasons:
+    FORCE: {type: HYPERNYM, reason: Synset('force.n.08')->Synset('social_group.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [CASINO, BEIJING]
+  neg: [LAB]
+  clue: BUILDING
+  score: 1.0
+  count: 1
+  terms: [CASINO]
+  reasons:
+    CASINO: {type: HYPERNYM, reason: Synset('casino.n.01')->Synset('gambling_house.n.01')->Synset('building.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [RABBIT, NINJA]
+  neg: [GHOST]
+  clue: ANIMAL
+  score: 1.0
+  count: 1
+  terms: [RABBIT]
+  reasons:
+    RABBIT: {type: HYPERNYM, reason: Synset('rabbit.n.01')->Synset('leporid.n.01')->Synset('lagomorph.n.01')->Synset('placental.n.01')->Synset('mammal.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [WELL, AMERICA]
+  neg: [PUMPKIN]
+  clue: AREA
+  score: 1.0
+  count: 1
+  terms: [WELL]
+  reasons:
+    WELL: {type: HYPERNYM, reason: Synset('well.n.05')->Synset('compartment.n.02')->Synset('room.n.01')->Synset('area.n.05')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [GLOVE, COOK]
+  neg: [ALIEN]
+  clue: ARTEFACT
+  score: 1.0
+  count: 1
+  terms: [GLOVE]
+  reasons:
+    GLOVE: {type: HYPERNYM, reason: Synset('glove.n.02')->Synset('handwear.n.01')->Synset('clothing.n.01')->Synset('covering.n.02')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [LEPRECHAUN, SPIDER]
+  neg: [PARK]
+  clue: BROWNIE
+  score: 1.0
+  count: 1
+  terms: [LEPRECHAUN]
+  reasons:
+    LEPRECHAUN: {type: HYPERNYM, reason: Synset('leprechaun.n.01')->Synset('elf.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [DINOSAUR, FILM]
+  neg: [ALIEN]
+  clue: ANIMAL
+  score: 1.0
+  count: 1
+  terms: [DINOSAUR]
+  reasons:
+    DINOSAUR: {type: HYPERNYM, reason: Synset('dinosaur.n.01')->Synset('archosaur.n.01')->Synset('diapsid.n.01')->Synset('reptile.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [DIAMOND, STRIKE]
+  neg: [EYE]
+  clue: ADORNMENT
+  score: 1.0
+  count: 1
+  terms: [DIAMOND]
+  reasons:
+    DIAMOND: {type: HYPERNYM, reason: Synset('diamond.n.01')->Synset('jewel.n.01')->Synset('jewelry.n.01')->Synset('adornment.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [APPLE, HAM]
+  neg: [BOX]
+  clue: FRUIT
+  score: 1.0
+  count: 1
+  terms: [APPLE]
+  reasons:
+    APPLE: {type: HYPERNYM, reason: Synset('apple.n.01')->Synset('edible_fruit.n.01')->Synset('fruit.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [PLATYPUS, MOUTH]
+  neg: [CROSS]
+  clue: ANIMAL
+  score: 1.0
+  count: 1
+  terms: [PLATYPUS]
+  reasons:
+    PLATYPUS: {type: HYPERNYM, reason: Synset('platypus.n.01')->Synset('monotreme.n.01')->Synset('prototherian.n.01')->Synset('mammal.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [OIL, SMUGGLER]
+  neg: [ORGAN]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [OIL]
+  reasons:
+    OIL: {type: HYPERNYM, reason: Synset('oil.n.02')->Synset('oil_paint.n.01')->Synset('paint.n.01')->Synset('coloring_material.n.01')->Synset('material.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [GERMANY, TURKEY]
+  neg: [LEPRECHAUN]
+  clue: ANIMAL
+  score: 1.0
+  count: 1
+  terms: [TURKEY]
+  reasons:
+    TURKEY: {type: HYPERNYM, reason: Synset('turkey.n.01')->Synset('domestic_fowl.n.01')->Synset('gallinaceous_bird.n.01')->Synset('bird.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [ENGLAND, LONDON]
+  neg: [LEMON]
+  clue: null
+  score: null
+  count: null
+  terms: null
+  reasons: null
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [PAN, HORSESHOE]
+  neg: [LASER]
+  clue: CONTAINER
+  score: 1.0
+  count: 1
+  terms: [PAN]
+  reasons:
+    PAN: {type: HYPERNYM, reason: Synset('pan.n.03')->Synset('container.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [SHOP, CARROT]
+  neg: [PANTS]
+  clue: ACTIVITY
+  score: 1.0
+  count: 1
+  terms: [SHOP]
+  reasons:
+    SHOP: {type: HYPERNYM, reason: Synset('shop_class.n.01')->Synset('course.n.01')->Synset('education.n.01')->Synset('activity.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [MOSCOW, IRON]
+  neg: [SPIDER]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [IRON]
+  reasons:
+    IRON: {type: HYPERNYM, reason: Synset('iron.n.01')->Synset('metallic_element.n.01')->Synset('chemical_element.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [STADIUM, CRICKET]
+  neg: [AZTEC]
+  clue: CONSTRUCTION
+  score: 1.0
+  count: 1
+  terms: [STADIUM]
+  reasons:
+    STADIUM: {type: HYPERNYM, reason: Synset('stadium.n.01')->Synset('structure.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [GAME, FAN]
+  neg: [QUEEN]
+  clue: ACT
+  score: 1.0
+  count: 1
+  terms: [GAME]
+  reasons:
+    GAME: {type: HYPERNYM, reason: Synset('game.n.01')->Synset('activity.n.01')->Synset('act.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [CLOAK, AIR]
+  neg: [FORK]
+  clue: CLOTHING
+  score: 1.0
+  count: 1
+  terms: [CLOAK]
+  reasons:
+    CLOAK: {type: HYPERNYM, reason: Synset('cloak.n.02')->Synset('overgarment.n.01')->Synset('garment.n.01')->Synset('clothing.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [UNDERTAKER, FOOT]
+  neg: [MARCH]
+  clue: ADD
+  score: 1.0
+  count: 1
+  terms: [FOOT]
+  reasons:
+    FOOT: {type: HYPERNYM, reason: Synset('foot.v.03')->Synset('add.v.04')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [KID, GRASS]
+  neg: [SOCK]
+  clue: ACT
+  score: 1.0
+  count: 1
+  terms: [KID]
+  reasons:
+    KID: {type: HYPERNYM, reason: Synset('kid.v.02')->Synset('tease.v.02')->Synset('mock.v.01')->Synset('treat.v.01')->Synset('interact.v.01')->Synset('act.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [HONEY, AFRICA]
+  neg: [SNOWMAN]
+  clue: DULCIFY
+  score: 1.0
+  count: 1
+  terms: [HONEY]
+  reasons:
+    HONEY: {type: HYPERNYM, reason: Synset('honey.v.01')->Synset('sweeten.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [PIT, HOLE]
+  neg: [STREAM]
+  clue: AREA
+  score: 1.0
+  count: 1
+  terms: [PIT]
+  reasons:
+    PIT: {type: HYPERNYM, reason: Synset('pit.n.06')->Synset('area.n.05')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [UNICORN, WITCH]
+  neg: [TABLE]
+  clue: ADULT
+  score: 1.0
+  count: 1
+  terms: [WITCH]
+  reasons:
+    WITCH: {type: HYPERNYM, reason: Synset('hag.n.01')->Synset('old_woman.n.01')->Synset('oldster.n.01')->Synset('adult.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [STRING, CONCERT]
+  neg: [KNIFE]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [STRING]
+  reasons:
+    STRING: {type: HYPERNYM, reason: Synset('string.n.09')->Synset('collection.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [OLIVE, ICE CREAM]
+  neg: [NAIL]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [OLIVE]
+  reasons:
+    OLIVE: {type: HYPERNYM, reason: Synset('olive.n.05')->Synset('chromatic_color.n.01')->Synset('color.n.01')->Synset('visual_property.n.01')->Synset('property.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [ROME, SHAKESPEARE]
+  neg: [PENGUIN]
+  clue: BODY
+  score: 1.0
+  count: 1
+  terms: [ROME]
+  reasons:
+    ROME: {type: HYPERNYM, reason: Synset('rome.n.02')->Synset('leadership.n.02')->Synset('body.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [MEXICO, CAPITAL]
+  neg: [BALL]
+  clue: AREA
+  score: 1.0
+  count: 1
+  terms: [CAPITAL]
+  reasons:
+    CAPITAL: {type: HYPERNYM, reason: Synset('capital.n.03')->Synset('seat.n.05')->Synset('center.n.01')->Synset('area.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [PYRAMID, EGYPT]
+  neg: [UNICORN]
+  clue: ARRANGE
+  score: 1.0
+  count: 1
+  terms: [PYRAMID]
+  reasons:
+    PYRAMID: {type: HYPERNYM, reason: Synset('pyramid.v.03')->Synset('arrange.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [HELICOPTER, SUPERHERO]
+  neg: [SLUG]
+  clue: AIRCRAFT
+  score: 1.0
+  count: 1
+  terms: [HELICOPTER]
+  reasons:
+    HELICOPTER: {type: HYPERNYM, reason: Synset('helicopter.n.01')->Synset('heavier-than-air_craft.n.01')->Synset('aircraft.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [TOWER, GIANT]
+  neg: [THUMB]
+  clue: BE
+  score: 1.0
+  count: 1
+  terms: [TOWER]
+  reasons:
+    TOWER: {type: HYPERNYM, reason: Synset('loom.v.02')->Synset('rise.v.04')->Synset('look.v.02')->Synset('be.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [HEAD, PRINCESS]
+  neg: [CONTRACT]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [HEAD]
+  reasons:
+    HEAD: {type: HYPERNYM, reason: Synset('mind.n.01')->Synset('cognition.n.01')->Synset('psychological_feature.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [PLOT, ANGEL]
+  neg: [VAN]
+  clue: CHART
+  score: 1.0
+  count: 1
+  terms: [PLOT]
+  reasons:
+    PLOT: {type: HYPERNYM, reason: Synset('plot.n.04')->Synset('chart.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [PHOENIX, EAGLE]
+  neg: [BUFFALO]
+  clue: ENTITY
+  score: 1.0
+  count: 1
+  terms: [PHOENIX]
+  reasons:
+    PHOENIX: {type: HYPERNYM, reason: Synset('phoenix.n.02')->Synset('monocot_genus.n.01')->Synset('genus.n.02')->Synset('taxonomic_group.n.01')->Synset('biological_group.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')->Synset('entity.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [MINT, JAM]
+  neg: [ROBOT]
+  clue: BEING
+  score: 1.0
+  count: 1
+  terms: [MINT]
+  reasons:
+    MINT: {type: HYPERNYM, reason: Synset('mint.n.02')->Synset('herb.n.01')->Synset('vascular_plant.n.01')->Synset('plant.n.02')->Synset('organism.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [CONTRACT, DEGREE]
+  neg: [CLUB]
+  clue: AGREEMENT
+  score: 1.0
+  count: 1
+  terms: [CONTRACT]
+  reasons:
+    CONTRACT: {type: HYPERNYM, reason: Synset('contract.n.01')->Synset('written_agreement.n.01')->Synset('agreement.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [CZECH, BERMUDA]
+  neg: [PLANE]
+  clue: DENIZEN
+  score: 1.0
+  count: 1
+  terms: [CZECH]
+  reasons:
+    CZECH: {type: HYPERNYM, reason: Synset('czech.n.01')->Synset('european.n.01')->Synset('inhabitant.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [CAT, CENTAUR]
+  neg: [EYE]
+  clue: ACT
+  score: 1.0
+  count: 1
+  terms: [CAT]
+  reasons:
+    CAT: {type: HYPERNYM, reason: Synset('computerized_tomography.n.01')->Synset('x-raying.n.01')->Synset('imaging.n.02')->Synset('pictorial_representation.n.01')->Synset('representation.n.10')->Synset('activity.n.01')->Synset('act.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [BOMB, WAVE]
+  neg: [LINK]
+  clue: ASSAIL
+  score: 1.0
+  count: 1
+  terms: [BOMB]
+  reasons:
+    BOMB: {type: HYPERNYM, reason: Synset('bombard.v.02')->Synset('attack.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [BEACH, PIRATE]
+  neg: [PANTS]
+  clue: LAND
+  score: 1.0
+  count: 1
+  terms: [BEACH]
+  reasons:
+    BEACH: {type: HYPERNYM, reason: Synset('beach.v.01')->Synset('land.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [GREECE, FRANCE]
+  neg: [FOREST]
+  clue: COUNTRY
+  score: 1.0
+  count: 1
+  terms: [GREECE]
+  reasons:
+    GREECE: {type: HYPERNYM, reason: Synset('greece.n.02')->Synset('balkan_country.n.01')->Synset('european_country.n.01')->Synset('country.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [CHINA, WHALE]
+  neg: [SNOW]
+  clue: ARTEFACT
+  score: 1.0
+  count: 1
+  terms: [CHINA]
+  reasons:
+    CHINA: {type: HYPERNYM, reason: Synset('chinaware.n.01')->Synset('crockery.n.01')->Synset('tableware.n.01')->Synset('ware.n.01')->Synset('article.n.02')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [TRUNK, GAS]
+  neg: [POINT]
+  clue: AREA
+  score: 1.0
+  count: 1
+  terms: [TRUNK]
+  reasons:
+    TRUNK: {type: HYPERNYM, reason: Synset('luggage_compartment.n.01')->Synset('compartment.n.02')->Synset('room.n.01')->Synset('area.n.05')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [CRANE, ROBOT]
+  neg: [STICK]
+  clue: ANIMAL
+  score: 1.0
+  count: 1
+  terms: [CRANE]
+  reasons:
+    CRANE: {type: HYPERNYM, reason: Synset('crane.n.05')->Synset('wading_bird.n.01')->Synset('aquatic_bird.n.01')->Synset('bird.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [TEACHER, DOCTOR]
+  neg: [CZECH]
+  clue: ABSTRACT
+  score: 1.0
+  count: 1
+  terms: [TEACHER]
+  reasons:
+    TEACHER: {type: HYPERNYM, reason: Synset('teacher.n.02')->Synset('abstraction.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [BERRY, PLATE]
+  neg: [NOVEL]
+  clue: COLLECT
+  score: 1.0
+  count: 1
+  terms: [BERRY]
+  reasons:
+    BERRY: {type: HYPERNYM, reason: Synset('berry.v.01')->Synset('pick.v.02')->Synset('gather.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [TABLET, CHURCH]
+  neg: [STADIUM]
+  clue: BAR
+  score: 1.0
+  count: 1
+  terms: [TABLET]
+  reasons:
+    TABLET: {type: HYPERNYM, reason: Synset('tablet.n.03')->Synset('cake.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [KNIFE, DEATH]
+  neg: [PHOENIX]
+  clue: ARM
+  score: 1.0
+  count: 1
+  terms: [KNIFE]
+  reasons:
+    KNIFE: {type: HYPERNYM, reason: Synset('knife.n.02')->Synset('weapon.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [POOL, STREAM]
+  neg: [DECK]
+  clue: AGGROUP
+  score: 1.0
+  count: 1
+  terms: [POOL]
+  reasons:
+    POOL: {type: HYPERNYM, reason: Synset('pool.v.02')->Synset('group.v.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [CANADA, KING]
+  neg: [WATCH]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [KING]
+  reasons:
+    KING: {type: HYPERNYM, reason: Synset('king.n.04')->Synset('eminence.n.01')->Synset('high_status.n.01')->Synset('status.n.01')->Synset('state.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [SNOWMAN, SNOW]
+  neg: [QUEEN]
+  clue: CREATION
+  score: 1.0
+  count: 1
+  terms: [SNOWMAN]
+  reasons:
+    SNOWMAN: {type: HYPERNYM, reason: Synset('snowman.n.01')->Synset('figure.n.04')->Synset('model.n.04')->Synset('representation.n.02')->Synset('creation.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [POISON, BED]
+  neg: [THIEF]
+  clue: KILL
+  score: 1.0
+  count: 1
+  terms: [POISON]
+  reasons:
+    POISON: {type: HYPERNYM, reason: Synset('poison.v.02')->Synset('kill.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [INDIA, BUG]
+  neg: [HOTEL]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [BUG]
+  reasons:
+    BUG: {type: HYPERNYM, reason: Synset('bug.n.02')->Synset('defect.n.03')->Synset('imperfection.n.01')->Synset('state.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [SOUND, PIANO]
+  neg: [KING]
+  clue: AESTHESIS
+  score: 1.0
+  count: 1
+  terms: [SOUND]
+  reasons:
+    SOUND: {type: HYPERNYM, reason: Synset('sound.n.02')->Synset('sensation.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [BERLIN, STATE]
+  neg: [OIL]
+  clue: AUTO
+  score: 1.0
+  count: 1
+  terms: [BERLIN]
+  reasons:
+    BERLIN: {type: HYPERNYM, reason: Synset('berlin.n.03')->Synset('limousine.n.01')->Synset('car.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [LAWYER, NEW YORK]
+  neg: [CRANE]
+  clue: INDIVIDUAL
+  score: 1.0
+  count: 1
+  terms: [LAWYER]
+  reasons:
+    LAWYER: {type: HYPERNYM, reason: Synset('lawyer.n.01')->Synset('professional.n.01')->Synset('adult.n.01')->Synset('person.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [SPY, REVOLUTION]
+  neg: [DATE]
+  clue: AGENT
+  score: 1.0
+  count: 1
+  terms: [SPY]
+  reasons:
+    SPY: {type: HYPERNYM, reason: Synset('spy.n.01')->Synset('secret_agent.n.01')->Synset('agent.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [SATELLITE, SPACE]
+  neg: [MICROSCOPE]
+  clue: EQUIPMENT
+  score: 1.0
+  count: 1
+  terms: [SATELLITE]
+  reasons:
+    SATELLITE: {type: HYPERNYM, reason: Synset('satellite.n.01')->Synset('equipment.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [PISTOL, PIPE]
+  neg: [TIE]
+  clue: ARM
+  score: 1.0
+  count: 1
+  terms: [PISTOL]
+  reasons:
+    PISTOL: {type: HYPERNYM, reason: Synset('pistol.n.01')->Synset('firearm.n.01')->Synset('gun.n.01')->Synset('weapon.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [LITTER, VACUUM]
+  neg: [THUMB]
+  clue: BE
+  score: 1.0
+  count: 1
+  terms: [LITTER]
+  reasons:
+    LITTER: {type: HYPERNYM, reason: Synset('litter.v.01')->Synset('be.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [SATURN, HIMALAYAS]
+  neg: [STICK]
+  clue: null
+  score: null
+  count: null
+  terms: null
+  reasons: null
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [ATLANTIS, MAMMOTH]
+  neg: [PORT]
+  clue: ANIMAL
+  score: 1.0
+  count: 1
+  terms: [MAMMOTH]
+  reasons:
+    MAMMOTH: {type: HYPERNYM, reason: Synset('mammoth.n.01')->Synset('elephant.n.01')->Synset('pachyderm.n.01')->Synset('placental.n.01')->Synset('mammal.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [SOUL, BEAT]
+  neg: [DIAMOND]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [SOUL]
+  reasons:
+    SOUL: {type: HYPERNYM, reason: Synset('soul.n.03')->Synset('feeling.n.01')->Synset('state.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [NURSE, SPINE]
+  neg: [TOKYO]
+  clue: ACT
+  score: 1.0
+  count: 1
+  terms: [NURSE]
+  reasons:
+    NURSE: {type: HYPERNYM, reason: Synset('nurse.v.04')->Synset('treat.v.01')->Synset('interact.v.01')->Synset('act.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [OPERA, CAST]
+  neg: [FIELD]
+  clue: BUILDING
+  score: 1.0
+  count: 1
+  terms: [OPERA]
+  reasons:
+    OPERA: {type: HYPERNYM, reason: Synset('opera.n.03')->Synset('theater.n.01')->Synset('building.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [PILOT, SOLDIER]
+  neg: [HOLLYWOOD]
+  clue: APPARATUS
+  score: 1.0
+  count: 1
+  terms: [PILOT]
+  reasons:
+    PILOT: {type: HYPERNYM, reason: Synset('pilot_burner.n.01')->Synset('gas_burner.n.01')->Synset('burner.n.01')->Synset('apparatus.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [HOLLYWOOD, SHARK]
+  neg: [BEIJING]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [HOLLYWOOD]
+  reasons:
+    HOLLYWOOD: {type: HYPERNYM, reason: Synset('hollywood.n.02')->Synset('spirit.n.02')->Synset('atmosphere.n.01')->Synset('condition.n.01')->Synset('state.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [COTTON, NUT]
+  neg: [DOCTOR]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [COTTON]
+  reasons:
+    COTTON: {type: HYPERNYM, reason: Synset('cotton.n.01')->Synset('plant_fiber.n.01')->Synset('natural_fiber.n.01')->Synset('fiber.n.01')->Synset('material.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [LOCH NESS, OLYMPUS]
+  neg: [HIMALAYAS]
+  clue: null
+  score: null
+  count: null
+  terms: null
+  reasons: null
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [SLUG, BUFFALO]
+  neg: [MAMMOTH]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [SLUG]
+  reasons:
+    SLUG: {type: HYPERNYM, reason: Synset('slug.n.02')->Synset('mass_unit.n.01')->Synset('unit_of_measurement.n.01')->Synset('definite_quantity.n.01')->Synset('measure.n.02')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [MILLIONAIRE, BILL]
+  neg: [OPERA]
+  clue: INDIVIDUAL
+  score: 1.0
+  count: 1
+  terms: [MILLIONAIRE]
+  reasons:
+    MILLIONAIRE: {type: HYPERNYM, reason: Synset('millionaire.n.01')->Synset('rich_person.n.01')->Synset('person.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [PUMPKIN, MOON]
+  neg: [SCORPION]
+  clue: FLORA
+  score: 1.0
+  count: 1
+  terms: [PUMPKIN]
+  reasons:
+    PUMPKIN: {type: HYPERNYM, reason: Synset('pumpkin.n.01')->Synset('squash.n.01')->Synset('vine.n.01')->Synset('vascular_plant.n.01')->Synset('plant.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [PLASTIC, KETCHUP]
+  neg: [APPLE]
+  clue: CREDIT
+  score: 1.0
+  count: 1
+  terms: [PLASTIC]
+  reasons:
+    PLASTIC: {type: HYPERNYM, reason: Synset('credit_card.n.01')->Synset('open-end_credit.n.01')->Synset('consumer_credit.n.01')->Synset('credit_line.n.01')->Synset('credit.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [CHANGE, SPRING]
+  neg: [DUCK]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [CHANGE]
+  reasons:
+    CHANGE: {type: HYPERNYM, reason: Synset('change.n.02')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [EUROPE, POUND]
+  neg: [PORT]
+  clue: GROUP
+  score: 1.0
+  count: 1
+  terms: [EUROPE]
+  reasons:
+    EUROPE: {type: HYPERNYM, reason: Synset('europe.n.03')->Synset('collection.n.01')->Synset('group.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [PIN, MERCURY]
+  neg: [TURKEY]
+  clue: ACT
+  score: 1.0
+  count: 1
+  terms: [PIN]
+  reasons:
+    PIN: {type: HYPERNYM, reason: Synset('pin.v.04')->Synset('attack.v.03')->Synset('act.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [ICE, RULER]
+  neg: [INDIA]
+  clue: AFTERS
+  score: 1.0
+  count: 1
+  terms: [ICE]
+  reasons:
+    ICE: {type: HYPERNYM, reason: Synset('ice.n.05')->Synset('frozen_dessert.n.01')->Synset('dessert.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [JUPITER, MOUNT]
+  neg: [ALIEN]
+  clue: ACT
+  score: 1.0
+  count: 1
+  terms: [MOUNT]
+  reasons:
+    MOUNT: {type: HYPERNYM, reason: Synset('climb.n.03')->Synset('rise.n.02')->Synset('motion.n.06')->Synset('change.n.03')->Synset('action.n.01')->Synset('act.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [ROULETTE, DICE]
+  neg: [GAME]
+  clue: DEVICE
+  score: 1.0
+  count: 1
+  terms: [ROULETTE]
+  reasons:
+    ROULETTE: {type: HYPERNYM, reason: Synset('roulette.n.02')->Synset('wheel.n.01')->Synset('machine.n.04')->Synset('mechanical_device.n.01')->Synset('mechanism.n.05')->Synset('device.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [FLUTE, WIND]
+  neg: [CRANE]
+  clue: CHANNEL
+  score: 1.0
+  count: 1
+  terms: [FLUTE]
+  reasons:
+    FLUTE: {type: HYPERNYM, reason: Synset('flute.n.03')->Synset('groove.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [COURT, SCIENTIST]
+  neg: [AFRICA]
+  clue: ABODE
+  score: 1.0
+  count: 1
+  terms: [COURT]
+  reasons:
+    COURT: {type: HYPERNYM, reason: Synset('court.n.09')->Synset('residence.n.02')->Synset('house.n.01')->Synset('dwelling.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [LAB, TEMPLE]
+  neg: [AFRICA]
+  clue: WORK
+  score: 1.0
+  count: 1
+  terms: [LAB]
+  reasons:
+    LAB: {type: HYPERNYM, reason: Synset('lab.n.01')->Synset('workplace.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [ROBIN, NOVEL]
+  neg: [THUMB]
+  clue: THRUSH
+  score: 1.0
+  count: 1
+  terms: [ROBIN]
+  reasons:
+    ROBIN: {type: HYPERNYM, reason: Synset('robin.n.01')->Synset('thrush.n.03')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [AUSTRALIA, TAIL]
+  neg: [SPIDER]
+  clue: ARTEFACT
+  score: 1.0
+  count: 1
+  terms: [TAIL]
+  reasons:
+    TAIL: {type: HYPERNYM, reason: Synset('tail.n.06')->Synset('reverse.n.04')->Synset('side.n.05')->Synset('surface.n.01')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [GREEN, WASHINGTON]
+  neg: [AUSTRALIA]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [GREEN]
+  reasons:
+    GREEN: {type: HYPERNYM, reason: Synset('green.n.01')->Synset('chromatic_color.n.01')->Synset('color.n.01')->Synset('visual_property.n.01')->Synset('property.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [FALL, MAPLE]
+  neg: [POISON]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [FALL]
+  reasons:
+    FALL: {type: HYPERNYM, reason: Synset('fall.n.01')->Synset('season.n.02')->Synset('time_period.n.01')->Synset('fundamental_quantity.n.01')->Synset('measure.n.02')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [AGENT, NIGHT]
+  neg: [CZECH]
+  clue: ENTITY
+  score: 1.0
+  count: 1
+  terms: [AGENT]
+  reasons:
+    AGENT: {type: HYPERNYM, reason: Synset('agent.n.01')->Synset('causal_agent.n.01')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [SCUBA DIVER, SUIT]
+  neg: [APPLE]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [SUIT]
+  reasons:
+    SUIT: {type: HYPERNYM, reason: Synset('lawsuit.n.01')->Synset('proceeding.n.01')->Synset('due_process.n.01')->Synset('group_action.n.01')->Synset('event.n.01')->Synset('psychological_feature.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [COVER, CAR]
+  neg: [HORSESHOE]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [COVER]
+  reasons:
+    COVER: {type: HYPERNYM, reason: Synset('cover.n.03')->Synset('concealment.n.03')->Synset('activity.n.01')->Synset('act.n.02')->Synset('event.n.01')->Synset('psychological_feature.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [LASER, LIGHT]
+  neg: [GLASS]
+  clue: ABSTRACTION
+  score: 1.0
+  count: 1
+  terms: [LIGHT]
+  reasons:
+    LIGHT: {type: HYPERNYM, reason: Synset('luminosity.n.01')->Synset('physical_property.n.01')->Synset('property.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [WAKE, DAY]
+  neg: [LOG]
+  clue: ALTER
+  score: 1.0
+  count: 1
+  terms: [WAKE]
+  reasons:
+    WAKE: {type: HYPERNYM, reason: Synset('awaken.v.01')->Synset('change.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [TABLE, FORK]
+  neg: [CAT]
+  clue: ARRANGE
+  score: 1.0
+  count: 1
+  terms: [TABLE]
+  reasons:
+    TABLE: {type: HYPERNYM, reason: Synset('table.v.02')->Synset('arrange.v.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [ALPS, COLD]
+  neg: [EGYPT]
+  clue: MOUNT
+  score: 1.0
+  count: 1
+  terms: [ALPS]
+  reasons:
+    ALPS: {type: HYPERNYM, reason: Synset('alp.n.01')->Synset('mountain.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [DRAGON, SPELL]
+  neg: [AMBULANCE]
+  clue: ABILITY
+  score: 1.0
+  count: 1
+  terms: [DRAGON]
+  reasons:
+    DRAGON: {type: HYPERNYM, reason: Synset('dragon.n.01')->Synset('mythical_monster.n.01')->Synset('monster.n.01')->Synset('imaginary_being.n.01')->Synset('imagination.n.01')->Synset('creativity.n.01')->Synset('ability.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+- pos: [ANTARCTICA, PENGUIN]
+  neg: [BATTERY]
+  clue: ANIMAL
+  score: 1.0
+  count: 1
+  terms: [PENGUIN]
+  reasons:
+    PENGUIN: {type: HYPERNYM, reason: Synset('penguin.n.01')->Synset('sphenisciform_seabird.n.01')->Synset('seabird.n.01')->Synset('aquatic_bird.n.01')->Synset('bird.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [1]
+incorrect_scenarios:
+- pos: [DECK, LUCK]
+  neg: [CAPITAL]
+  clue: ENTITY
+  score: 2.0
+  count: 2
+  terms: [DECK, LUCK]
+  reasons:
+    DECK: {type: HYPERNYM, reason: Synset('pack_of_cards.n.01')->Synset('pack.n.02')->Synset('collection.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')->Synset('entity.n.01')}
+    LUCK: {type: HYPERNYM, reason: Synset('luck.n.02')->Synset('phenomenon.n.01')->Synset('process.n.06')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [VAN, GLASS]
+  neg: [TRUNK]
+  clue: UNIT
+  score: 2.0
+  count: 2
+  terms: [VAN, GLASS]
+  reasons:
+    VAN: {type: HYPERNYM, reason: Synset('vanguard.n.01')->Synset('army_unit.n.01')->Synset('military_unit.n.01')->Synset('unit.n.03')}
+    GLASS: {type: HYPERNYM, reason: Synset('glass.n.02')->Synset('container.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')->Synset('whole.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [WAR, PORT]
+  neg: [AZTEC]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [WAR, PORT]
+  reasons:
+    WAR: {type: HYPERNYM, reason: Synset('war.n.02')->Synset('hostility.n.02')->Synset('state.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+    PORT: {type: HYPERNYM, reason: Synset('port.n.02')->Synset('fortified_wine.n.01')->Synset('wine.n.01')->Synset('alcohol.n.01')->Synset('beverage.n.01')->Synset('liquid.n.01')->Synset('fluid.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [COPPER, PRESS]
+  neg: [LEPRECHAUN]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [COPPER, PRESS]
+  reasons:
+    COPPER: {type: HYPERNYM, reason: Synset('copper.n.01')->Synset('conductor.n.02')->Synset('material.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+    PRESS: {type: HYPERNYM, reason: Synset('crush.n.02')->Synset('crowd.n.01')->Synset('gathering.n.01')->Synset('social_group.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [COMPOUND, TIME]
+  neg: [VET]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [COMPOUND, TIME]
+  reasons:
+    COMPOUND: {type: HYPERNYM, reason: Synset('compound.n.02')->Synset('chemical.n.01')->Synset('material.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+    TIME: {type: HYPERNYM, reason: Synset('time.n.05')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [JET, MISSILE]
+  neg: [LEPRECHAUN]
+  clue: CONVEYANCE
+  score: 2.0
+  count: 2
+  terms: [JET, MISSILE]
+  reasons:
+    JET: {type: HYPERNYM, reason: Synset('jet.n.01')->Synset('airplane.n.01')->Synset('heavier-than-air_craft.n.01')->Synset('aircraft.n.01')->Synset('craft.n.02')->Synset('vehicle.n.01')->Synset('conveyance.n.03')}
+    MISSILE: {type: HYPERNYM, reason: Synset('missile.n.01')->Synset('rocket.n.01')->Synset('vehicle.n.01')->Synset('conveyance.n.03')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [CODE, POST]
+  neg: [ICE CREAM]
+  clue: ALTER
+  score: 2.0
+  count: 2
+  terms: [CODE, POST]
+  reasons:
+    CODE: {type: HYPERNYM, reason: Synset('code.v.02')->Synset('encode.v.01')->Synset('convert.v.02')->Synset('change.v.01')}
+    POST: {type: HYPERNYM, reason: Synset('stake.v.03')->Synset('mark.v.05')->Synset('change.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [STOCK, BOND]
+  neg: [BUTTON]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [STOCK, BOND]
+  reasons:
+    STOCK: {type: HYPERNYM, reason: Synset('breed.n.01')->Synset('animal_group.n.01')->Synset('biological_group.n.01')->Synset('group.n.01')->Synset('abstraction.n.06')}
+    BOND: {type: HYPERNYM, reason: Synset('alliance.n.02')->Synset('connection.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [SPIKE, BLOCK]
+  neg: [TAIL]
+  clue: CONSTRUCTION
+  score: 2.0
+  count: 2
+  terms: [SPIKE, BLOCK]
+  reasons:
+    SPIKE: {type: HYPERNYM, reason: Synset('spike.n.08')->Synset('projection.n.04')->Synset('structure.n.01')}
+    BLOCK: {type: HYPERNYM, reason: Synset('block.n.05')->Synset('housing.n.01')->Synset('structure.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [CELL, ORGAN]
+  neg: [STRIKE]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [CELL, ORGAN]
+  reasons:
+    CELL: {type: HYPERNYM, reason: Synset('cell.n.03')->Synset('electrical_device.n.01')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+    ORGAN: {type: HYPERNYM, reason: Synset('electric_organ.n.01')->Synset('electronic_instrument.n.01')->Synset('musical_instrument.n.01')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [FAIR, POLICE]
+  neg: [RAY]
+  clue: GROUP
+  score: 2.0
+  count: 2
+  terms: [FAIR, POLICE]
+  reasons:
+    FAIR: {type: HYPERNYM, reason: Synset('fair.n.02')->Synset('gathering.n.01')->Synset('social_group.n.01')->Synset('group.n.01')}
+    POLICE: {type: HYPERNYM, reason: Synset('police.n.01')->Synset('force.n.04')->Synset('organization.n.01')->Synset('social_group.n.01')->Synset('group.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [MINE, TRACK]
+  neg: [MOUTH]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [MINE, TRACK]
+  reasons:
+    MINE: {type: HYPERNYM, reason: Synset('mine.n.01')->Synset('excavation.n.03')->Synset('artifact.n.01')}
+    TRACK: {type: HYPERNYM, reason: Synset('track.n.03')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [GOLD, CARD]
+  neg: [TAG]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [GOLD, CARD]
+  reasons:
+    GOLD: {type: HYPERNYM, reason: Synset('gold.n.04')->Synset('wealth.n.03')->Synset('material_resource.n.01')->Synset('assets.n.01')->Synset('possession.n.02')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+    CARD: {type: HYPERNYM, reason: Synset('poster.n.01')->Synset('sign.n.02')->Synset('communication.n.02')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [LIFE, ALIEN]
+  neg: [ALPS]
+  clue: INDIVIDUAL
+  score: 2.0
+  count: 2
+  terms: [LIFE, ALIEN]
+  reasons:
+    LIFE: {type: HYPERNYM, reason: Synset('life.n.08')->Synset('person.n.01')}
+    ALIEN: {type: HYPERNYM, reason: Synset('foreigner.n.01')->Synset('traveler.n.01')->Synset('person.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [HAND, MOLE]
+  neg: [BAND]
+  clue: INDIVIDUAL
+  score: 2.0
+  count: 2
+  terms: [HAND, MOLE]
+  reasons:
+    HAND: {type: HYPERNYM, reason: Synset('hand.n.10')->Synset('sailor.n.01')->Synset('skilled_worker.n.01')->Synset('worker.n.01')->Synset('person.n.01')}
+    MOLE: {type: HYPERNYM, reason: Synset('counterspy.n.01')->Synset('spy.n.01')->Synset('secret_agent.n.01')->Synset('agent.n.02')->Synset('representative.n.01')->Synset('negotiator.n.01')->Synset('communicator.n.01')->Synset('person.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [CROWN, LEAD]
+  neg: [KNIFE]
+  clue: BE
+  score: 2.0
+  count: 2
+  terms: [CROWN, LEAD]
+  reasons:
+    CROWN: {type: HYPERNYM, reason: Synset('crown.v.03')->Synset('head.v.07')->Synset('lie.v.01')->Synset('be.v.03')}
+    LEAD: {type: HYPERNYM, reason: Synset('run.v.03')->Synset('be.v.03')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [STRAW, GROUND]
+  neg: [DANCE]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [STRAW, GROUND]
+  reasons:
+    STRAW: {type: HYPERNYM, reason: Synset('chaff.n.01')->Synset('plant_material.n.01')->Synset('material.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+    GROUND: {type: HYPERNYM, reason: Synset('footing.n.02')->Synset('foundation.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [PUPIL, EYE]
+  neg: [TRIANGLE]
+  clue: OPENING
+  score: 2.0
+  count: 2
+  terms: [PUPIL, EYE]
+  reasons:
+    PUPIL: {type: HYPERNYM, reason: Synset('pupil.n.02')->Synset('aperture.n.02')->Synset('hole.n.01')->Synset('opening.n.01')}
+    EYE: {type: HYPERNYM, reason: Synset('eye.n.05')->Synset('hole.n.02')->Synset('opening.n.10')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [WEB, MATCH]
+  neg: [DICE]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [WEB, MATCH]
+  reasons:
+    WEB: {type: HYPERNYM, reason: Synset('web.n.06')->Synset('fabric.n.01')->Synset('artifact.n.01')}
+    MATCH: {type: HYPERNYM, reason: Synset('match.n.01')->Synset('lighter.n.02')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [LIMOUSINE, PART]
+  neg: [PHOENIX]
+  clue: OBJECT
+  score: 2.0
+  count: 2
+  terms: [LIMOUSINE, PART]
+  reasons:
+    LIMOUSINE: {type: HYPERNYM, reason: Synset('limousine.n.01')->Synset('car.n.01')->Synset('motor_vehicle.n.01')->Synset('self-propelled_vehicle.n.01')->Synset('wheeled_vehicle.n.01')->Synset('container.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')->Synset('whole.n.02')->Synset('object.n.01')}
+    PART: {type: HYPERNYM, reason: Synset('part.n.02')->Synset('object.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [CONDUCTOR, FIELD]
+  neg: [CZECH]
+  clue: ENTITY
+  score: 2.0
+  count: 2
+  terms: [CONDUCTOR, FIELD]
+  reasons:
+    CONDUCTOR: {type: HYPERNYM, reason: Synset('conductor.n.02')->Synset('material.n.01')->Synset('substance.n.01')->Synset('matter.n.03')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+    FIELD: {type: HYPERNYM, reason: Synset('field.n.10')->Synset('set.n.02')->Synset('abstraction.n.06')->Synset('entity.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [ROCK, LOG]
+  neg: [MILLIONAIRE]
+  clue: ENTITY
+  score: 2.0
+  count: 2
+  terms: [ROCK, LOG]
+  reasons:
+    ROCK: {type: HYPERNYM, reason: Synset('rock.n.01')->Synset('natural_object.n.01')->Synset('whole.n.02')->Synset('object.n.01')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+    LOG: {type: HYPERNYM, reason: Synset('log.n.01')->Synset('wood.n.01')->Synset('plant_material.n.01')->Synset('material.n.01')->Synset('substance.n.01')->Synset('matter.n.03')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [BOOT, BELT]
+  neg: [NUT]
+  clue: ACT
+  score: 2.0
+  count: 2
+  terms: [BOOT, BELT]
+  reasons:
+    BOOT: {type: HYPERNYM, reason: Synset('kick.n.01')->Synset('blow.n.01')->Synset('stroke.n.12')->Synset('motion.n.03')->Synset('change.n.03')->Synset('action.n.01')->Synset('act.n.02')}
+    BELT: {type: HYPERNYM, reason: Synset('belt_out.v.01')->Synset('sing.v.02')->Synset('talk.v.02')->Synset('communicate.v.02')->Synset('interact.v.01')->Synset('act.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [TUBE, SHOT]
+  neg: [GERMANY]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [TUBE, SHOT]
+  reasons:
+    TUBE: {type: HYPERNYM, reason: Synset('tube.n.01')->Synset('conduit.n.01')->Synset('passage.n.03')->Synset('way.n.06')->Synset('artifact.n.01')}
+    SHOT: {type: HYPERNYM, reason: Synset('scene.n.04')->Synset('photograph.n.01')->Synset('representation.n.02')->Synset('creation.n.02')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [AMBULANCE, CROSS]
+  neg: [KIWI]
+  clue: ENTITY
+  score: 2.0
+  count: 2
+  terms: [AMBULANCE, CROSS]
+  reasons:
+    AMBULANCE: {type: HYPERNYM, reason: Synset('ambulance.n.01')->Synset('car.n.01')->Synset('motor_vehicle.n.01')->Synset('self-propelled_vehicle.n.01')->Synset('wheeled_vehicle.n.01')->Synset('container.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')->Synset('whole.n.02')->Synset('object.n.01')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+    CROSS: {type: HYPERNYM, reason: Synset('cross.n.01')->Synset('structure.n.01')->Synset('artifact.n.01')->Synset('whole.n.02')->Synset('object.n.01')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [DATE, MARCH]
+  neg: [GAME]
+  clue: ASSEMBLAGE
+  score: 2.0
+  count: 2
+  terms: [DATE, MARCH]
+  reasons:
+    DATE: {type: HYPERNYM, reason: Synset('date.n.03')->Synset('meeting.n.02')->Synset('social_gathering.n.01')->Synset('gathering.n.01')}
+    MARCH: {type: HYPERNYM, reason: Synset('march.n.04')->Synset('procession.n.02')->Synset('collection.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [HEART, PAPER]
+  neg: [IRON]
+  clue: MATERIAL
+  score: 2.0
+  count: 2
+  terms: [HEART, PAPER]
+  reasons:
+    HEART: {type: HYPERNYM, reason: Synset('heart.n.10')->Synset('playing_card.n.01')->Synset('card.n.01')->Synset('paper.n.01')->Synset('material.n.01')}
+    PAPER: {type: HYPERNYM, reason: Synset('paper.n.01')->Synset('material.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [BUCK, LION]
+  neg: [PHOENIX]
+  clue: ANIMAL
+  score: 2.0
+  count: 2
+  terms: [BUCK, LION]
+  reasons:
+    BUCK: {type: HYPERNYM, reason: Synset('buck.n.05')->Synset('placental.n.01')->Synset('mammal.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+    LION: {type: HYPERNYM, reason: Synset('lion.n.01')->Synset('big_cat.n.01')->Synset('feline.n.01')->Synset('carnivore.n.01')->Synset('placental.n.01')->Synset('mammal.n.01')->Synset('vertebrate.n.01')->Synset('chordate.n.01')->Synset('animal.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [DISEASE, CHECK]
+  neg: [EYE]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [DISEASE, CHECK]
+  reasons:
+    DISEASE: {type: HYPERNYM, reason: Synset('disease.n.01')->Synset('illness.n.01')->Synset('ill_health.n.01')->Synset('pathological_state.n.01')->Synset('physical_condition.n.01')->Synset('condition.n.01')->Synset('state.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+    CHECK: {type: HYPERNYM, reason: Synset('arrest.n.02')->Synset('inaction.n.01')->Synset('state.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [NAIL, ENGINE]
+  neg: [PYRAMID]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [NAIL, ENGINE]
+  reasons:
+    NAIL: {type: HYPERNYM, reason: Synset('nail.n.02')->Synset('fastener.n.02')->Synset('restraint.n.06')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+    ENGINE: {type: HYPERNYM, reason: Synset('engine.n.04')->Synset('instrument.n.01')->Synset('device.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [RING, THUMB]
+  neg: [SHOE]
+  clue: GO
+  score: 2.0
+  count: 2
+  terms: [RING, THUMB]
+  reasons:
+    RING: {type: HYPERNYM, reason: Synset('ring.v.01')->Synset('sound.v.02')}
+    THUMB: {type: HYPERNYM, reason: Synset('hitchhike.v.01')->Synset('ride.v.02')->Synset('travel.v.05')->Synset('travel.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [POLE, LINE]
+  neg: [MOUNT]
+  clue: AMOUNT
+  score: 2.0
+  count: 2
+  terms: [POLE, LINE]
+  reasons:
+    POLE: {type: HYPERNYM, reason: Synset('perch.n.02')->Synset('linear_unit.n.01')->Synset('unit_of_measurement.n.01')->Synset('definite_quantity.n.01')->Synset('measure.n.02')}
+    LINE: {type: HYPERNYM, reason: Synset('agate_line.n.01')->Synset('area_unit.n.01')->Synset('unit_of_measurement.n.01')->Synset('definite_quantity.n.01')->Synset('measure.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [LINK, PLAY]
+  neg: [ROBOT]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [LINK, PLAY]
+  reasons:
+    LINK: {type: HYPERNYM, reason: Synset('connection.n.06')->Synset('shape.n.02')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+    PLAY: {type: HYPERNYM, reason: Synset('playing_period.n.01')->Synset('measure.n.02')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [SERVER, TRIP]
+  neg: [BOX]
+  clue: DEVICE
+  score: 2.0
+  count: 2
+  terms: [SERVER, TRIP]
+  reasons:
+    SERVER: {type: HYPERNYM, reason: Synset('server.n.03')->Synset('computer.n.01')->Synset('machine.n.01')->Synset('device.n.01')}
+    TRIP: {type: HYPERNYM, reason: Synset('tripper.n.04')->Synset('catch.n.06')->Synset('restraint.n.06')->Synset('device.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [FIRE, BELL]
+  neg: [SNOW]
+  clue: ENTITY
+  score: 2.0
+  count: 2
+  terms: [FIRE, BELL]
+  reasons:
+    FIRE: {type: HYPERNYM, reason: Synset('fire.n.01')->Synset('happening.n.01')->Synset('event.n.01')->Synset('psychological_feature.n.01')->Synset('abstraction.n.06')->Synset('entity.n.01')}
+    BELL: {type: HYPERNYM, reason: Synset('bell.n.04')->Synset('time_unit.n.01')->Synset('measure.n.02')->Synset('abstraction.n.06')->Synset('entity.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [ARM, FACE]
+  neg: [WAVE]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [ARM, FACE]
+  reasons:
+    ARM: {type: HYPERNYM, reason: Synset('arm.n.02')->Synset('projection.n.04')->Synset('structure.n.01')->Synset('artifact.n.01')}
+    FACE: {type: HYPERNYM, reason: Synset('face.n.04')->Synset('surface.n.01')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [MASS, TRAIN]
+  neg: [CARROT]
+  clue: ACCUMULATION
+  score: 2.0
+  count: 2
+  terms: [MASS, TRAIN]
+  reasons:
+    MASS: {type: HYPERNYM, reason: Synset('mass.n.03')->Synset('collection.n.01')}
+    TRAIN: {type: HYPERNYM, reason: Synset('caravan.n.01')->Synset('procession.n.02')->Synset('collection.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [BAT, HAWK]
+  neg: [SOCK]
+  clue: ACT
+  score: 2.0
+  count: 2
+  terms: [BAT, HAWK]
+  reasons:
+    BAT: {type: HYPERNYM, reason: Synset('bat.n.02')->Synset('turn.n.03')->Synset('activity.n.01')->Synset('act.n.02')}
+    HAWK: {type: HYPERNYM, reason: Synset('peddle.v.01')->Synset('deal.v.06')->Synset('transact.v.01')->Synset('interact.v.01')->Synset('act.v.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [CHOCOLATE, SHADOW]
+  neg: [BEAR]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [CHOCOLATE, SHADOW]
+  reasons:
+    CHOCOLATE: {type: HYPERNYM, reason: Synset('cocoa.n.01')->Synset('beverage.n.01')->Synset('liquid.n.01')->Synset('fluid.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+    SHADOW: {type: HYPERNYM, reason: Synset('trace.n.02')->Synset('indication.n.01')->Synset('communication.n.02')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [NOTE, SLIP]
+  neg: [PANTS]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [NOTE, SLIP]
+  reasons:
+    NOTE: {type: HYPERNYM, reason: Synset('note.n.05')->Synset('air.n.03')->Synset('quality.n.01')->Synset('attribute.n.02')->Synset('abstraction.n.06')}
+    SLIP: {type: HYPERNYM, reason: Synset('slip.n.02')->Synset('mistake.n.01')->Synset('nonaccomplishment.n.01')->Synset('act.n.02')->Synset('event.n.01')->Synset('psychological_feature.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [STAFF, HOSPITAL]
+  neg: [CASINO]
+  clue: GROUP
+  score: 2.0
+  count: 2
+  terms: [STAFF, HOSPITAL]
+  reasons:
+    STAFF: {type: HYPERNYM, reason: Synset('staff.n.03')->Synset('body.n.02')->Synset('social_group.n.01')->Synset('group.n.01')}
+    HOSPITAL: {type: HYPERNYM, reason: Synset('hospital.n.02')->Synset('medical_institution.n.01')->Synset('institution.n.01')->Synset('organization.n.01')->Synset('social_group.n.01')->Synset('group.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [SOCK, DANCE]
+  neg: [VACUUM]
+  clue: ENTITY
+  score: 2.0
+  count: 2
+  terms: [SOCK, DANCE]
+  reasons:
+    SOCK: {type: HYPERNYM, reason: Synset('windsock.n.01')->Synset('visual_signal.n.01')->Synset('signal.n.01')->Synset('communication.n.02')->Synset('abstraction.n.06')->Synset('entity.n.01')}
+    DANCE: {type: HYPERNYM, reason: Synset('dance.n.01')->Synset('art.n.01')->Synset('creation.n.02')->Synset('artifact.n.01')->Synset('whole.n.02')->Synset('object.n.01')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [FIGHTER, BAR]
+  neg: [PLAY]
+  clue: OBJECT
+  score: 2.0
+  count: 2
+  terms: [FIGHTER, BAR]
+  reasons:
+    FIGHTER: {type: HYPERNYM, reason: Synset('combatant.n.01')->Synset('person.n.01')->Synset('organism.n.01')->Synset('living_thing.n.01')->Synset('whole.n.02')->Synset('object.n.01')}
+    BAR: {type: HYPERNYM, reason: Synset('bar.n.08')->Synset('ridge.n.01')->Synset('natural_elevation.n.01')->Synset('geological_formation.n.01')->Synset('object.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [HORN, IVORY]
+  neg: [OCTOPUS]
+  clue: ABSTRACTION
+  score: 2.0
+  count: 2
+  terms: [HORN, IVORY]
+  reasons:
+    HORN: {type: HYPERNYM, reason: Synset('horn.n.03')->Synset('alarm.n.03')->Synset('signal.n.01')->Synset('communication.n.02')->Synset('abstraction.n.06')}
+    IVORY: {type: HYPERNYM, reason: Synset('ivory.n.01')->Synset('dentine.n.01')->Synset('animal_material.n.01')->Synset('material.n.01')->Synset('substance.n.01')->Synset('part.n.01')->Synset('relation.n.01')->Synset('abstraction.n.06')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [TOOTH, NEEDLE]
+  neg: [PUMPKIN]
+  clue: ENTITY
+  score: 2.0
+  count: 2
+  terms: [TOOTH, NEEDLE]
+  reasons:
+    TOOTH: {type: HYPERNYM, reason: Synset('tooth.n.03')->Synset('structure.n.04')->Synset('body_part.n.01')->Synset('part.n.03')->Synset('thing.n.12')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+    NEEDLE: {type: HYPERNYM, reason: Synset('needle.n.03')->Synset('implement.n.01')->Synset('instrumentality.n.03')->Synset('artifact.n.01')->Synset('whole.n.02')->Synset('object.n.01')->Synset('physical_entity.n.01')->Synset('entity.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [THEATER, STAR]
+  neg: [SERVER]
+  clue: STRUCTURE
+  score: 2.0
+  count: 2
+  terms: [THEATER, STAR]
+  reasons:
+    THEATER: {type: HYPERNYM, reason: Synset('theater.n.01')->Synset('building.n.01')->Synset('structure.n.01')}
+    STAR: {type: HYPERNYM, reason: Synset('star_topology.n.01')->Synset('topology.n.04')->Synset('configuration.n.01')->Synset('design.n.02')->Synset('arrangement.n.03')->Synset('structure.n.03')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [KEY, LOCK]
+  neg: [FILE]
+  clue: AREA
+  score: 2.0
+  count: 2
+  terms: [KEY, LOCK]
+  reasons:
+    KEY: {type: HYPERNYM, reason: Synset('key.n.09')->Synset('space.n.03')->Synset('area.n.01')}
+    LOCK: {type: HYPERNYM, reason: Synset('lock.n.04')->Synset('enclosure.n.01')->Synset('area.n.05')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [ROUND, BOW]
+  neg: [CROSS]
+  clue: ACT
+  score: 2.0
+  count: 2
+  terms: [ROUND, BOW]
+  reasons:
+    ROUND: {type: HYPERNYM, reason: Synset('round.n.06')->Synset('habitude.n.01')->Synset('practice.n.01')->Synset('activity.n.01')->Synset('act.n.02')}
+    BOW: {type: HYPERNYM, reason: Synset('bow.n.06')->Synset('reverence.n.03')->Synset('action.n.01')->Synset('act.n.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [SHOE, ROOT]
+  neg: [STAFF]
+  clue: OBJECT
+  score: 2.0
+  count: 2
+  terms: [SHOE, ROOT]
+  reasons:
+    SHOE: {type: HYPERNYM, reason: Synset('shoe.n.01')->Synset('footwear.n.02')->Synset('covering.n.02')->Synset('artifact.n.01')->Synset('whole.n.02')->Synset('object.n.01')}
+    ROOT: {type: HYPERNYM, reason: Synset('beginning.n.04')->Synset('point.n.02')->Synset('location.n.01')->Synset('object.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [ROSE, TORCH]
+  neg: [PARACHUTE]
+  clue: BEING
+  score: 2.0
+  count: 2
+  terms: [ROSE, TORCH]
+  reasons:
+    ROSE: {type: HYPERNYM, reason: Synset('rose.n.01')->Synset('shrub.n.01')->Synset('woody_plant.n.01')->Synset('vascular_plant.n.01')->Synset('plant.n.02')->Synset('organism.n.01')}
+    TORCH: {type: HYPERNYM, reason: Synset('common_mullein.n.01')->Synset('mullein.n.01')->Synset('herb.n.01')->Synset('vascular_plant.n.01')->Synset('plant.n.02')->Synset('organism.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [TAG, RAY]
+  neg: [THEATER]
+  clue: OBJECT
+  score: 2.0
+  count: 2
+  terms: [TAG, RAY]
+  reasons:
+    TAG: {type: HYPERNYM, reason: Synset('rag.n.01')->Synset('piece_of_cloth.n.01')->Synset('piece.n.01')->Synset('part.n.02')->Synset('object.n.01')}
+    RAY: {type: HYPERNYM, reason: Synset('ray.n.02')->Synset('pedicel.n.01')->Synset('peduncle.n.02')->Synset('scape.n.01')->Synset('stalk.n.02')->Synset('plant_organ.n.01')->Synset('plant_part.n.01')->Synset('natural_object.n.01')->Synset('whole.n.02')->Synset('object.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [CIRCLE, MARBLE]
+  neg: [CLOAK]
+  clue: MATTER
+  score: 2.0
+  count: 2
+  terms: [CIRCLE, MARBLE]
+  reasons:
+    CIRCLE: {type: HYPERNYM, reason: Synset('r-2.n.01')->Synset('flunitrazepan.n.01')->Synset('club_drug.n.01')->Synset('controlled_substance.n.01')->Synset('drug.n.01')->Synset('agent.n.03')->Synset('substance.n.07')->Synset('matter.n.03')}
+    MARBLE: {type: HYPERNYM, reason: Synset('marble.n.01')->Synset('rock.n.02')->Synset('material.n.01')->Synset('substance.n.01')->Synset('matter.n.03')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [SQUARE, CENTER]
+  neg: [SPINE]
+  clue: INDIVIDUAL
+  score: 2.0
+  count: 2
+  terms: [SQUARE, CENTER]
+  reasons:
+    SQUARE: {type: HYPERNYM, reason: Synset('square.n.05')->Synset('simpleton.n.01')->Synset('person.n.01')}
+    CENTER: {type: HYPERNYM, reason: Synset('center.n.09')->Synset('basketball_player.n.01')->Synset('athlete.n.01')->Synset('contestant.n.01')->Synset('person.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [TIE, POINT]
+  neg: [GOLD]
+  clue: ARTEFACT
+  score: 2.0
+  count: 2
+  terms: [TIE, POINT]
+  reasons:
+    TIE: {type: HYPERNYM, reason: Synset('tie.n.09')->Synset('cord.n.01')->Synset('line.n.18')->Synset('artifact.n.01')}
+    POINT: {type: HYPERNYM, reason: Synset('point.n.24')->Synset('gun_muzzle.n.01')->Synset('opening.n.10')->Synset('artifact.n.01')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+- pos: [PITCH, RACKET]
+  neg: [ROSE]
+  clue: DISPLACE
+  score: 2.0
+  count: 2
+  terms: [PITCH, RACKET]
+  reasons:
+    PITCH: {type: HYPERNYM, reason: Synset('pitch.v.08')->Synset('rear.v.04')->Synset('raise.v.02')->Synset('move.v.02')}
+    RACKET: {type: HYPERNYM, reason: Synset('racket.v.03')->Synset('hit.v.01')->Synset('propel.v.01')->Synset('move.v.02')}
+  result: !!python/object/apply:evaluation.triplet_evaluator.ScenarioResult [0]
+correct: 26
+skipped: 99
+incorrect: 55
