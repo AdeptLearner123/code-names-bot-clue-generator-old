@@ -76,7 +76,7 @@
 - id: 394f9b69-5c3d-4d83-8787-b07df8451742
   positive: [HELICOPTER, MISSILE]
   negative: [WASHINGTON, ORGAN, GIANT, HOOK, KID, UNICORN]
-  clues: [AERIAL]
+  clues: [AERIAL, CONVEYANCE]
   nonclues: []
 - id: cb8c6fd4-5606-4612-94ae-fb4928dcc82b
   positive: [MAMMOTH, ROME]
@@ -206,7 +206,7 @@
 - id: 1f67ae02-e6f4-4eae-a45c-fd59d245b549
   positive: [DWARF, ANGEL]
   negative: [LINK, WATCH, LEMON, MODEL, TOOTH, FORK]
-  clues: [MYTHICAL]
+  clues: [MYTHICAL, BEING]
   nonclues: []
 - id: 4190cc49-c844-47d7-9514-72be7eb89464
   positive: [CARROT, OCTOPUS]
@@ -291,13 +291,13 @@
 - id: 3da6de54-6aa9-4ef9-9120-5f4a0b69c073
   positive: [DRESS, SHOE]
   negative: [FIRE, PILOT, BOW, NAIL, PLANE, BUTTON]
-  clues: [CINDERELLA]
+  clues: [CINDERELLA, COVERING]
   nonclues: []
 - id: 1eccbf1b-bf56-45c1-a934-763493bd4950
   positive: [BILL, DRAFT]
   negative: [LION, NURSE, IVORY, AFRICA, DRAGON, SHARK]
   clues: [LEGISLATION]
-  nonclues: []
+  nonclues: [ARTEFACT]
 - id: 04c697b2-c7cf-4b35-8853-c0c7bad282d1
   positive: [MINT, HAM]
   negative: [POST, PLANE, CLIFF, LAP, PISTOL, FLY]
@@ -346,7 +346,7 @@
 - id: 1b64e680-14c2-4c04-983b-18c6c8bd3cae
   positive: [PRINCESS, KNIGHT]
   negative: [FENCE, IRON, ORGAN, SOCK, SWING, AGENT]
-  clues: [CASTLE]
+  clues: [CASTLE, ARISTOCRAT]
   nonclues: []
 - id: a0cc2c95-3b8c-4f5c-9eb3-606b75dba0a8
   positive: [YARD, FIELD]
@@ -421,7 +421,7 @@
 - id: 6ca73e34-c816-4688-80d5-337b57bc5349
   positive: [UNDERTAKER, TEACHER]
   negative: [POLE, DISEASE, IVORY, MOUNT, PRESS, PIT]
-  clues: [OCCUPATION]
+  clues: [OCCUPATION, BEING]
   nonclues: []
 - id: b252ed06-0bbd-4ca2-bcb4-739849b4ee68
   positive: [CRICKET, DUCK]
@@ -462,7 +462,7 @@
   positive: [WAVE, GLOVE]
   negative: [STICK, NUT, BOMB, CAPITAL, FISH, GERMANY]
   clues: [HAND]
-  nonclues: []
+  nonclues: [COVERING]
 - id: 839133bc-df5f-4862-bc59-4be755cfbd54
   positive: [KEY, PARK]
   negative: [BILL, BAR, THIEF, DOCTOR, PAPER, DRESS]
@@ -477,7 +477,7 @@
   positive: [CHICK, DATE]
   negative: [SUB, PIE, HORN, VAN, NUT, LUCK]
   clues: [GIRLFRIEND]
-  nonclues: []
+  nonclues: [BEING]
 - id: 3f481c58-23bf-4702-96a9-7d454a619334
   positive: [PLATYPUS, CENTAUR]
   negative: [THUMB, ARM, SWITCH, SERVER, TRIANGLE, ROCK]
@@ -661,7 +661,7 @@
 - id: d22d8804-7a7f-4ce5-a7bd-0f37f8307a4d
   positive: [WHIP, NEEDLE]
   negative: [ARM, BUCK, PART, DEATH, POISON, DROP]
-  clues: [THIN]
+  clues: [THIN, INSTRUMENTALITY]
   nonclues: []
 - id: cbd94b45-3007-4929-a3ae-6fd3dbcca1b3
   positive: [COPPER, IRON]
@@ -757,7 +757,7 @@
   positive: [SOCK, CLOAK]
   negative: [AFRICA, DOG, MATCH, DINOSAUR, VACUUM, SOUND]
   clues: [CLOTHING]
-  nonclues: []
+  nonclues: [ARTEFACT]
 - id: cf557a5f-dab2-4097-ac92-b65ac8dbc47b
   positive: [PIANO, BARK]
   negative: [HORSESHOE, SUB, FIGHTER, CLIFF, DINOSAUR, SINK]
@@ -787,7 +787,7 @@
   positive: [EYE, SHADOW]
   negative: [PUMPKIN, STATE, SNOWMAN, MARBLE, TRACK, JAM]
   clues: [LIGHT]
-  nonclues: []
+  nonclues: [AREA]
 - id: a50050ce-ab38-4b78-a8d3-48d3e7d3bb95
   positive: [TICK, BAND]
   negative: [LEPRECHAUN, SQUARE, FILM, MAMMOTH, BOOT, CODE]
@@ -827,7 +827,7 @@
   positive: [BAT, MICROSCOPE]
   negative: [LUCK, TOWER, FISH, BELT, NOVEL, BUGLE]
   clues: [COVID]
-  nonclues: []
+  nonclues: [INSTRUMENTALITY]
 - id: b90d2d77-00b1-4ef2-beb7-8ca4e58f130f
   positive: [TABLE, NOTE]
   negative: [MAMMOTH, COVER, MICROSCOPE, PUMPKIN, WAKE, PART]
@@ -866,7 +866,7 @@
 - id: da12e6fe-f143-4e55-854c-09f63b8f4696
   positive: [PAN, FAN]
   negative: [MINE, BAND, CENTAUR, TEACHER, SHAKESPEARE, HOSPITAL]
-  clues: [DEVICE]
+  clues: [DEVICE, INSTRUMENTALITY]
   nonclues: []
 - id: c1520320-ced3-46a6-9f3e-e721506d207c
   positive: [STAFF, WAR]
@@ -877,7 +877,7 @@
   positive: [MUG, SHOT]
   negative: [LIMOUSINE, PLAY, FORCE, SHIP, MERCURY, DICE]
   clues: [PHOTO]
-  nonclues: []
+  nonclues: [BEING]
 - id: 91e77166-8cbc-415e-a3f7-e54e63cfe25b
   positive: [MODEL, SPY]
   negative: [TRIP, SQUARE, POUND, MOLE, PLATE, TRUNK]
@@ -902,7 +902,7 @@
   positive: [BOOM, CYCLE]
   negative: [LAP, MODEL, STADIUM, STRIKE, THUMB, SOCK]
   clues: [ECONOMIC]
-  nonclues: []
+  nonclues: [INSTRUMENTALITY]
 - id: 1009b8b1-1ef9-4e74-abdb-521006189973
   positive: [PASTE, LINK]
   negative: [MUG, PIT, MAPLE, CONTRACT, PYRAMID, OPERA]
@@ -921,7 +921,7 @@
 - id: b7b48c08-1f2a-4c29-8b40-f575695cf8b7
   positive: [SPOT, LAB]
   negative: [ARM, MAMMOTH, DATE, KING, DEGREE, BOND]
-  clues: [INVESTIGATE]
+  clues: [INVESTIGATE, LOCATION]
   nonclues: []
 - id: cf22d885-9a31-4af0-bcb7-4095bf8429d9
   positive: [WAKE, CHANGE]
