@@ -5,11 +5,11 @@ from nltk.stem import WordNetLemmatizer
 from tqdm import tqdm
 
 from code_names_bot_clue_generator.clues.clues_database import CluesDatabase
-from config import HYPERNYM_SCORES_PATH, TERMS_PATH
+from config import HYPERNYM, GET_SCORES_PATH, TERMS_PATH
 
 
 def main():
-    scores_database = CluesDatabase(HYPERNYM_SCORES_PATH)
+    scores_database = CluesDatabase(GET_SCORES_PATH(HYPERNYM))
     scores_database.clear()
     scores_database.setup()
 
