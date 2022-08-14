@@ -75,8 +75,8 @@ def test_scenario(triplet, clue_generator):
     else:
         triplet.nonclues.append(clue)
 
-    result = ScenarioResult.CORRECT.name if correct else ScenarioResult.INCORRECT.name
-    scenario_report["result"] = result
+    result = ScenarioResult.CORRECT if correct else ScenarioResult.INCORRECT
+    scenario_report["result"] = result.name
 
     print_clue_details(triplet.positive, triplet.negative, clue, clue_score, clue_count, clue_terms, clue_reasons)
 

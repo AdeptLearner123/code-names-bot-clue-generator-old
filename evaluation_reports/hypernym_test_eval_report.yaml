@@ -131,6 +131,17 @@ correct_scenarios:
     KANGAROO: {type: HYPERNYM, reason: kangaroo.n.01->marsupial.n.01->metatherian.n.01->mammal.n.01->vertebrate.n.01->chordate.n.01->animal.n.01}
     OCTOPUS: {type: HYPERNYM, reason: octopus.n.02->octopod.n.01->cephalopod.n.01->mollusk.n.01->invertebrate.n.01->animal.n.01}
   result: CORRECT
+- id: af89270b-f539-4799-90d0-e40511c420f3
+  pos: [TEACHER, DOCTOR]
+  neg: [AMAZON, CAP, ORANGE, JACK, GREECE, SOUL]
+  clue: PROFESSIONAL
+  score: 2.0
+  count: 2
+  terms: [TEACHER, DOCTOR]
+  reasons:
+    TEACHER: {type: HYPERNYM, reason: teacher.n.01->educator.n.01->professional.n.01}
+    DOCTOR: {type: HYPERNYM, reason: doctor.n.01->medical_practitioner.n.01->health_professional.n.01->professional.n.01}
+  result: CORRECT
 - id: 3842b6e0-da16-40ae-816e-c29438777c92
   pos: [JET, MISSILE]
   neg: [MERCURY, SUPERHERO, JACK, IRON, SPACE, MARBLE]
@@ -141,6 +152,17 @@ correct_scenarios:
   reasons:
     JET: {type: HYPERNYM, reason: jet.n.01->airplane.n.01->heavier-than-air_craft.n.01->aircraft.n.01->craft.n.02->vehicle.n.01->conveyance.n.03}
     MISSILE: {type: HYPERNYM, reason: missile.n.01->rocket.n.01->vehicle.n.01->conveyance.n.03}
+  result: CORRECT
+- id: 040c7256-e672-4de5-9021-31dd4ec8a838
+  pos: [BUCK, LION]
+  neg: [BACK, FILE, PIPE, HORN, PYRAMID, VAN]
+  clue: ANIMAL
+  score: 2.0
+  count: 2
+  terms: [BUCK, LION]
+  reasons:
+    BUCK: {type: HYPERNYM, reason: buck.n.05->placental.n.01->mammal.n.01->vertebrate.n.01->chordate.n.01->animal.n.01}
+    LION: {type: HYPERNYM, reason: lion.n.01->big_cat.n.01->feline.n.01->carnivore.n.01->placental.n.01->mammal.n.01->vertebrate.n.01->chordate.n.01->animal.n.01}
   result: CORRECT
 - id: f239b9f2-9311-4586-9627-6f80b0681850
   pos: [DUCK, KIWI]
@@ -153,6 +175,17 @@ correct_scenarios:
     DUCK: {type: HYPERNYM, reason: duck.n.01->anseriform_bird.n.01->waterfowl.n.01->aquatic_bird.n.01->bird.n.01}
     KIWI: {type: HYPERNYM, reason: kiwi.n.04->ratite.n.01->bird.n.01}
   result: CORRECT
+- id: ef769750-f1e4-455e-a9a0-b9cc78f42230
+  pos: [SPIDER, SCORPION]
+  neg: [BERLIN, COPPER, BELT, NUT, EAGLE, DUCK]
+  clue: ARACHNID
+  score: 2.0
+  count: 2
+  terms: [SPIDER, SCORPION]
+  reasons:
+    SPIDER: {type: HYPERNYM, reason: spider.n.01->arachnid.n.01}
+    SCORPION: {type: HYPERNYM, reason: scorpion.n.03->arachnid.n.01}
+  result: CORRECT
 - id: 4c997990-b245-4a2f-8823-95fac7cf9a15
   pos: [SEAL, PENGUIN]
   neg: [ICE CREAM, ANTARCTICA, CONCERT, BOMB, PIE, WEB]
@@ -163,6 +196,39 @@ correct_scenarios:
   reasons:
     SEAL: {type: HYPERNYM, reason: seal.n.09->pinniped_mammal.n.01->aquatic_mammal.n.01->placental.n.01->mammal.n.01->vertebrate.n.01->chordate.n.01->animal.n.01}
     PENGUIN: {type: HYPERNYM, reason: penguin.n.01->sphenisciform_seabird.n.01->seabird.n.01->aquatic_bird.n.01->bird.n.01->vertebrate.n.01->chordate.n.01->animal.n.01}
+  result: CORRECT
+- id: 670102c6-47f8-4149-bfb9-bfa02f0bf25c
+  pos: [HORSE, KNIGHT]
+  neg: [UNICORN, DANCE, SHOT, CANADA, SMUGGLER, CHANGE]
+  clue: CHESSMAN
+  score: 2.0
+  count: 2
+  terms: [HORSE, KNIGHT]
+  reasons:
+    HORSE: {type: HYPERNYM, reason: knight.n.02->chessman.n.01}
+    KNIGHT: {type: HYPERNYM, reason: knight.n.02->chessman.n.01}
+  result: CORRECT
+- id: 5a1489bf-9594-43b0-8cad-84235af02046
+  pos: [HORSESHOE, BELT]
+  neg: [LIMOUSINE, SPY, BILL, PIPE, INDIA, DUCK]
+  clue: COVERING
+  score: 2.0
+  count: 2
+  terms: [HORSESHOE, BELT]
+  reasons:
+    HORSESHOE: {type: HYPERNYM, reason: horseshoe.n.02->plate.n.14->shield.n.01->protective_covering.n.01->covering.n.02}
+    BELT: {type: HYPERNYM, reason: belt.n.02->accessory.n.01->clothing.n.01->covering.n.02}
+  result: CORRECT
+- id: 4190cc49-c844-47d7-9514-72be7eb89464
+  pos: [CARROT, OCTOPUS]
+  neg: [VACUUM, NIGHT, LITTER, HORN, LOG, LINE]
+  clue: ORGANISM
+  score: 2.0
+  count: 2
+  terms: [CARROT, OCTOPUS]
+  reasons:
+    CARROT: {type: HYPERNYM, reason: carrot.n.02->herb.n.01->vascular_plant.n.01->plant.n.02->organism.n.01}
+    OCTOPUS: {type: HYPERNYM, reason: octopus.n.02->octopod.n.01->cephalopod.n.01->mollusk.n.01->invertebrate.n.01->animal.n.01->organism.n.01}
   result: CORRECT
 - id: 31fd2970-4769-4ad5-9f48-56984bc1b342
   pos: [CAP, PANTS]
@@ -1824,17 +1890,6 @@ incorrect_scenarios:
     CROWN: {type: HYPERNYM, reason: crown.n.12->top.n.02->side.n.04->surface.n.02->boundary.n.01->extremity.n.04->region.n.01->location.n.01}
     LEAD: {type: HYPERNYM, reason: lead.n.09->position.n.01->point.n.02->location.n.01}
   result: INCORRECT
-- id: af89270b-f539-4799-90d0-e40511c420f3
-  pos: [TEACHER, DOCTOR]
-  neg: [AMAZON, CAP, ORANGE, JACK, GREECE, SOUL]
-  clue: PROFESSIONAL
-  score: 2.0
-  count: 2
-  terms: [TEACHER, DOCTOR]
-  reasons:
-    TEACHER: {type: HYPERNYM, reason: teacher.n.01->educator.n.01->professional.n.01}
-    DOCTOR: {type: HYPERNYM, reason: doctor.n.01->medical_practitioner.n.01->health_professional.n.01->professional.n.01}
-  result: CORRECT
 - id: 36daab5a-f15b-4291-98bf-b0f28bf69e2a
   pos: [SATELLITE, SPACE]
   neg: [DWARF, PLATYPUS, CRICKET, COPPER, HEART, BERRY]
@@ -1846,50 +1901,6 @@ incorrect_scenarios:
     SATELLITE: {type: HYPERNYM, reason: satellite.n.01->equipment.n.01->instrumentality.n.03->artifact.n.01}
     SPACE: {type: HYPERNYM, reason: quad.n.03->type.n.06->block.n.01->artifact.n.01}
   result: INCORRECT
-- id: 040c7256-e672-4de5-9021-31dd4ec8a838
-  pos: [BUCK, LION]
-  neg: [BACK, FILE, PIPE, HORN, PYRAMID, VAN]
-  clue: ANIMAL
-  score: 2.0
-  count: 2
-  terms: [BUCK, LION]
-  reasons:
-    BUCK: {type: HYPERNYM, reason: buck.n.05->placental.n.01->mammal.n.01->vertebrate.n.01->chordate.n.01->animal.n.01}
-    LION: {type: HYPERNYM, reason: lion.n.01->big_cat.n.01->feline.n.01->carnivore.n.01->placental.n.01->mammal.n.01->vertebrate.n.01->chordate.n.01->animal.n.01}
-  result: CORRECT
-- id: ef769750-f1e4-455e-a9a0-b9cc78f42230
-  pos: [SPIDER, SCORPION]
-  neg: [BERLIN, COPPER, BELT, NUT, EAGLE, DUCK]
-  clue: ARACHNID
-  score: 2.0
-  count: 2
-  terms: [SPIDER, SCORPION]
-  reasons:
-    SPIDER: {type: HYPERNYM, reason: spider.n.01->arachnid.n.01}
-    SCORPION: {type: HYPERNYM, reason: scorpion.n.03->arachnid.n.01}
-  result: CORRECT
-- id: 670102c6-47f8-4149-bfb9-bfa02f0bf25c
-  pos: [HORSE, KNIGHT]
-  neg: [UNICORN, DANCE, SHOT, CANADA, SMUGGLER, CHANGE]
-  clue: CHESSMAN
-  score: 2.0
-  count: 2
-  terms: [HORSE, KNIGHT]
-  reasons:
-    HORSE: {type: HYPERNYM, reason: knight.n.02->chessman.n.01}
-    KNIGHT: {type: HYPERNYM, reason: knight.n.02->chessman.n.01}
-  result: CORRECT
-- id: 5a1489bf-9594-43b0-8cad-84235af02046
-  pos: [HORSESHOE, BELT]
-  neg: [LIMOUSINE, SPY, BILL, PIPE, INDIA, DUCK]
-  clue: COVERING
-  score: 2.0
-  count: 2
-  terms: [HORSESHOE, BELT]
-  reasons:
-    HORSESHOE: {type: HYPERNYM, reason: horseshoe.n.02->plate.n.14->shield.n.01->protective_covering.n.01->covering.n.02}
-    BELT: {type: HYPERNYM, reason: belt.n.02->accessory.n.01->clothing.n.01->covering.n.02}
-  result: CORRECT
 - id: 0bf6fb59-0973-431a-8368-78fa69c1d93e
   pos: [PUPIL, EYE]
   neg: [FLY, THEATER, LIFE, APPLE, CAT, ROBIN]
@@ -1901,17 +1912,6 @@ incorrect_scenarios:
     PUPIL: {type: HYPERNYM, reason: pupil.n.02->aperture.n.02->hole.n.01}
     EYE: {type: HYPERNYM, reason: eye.n.05->hole.n.02}
   result: INCORRECT
-- id: 4190cc49-c844-47d7-9514-72be7eb89464
-  pos: [CARROT, OCTOPUS]
-  neg: [VACUUM, NIGHT, LITTER, HORN, LOG, LINE]
-  clue: ORGANISM
-  score: 2.0
-  count: 2
-  terms: [CARROT, OCTOPUS]
-  reasons:
-    CARROT: {type: HYPERNYM, reason: carrot.n.02->herb.n.01->vascular_plant.n.01->plant.n.02->organism.n.01}
-    OCTOPUS: {type: HYPERNYM, reason: octopus.n.02->octopod.n.01->cephalopod.n.01->mollusk.n.01->invertebrate.n.01->animal.n.01->organism.n.01}
-  result: CORRECT
 - id: 82fd5c40-6326-4b7e-9830-d01fa1397de8
   pos: [MUG, SHOT]
   neg: [LIMOUSINE, PLAY, FORCE, SHIP, MERCURY, DICE]
@@ -1934,6 +1934,6 @@ incorrect_scenarios:
     QUEEN: {type: HYPERNYM, reason: fagot.n.01->gay_man.n.01->homosexual.n.01->person.n.01}
     AZTEC: {type: HYPERNYM, reason: aztec.n.01->nahuatl.n.01->indian.n.01->amerindian.n.01->person_of_color.n.01->person.n.01}
   result: INCORRECT
-correct: 16
+correct: 22
 skipped: 152
-incorrect: 22
+incorrect: 16
