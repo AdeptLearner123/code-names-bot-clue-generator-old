@@ -1,5 +1,6 @@
 TERMS_PATH = "static/terms.txt"
 
+TRIPLETS_PATH = "static/triplets/"
 TRAIN_TRIPLETS_PATH = "static/train_triplets.yaml"
 TEST_TRIPLETS_PATH = "static/test_triplets.yaml"
 

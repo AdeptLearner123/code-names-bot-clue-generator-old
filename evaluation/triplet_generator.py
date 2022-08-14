@@ -1,6 +1,7 @@
 import random
 
 import yaml
+import uuid
 
 from config import TRAIN_TRIPLETS_PATH, TEST_TRIPLETS_PATH, TERMS_PATH
 
@@ -34,27 +35,26 @@ def main():
 
     while len(pruned_terms) > 0:
         positive_options = random.sample(pruned_terms, min(len(pruned_terms), 9))
-        negative_options = random.sample(terms, 5)
+        negative_terms = random.sample(list(set(terms) - set(positive_options)), 6)
 
         print(f"Choosing from {len(pruned_terms)}")
         print("--- POSITIVE ---")
         print_options_list(positive_options)
         print()
         print("--- NEGATIVE ---")
-        print_options_list(negative_options)
+        print_options_list(negative_terms)
 
         print("Choose first positive term")
         positive_idx_1 = int(input())
         print("Choose second positive term")
         positive_idx_2 = int(input())
-        print("Choose negative term")
-        negative_idx = int(input())
         print("Enter clue")
         clue = str(input()).upper()
 
         new_scenario = Scenario(
+            uuid.uuid4(),
             [positive_options[positive_idx_1], positive_options[positive_idx_2]],
-            [negative_options[negative_idx]],
+            negative_terms,
             [clue],
         )
         evaluation_triplets.scenarios.append(new_scenario)

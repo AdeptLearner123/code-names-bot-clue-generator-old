@@ -1,0 +1,985 @@
+- id: 70894adb-bf98-4f6c-96e3-98883419c5f9
+  positive: [HOLE, MOLE]
+  negative: [ORANGE, SPELL, TAIL, DUCK, DOG, MATCH]
+  clues: [UNDERGROUND]
+  nonclues: []
+- id: 054a18af-60e4-4610-a92d-2c6a34fd0d5f
+  positive: [CRANE, PHOENIX]
+  negative: [CLOAK, MICROSCOPE, HOTEL, SPELL, LEMON, CENTER]
+  clues: [BIRD]
+  nonclues: []
+- id: e31bc4ca-49e8-46a7-8313-d85df60ad880
+  positive: [MOSCOW, TOKYO]
+  negative: [MAIL, PAN, ROSE, LAWYER, SWING, PISTOL]
+  clues: [CAPITAL]
+  nonclues: []
+- id: 8d5c5ec0-a825-48ad-ac61-100175450573
+  positive: [BANK, EUROPE]
+  negative: [QUEEN, LONDON, MATCH, WELL, FISH, SCORPION]
+  clues: [CREDIT SUISSE]
+  nonclues: []
+- id: d4f6d73d-c6cc-44a3-8f76-3849fc4f6f4a
+  positive: [TOOTH, BACK]
+  negative: [WATCH, MATCH, SEAL, FACE, BALL, CHURCH]
+  clues: [MOLAR]
+  nonclues: []
+- id: 8fb0c377-1c1b-4e6b-a48e-0b53edeaa531
+  positive: [HOOK, SHIP]
+  negative: [DWARF, MISSILE, FAN, LASER, TOKYO, POOL]
+  clues: [ANCHOR]
+  nonclues: []
+- id: b5db62bf-7261-4db0-bce3-f2f57c2bfe71
+  positive: [PUPIL, SCUBA DIVER]
+  negative: [PLANE, MICROSCOPE, SWITCH, LIFE, BERLIN, WHALE]
+  clues: [PERSON]
+  nonclues: []
+- id: 2fc4e011-49df-4076-b39b-b5d6de12814b
+  positive: [WATER, PIPE]
+  negative: [STOCK, FILM, SERVER, SPINE, PITCH, BUG]
+  clues: [PLUMBING]
+  nonclues: []
+- id: ba12496b-28e9-40c0-a5ba-d186ddd6458f
+  positive: [TABLET, TAP]
+  negative: [MILLIONAIRE, RACKET, GAS, PIN, COOK, BOOM]
+  clues: [TOUCHSCREEN]
+  nonclues: []
+- id: 691f98dd-46c1-44c5-896e-a7dfa0c998d3
+  positive: [BERRY, COTTON]
+  negative: [KNIGHT, SMUGGLER, ROOT, EMBASSY, STOCK, UNDERTAKER]
+  clues: [HARVESTED]
+  nonclues: []
+- id: 822dff54-6f53-44b2-bd83-546ca5fe48ce
+  positive: [DAY, STAR]
+  negative: [PART, PALM, NINJA, SCREEN, WAKE, AMBULANCE]
+  clues: [SUN]
+  nonclues: []
+- id: d17246f5-d84a-47b1-8baf-0e8431c10ae4
+  positive: [ROBIN, HOOD]
+  negative: [COVER, FAN, FOOT, ROME, AFRICA, BERRY]
+  clues: [ARCHER]
+  nonclues: []
+- id: 099856ce-387f-495d-a2fd-0ea39c7fa7ae
+  positive: [HOLLYWOOD, WASHINGTON]
+  negative: [BOLT, PLAY, BERLIN, ICE CREAM, CLUB, RING]
+  clues: [AMERICAN]
+  nonclues: []
+- id: 33b32e1d-ed52-464e-af00-29063dded09b
+  positive: [FRANCE, ALPS]
+  negative: [PIANO, NOTE, COOK, ORGAN, NUT, LUCK]
+  clues: [EUROPE]
+  nonclues: []
+- id: ef3e0d15-52c6-40c4-82d8-f878742bdde2
+  positive: [BEAR, DOG]
+  negative: [PALM, FLY, SCALE, GAS, TRIANGLE, SPELL]
+  clues: [MAMMAL]
+  nonclues: []
+- id: 394f9b69-5c3d-4d83-8787-b07df8451742
+  positive: [HELICOPTER, MISSILE]
+  negative: [WASHINGTON, ORGAN, GIANT, HOOK, KID, UNICORN]
+  clues: [AERIAL]
+  nonclues: []
+- id: cb8c6fd4-5606-4612-94ae-fb4928dcc82b
+  positive: [MAMMOTH, ROME]
+  negative: [BALL, MUG, WAR, WITCH, CARROT, EUROPE]
+  clues: [ANCIENT]
+  nonclues: []
+- id: 68c996ed-9ac8-4fec-a0c9-425a02d50c7b
+  positive: [WATCH, STADIUM]
+  negative: [MASS, CYCLE, BOARD, SCUBA DIVER, MOSCOW, MAPLE]
+  clues: [PERFORMANCE]
+  nonclues: []
+- id: 04a0cd62-0d0c-4be9-a81c-a2eba3264348
+  positive: [TRUNK, APPLE]
+  negative: [OIL, PART, FENCE, EGYPT, WAKE, DWARF]
+  clues: [TREE]
+  nonclues: []
+- id: f74e9912-824c-48de-8edc-bbf87a0145e7
+  positive: [PISTOL, VET]
+  negative: [TAIL, THEATER, COMIC, BEAT, QUEEN, FAIR]
+  clues: [WAR]
+  nonclues: []
+- id: 60f09fc0-395e-40de-9637-ca50a86e7d78
+  positive: [GROUND, DIAMOND]
+  negative: [NURSE, SPRING, TOOTH, SQUARE, DUCK, BOND]
+  clues: [MINING]
+  nonclues: []
+- id: 93324a24-e319-4fdd-9abb-9a673356c942
+  positive: [AMAZON, SERVER]
+  negative: [DECK, LAB, SEAL, WATCH, PRESS, QUEEN]
+  clues: [AWS]
+  nonclues: []
+- id: f3fb34b2-d866-4745-904e-aa802a783ef1
+  positive: [CENTER, MASS]
+  negative: [PLOT, KIWI, SPACE, AUSTRALIA, ALPS, LAWYER]
+  clues: [CENTROID]
+  nonclues: []
+- id: c6944e2c-1ab2-460e-bd23-3962a64bb460
+  positive: [SATELLITE, MOON]
+  negative: [WASHINGTON, INDIA, SCALE, POLICE, WITCH, ARM]
+  clues: [ORBIT]
+  nonclues: []
+- id: c3f3acbd-5a72-44ab-8222-894ee5cd7979
+  positive: [ROUND, TUBE]
+  negative: [DEATH, AZTEC, HAWK, FLUTE, GENIUS, BUFFALO]
+  clues: [CYLINDER]
+  nonclues: []
+- id: 78d47a57-ea64-4f95-9a60-1df71a1835ab
+  positive: [PILOT, GERMANY]
+  negative: [SATURN, BRIDGE, NOVEL, SKYSCRAPER, LOCH NESS, ROCK]
+  clues: [LUFTWAFFE]
+  nonclues: []
+- id: cfbf7872-b4cd-4623-aac4-f04cb27cebb9
+  positive: [OIL, DRILL]
+  negative: [STAFF, COMPOUND, COMIC, POLE, CAP, EAGLE]
+  clues: [FRACKING]
+  nonclues: []
+- id: daf0122d-c095-470b-b2b4-f26d3bc45fb2
+  positive: [CHARGE, STOCK]
+  negative: [TIE, TOOTH, HAND, SCIENTIST, STADIUM, LOG]
+  clues: [MARKET]
+  nonclues: []
+- id: 580fbfa8-743e-4b0a-bbe0-df76671a8558
+  positive: [LIMOUSINE, QUEEN]
+  negative: [FISH, COURT, BEAT, ORGAN, NET, CHAIR]
+  clues: [FAMOUS]
+  nonclues: []
+- id: 34c4ad20-d46a-4258-aee4-ed7505e8500d
+  positive: [ENGINE, CRASH]
+  negative: [WATER, HOSPITAL, NOVEL, COPPER, DINOSAUR, GLOVE]
+  clues: [CAR]
+  nonclues: []
+- id: f44211c5-3328-402c-81d7-b58373218154
+  positive: [AFRICA, JUPITER]
+  negative: [CONCERT, DRESS, NINJA, GIANT, CAP, NIGHT]
+  clues: [PLACE]
+  nonclues: []
+- id: 5722f198-48fb-45f6-a105-2b3402672442
+  positive: [PALM, INDIA]
+  negative: [TOOTH, DRAFT, FISH, ROW, PLATYPUS, CHICK]
+  clues: [EQUATOR]
+  nonclues: []
+- id: 3f2c0dd1-db20-4a4a-9140-bc353dfcbb9c
+  positive: [SQUARE, BERMUDA]
+  negative: [CODE, CHEST, BATTERY, MEXICO, TICK, SNOW]
+  clues: [TRIANGLE]
+  nonclues: []
+- id: b0baa078-06b9-4cbc-bbc6-744a80ff442b
+  positive: [ICE CREAM, ANTARCTICA]
+  negative: [MODEL, HIMALAYAS, LAWYER, CAP, HORSESHOE, STRING]
+  clues: [ICY]
+  nonclues: []
+- id: 4c997990-b245-4a2f-8823-95fac7cf9a15
+  positive: [SEAL, PENGUIN]
+  negative: [ICE CREAM, ANTARCTICA, CONCERT, BOMB, PIE, WEB]
+  clues: [ANIMAL]
+  nonclues: []
+- id: 1f1252e0-abf1-4577-b422-a0af778d0328
+  positive: [CAT, KIWI]
+  negative: [NURSE, SPACE, FIRE, PIRATE, BELT, PORT]
+  clues: [ANIMAL]
+  nonclues: []
+- id: 3480745f-e261-4e4c-8216-88256243ee04
+  positive: [COURT, HOSPITAL]
+  negative: [PUMPKIN, FENCE, JACK, HAM, BEACH, FOREST]
+  clues: [INSTITUTION]
+  nonclues: []
+- id: 672fc75b-975a-4805-9246-8320d09e01b4
+  positive: [LION, TAIL]
+  negative: [LEAD, ROOT, PIANO, CHAIR, MOUTH, LASER]
+  clues: [ANIMAL]
+  nonclues: []
+- id: c4962b73-cc53-4734-b78e-3efe4ba404a3
+  positive: [HOTEL, BEACH]
+  negative: [HORSE, LOG, SWITCH, CLIFF, TRUNK, ALPS]
+  clues: [VACATION]
+  nonclues: []
+- id: 713b41fb-8660-490d-9d42-fb6383752970
+  positive: [KNIFE, FORK]
+  negative: [PIT, SCORPION, DAY, TAIL, FILM, SCHOOL]
+  clues: [UTENSIL]
+  nonclues: []
+- id: f5de7e75-1c4a-46f5-ac91-9aed34351519
+  positive: [KID, LASER]
+  negative: [KEY, STRIKE, LOCH NESS, STOCK, JET, INDIA]
+  clues: [TAG]
+  nonclues: []
+- id: 1f67ae02-e6f4-4eae-a45c-fd59d245b549
+  positive: [DWARF, ANGEL]
+  negative: [LINK, WATCH, LEMON, MODEL, TOOTH, FORK]
+  clues: [MYTHICAL]
+  nonclues: []
+- id: 4190cc49-c844-47d7-9514-72be7eb89464
+  positive: [CARROT, OCTOPUS]
+  negative: [VACUUM, NIGHT, LITTER, HORN, LOG, LINE]
+  clues: [FOOD]
+  nonclues: []
+- id: 2ec2207d-35bb-4845-94b5-5b38dbedcede
+  positive: [COOK, CHINA]
+  negative: [MEXICO, LONDON, DWARF, GRASS, TAG, MOSCOW]
+  clues: [WOK]
+  nonclues: []
+- id: 9a4dd6d4-1e0e-4846-8c07-ef3d570107ab
+  positive: [DISEASE, MOUTH]
+  negative: [MARCH, UNICORN, UNDERTAKER, NUT, BATTERY, COMPOUND]
+  clues: [GINGIVITIS]
+  nonclues: []
+- id: 2696525e-0b5f-44f7-a676-1f8372ed6a87
+  positive: [FIGURE, THUMB]
+  negative: [RACKET, BRUSH, CARROT, CRICKET, TABLE, NUT]
+  clues: [BODY]
+  nonclues: []
+- id: 51656822-77ce-4cba-bf0b-85d14161ad1f
+  positive: [MEXICO, TRIP]
+  negative: [DRAGON, VAN, COTTON, DUCK, BANK, SPINE]
+  clues: [VACATION]
+  nonclues: []
+- id: e10a8024-cc30-44a8-951b-ade647f15a80
+  positive: [SUIT, MILLIONAIRE]
+  negative: [AUSTRALIA, BERMUDA, EAGLE, STICK, LAB, IVORY]
+  clues: [BUSINESSMAN]
+  nonclues: []
+- id: 26b954aa-3ba2-4b5b-bccc-4689291a8650
+  positive: [BALL, DANCE]
+  negative: [GIANT, GAME, CASINO, TRUNK, CLOAK, DISEASE]
+  clues: [WALTZ]
+  nonclues: []
+- id: 103193ab-add9-4ede-8bd6-53a23b761f1a
+  positive: [KETCHUP, JAM]
+  negative: [NIGHT, RACKET, FLY, CASINO, RAY, VET]
+  clues: [FOOD]
+  nonclues: []
+- id: d96b7a27-8042-41c5-981b-1ff438898056
+  positive: [SWITCH, CONDUCTOR]
+  negative: [PARACHUTE, POINT, TRAIN, KANGAROO, NIGHT, PLANE]
+  clues: [TRANSISTOR]
+  nonclues: []
+- id: 8b7e7da3-06a4-404a-ac68-f004ceda6bff
+  positive: [NEW YORK, CAPITAL]
+  negative: [PASS, NEEDLE, CHANGE, GREEN, TOKYO, BAR]
+  clues: [WASHINGTON DC]
+  nonclues: []
+- id: 6b5a0fb2-ee6e-4226-94dc-89864675d6aa
+  positive: [SPINE, BUFFALO]
+  negative: [SUB, AZTEC, SWING, CHEST, PRINCESS, PIN]
+  clues: [VERTEBRATE]
+  nonclues: []
+- id: 4a3e4f0e-a758-408c-a4b6-231393b07968
+  positive: [DEATH, PASS]
+  negative: [SMUGGLER, MILLIONAIRE, BARK, DATE, VACUUM, LOCH NESS]
+  clues: [DIE]
+  nonclues: []
+- id: 182d98a0-ff78-433e-ac8e-c3b8da9c4f5b
+  positive: [BOX, MAIL]
+  negative: [TIE, LINK, CAR, FIGURE, SWING, JET]
+  clues: [DELIVERY]
+  nonclues: []
+- id: a980e13e-3a3f-4bce-af69-61cbe3c8518e
+  positive: [UNICORN, NOVEL]
+  negative: [OIL, SCUBA DIVER, PART, LIMOUSINE, FILE, SPRING]
+  clues: [FICTION]
+  nonclues: []
+- id: b3ea4a83-9ed1-4f74-bc38-16baec9028e0
+  positive: [EGYPT, PORT]
+  negative: [LAP, NUT, SOUL, NINJA, CYCLE, VAN]
+  clues: [SUEZ]
+  nonclues: []
+- id: b8f8b45c-5d66-4efe-8340-008ef5154163
+  positive: [CHURCH, RAY]
+  negative: [BUGLE, RABBIT, TEACHER, TIE, PLANE, STOCK]
+  clues: [GOD]
+  nonclues: []
+- id: 3da6de54-6aa9-4ef9-9120-5f4a0b69c073
+  positive: [DRESS, SHOE]
+  negative: [FIRE, PILOT, BOW, NAIL, PLANE, BUTTON]
+  clues: [CINDERELLA]
+  nonclues: []
+- id: 1eccbf1b-bf56-45c1-a934-763493bd4950
+  positive: [BILL, DRAFT]
+  negative: [LION, NURSE, IVORY, AFRICA, DRAGON, SHARK]
+  clues: [LEGISLATION]
+  nonclues: []
+- id: 04c697b2-c7cf-4b35-8853-c0c7bad282d1
+  positive: [MINT, HAM]
+  negative: [POST, PLANE, CLIFF, LAP, PISTOL, FLY]
+  clues: [FOOD]
+  nonclues: []
+- id: 2209492b-ab4e-448b-a1b3-52b4ede37e9b
+  positive: [SCHOOL, AZTEC]
+  negative: [SERVER, MAPLE, HOSPITAL, CARROT, SCORPION, CAST]
+  clues: [HISTORY]
+  nonclues: []
+- id: cff9d8fb-bb15-4a91-a63c-e5b070c069f6
+  positive: [ARM, ENGLAND]
+  negative: [COLD, GROUND, WHIP, ROULETTE, BOLT, BOND]
+  clues: [ARCHITECTURE]
+  nonclues: []
+- id: 84c699fd-1880-4515-a9f0-aa3bcc671c78
+  positive: [LEMON, SHOP]
+  negative: [HORN, DRAFT, ROBOT, CARROT, LUCK, SUB]
+  clues: [LULU]
+  nonclues: []
+- id: 52910409-b4b6-4abd-b8c2-2531c19324dc
+  positive: [FLY, BUG]
+  negative: [KANGAROO, NIGHT, SCHOOL, CONDUCTOR, KETCHUP, MODEL]
+  clues: [INSECT]
+  nonclues: []
+- id: a8891123-9cb6-4590-8a0b-090f6eb9beee
+  positive: [JACK, POST]
+  negative: [NINJA, HORN, CYCLE, CAP, GOLD, BOOM]
+  clues: [TWITTER]
+  nonclues: []
+- id: 9c3985b4-5f00-4109-a56d-d485e7a89bfc
+  positive: [RULER, FORCE]
+  negative: [JACK, TELESCOPE, MUG, SHOT, GENIUS, HORSESHOE]
+  clues: [SLAVE]
+  nonclues: []
+- id: 236e5ba5-2aee-4a24-a5d7-677bccf29cad
+  positive: [BOMB, POISON]
+  negative: [YARD, BUG, ROW, DWARF, PART, CLIFF]
+  clues: [ASSASSIN]
+  nonclues: []
+- id: 57c32e21-4971-4e0e-92c0-a8f75f6f216e
+  positive: [PITCH, HORN]
+  negative: [LION, FILM, BEAR, SMUGGLER, ANTARCTICA, LAP]
+  clues: [SOUND]
+  nonclues: []
+- id: 1b64e680-14c2-4c04-983b-18c6c8bd3cae
+  positive: [PRINCESS, KNIGHT]
+  negative: [FENCE, IRON, ORGAN, SOCK, SWING, AGENT]
+  clues: [CASTLE]
+  nonclues: []
+- id: a0cc2c95-3b8c-4f5c-9eb3-606b75dba0a8
+  positive: [YARD, FIELD]
+  negative: [HORN, TABLE, SOUL, SPELL, AMAZON, PARK]
+  clues: [GRASS]
+  nonclues: []
+- id: 35c63311-fe81-45de-80aa-3773d726f0b1
+  positive: [SMUGGLER, THIEF]
+  negative: [PAN, OIL, EAGLE, LUCK, CRICKET, PHOENIX]
+  clues: [CRIMINAL]
+  nonclues: []
+- id: 1450f218-7c08-4600-a903-e1024488f693
+  positive: [BERLIN, GREECE]
+  negative: [POISON, NINJA, DINOSAUR, WITCH, BAND, PILOT]
+  clues: [EUROPE]
+  nonclues: []
+- id: b853c4e6-20ef-4b4f-8cc5-0468ca852fc2
+  positive: [TRAIN, AMERICA]
+  negative: [CALF, DWARF, MOLE, BAT, COMIC, IRON]
+  clues: [AMTRAK]
+  nonclues: []
+- id: fba8f593-3590-480f-b1ce-dbd391529172
+  positive: [MERCURY, FIRE]
+  negative: [SUB, FENCE, BEAT, SUPERHERO, OIL, NOVEL]
+  clues: [HOT]
+  nonclues: []
+- id: bd8f51a2-c815-4666-8096-44a1c7ccb09e
+  positive: [PIRATE, WIND]
+  negative: [LINK, AGENT, GOLD, OIL, ROOT, CHINA]
+  clues: [SAIL]
+  nonclues: []
+- id: d4f67ca7-a291-489a-b88c-6d2dc248148d
+  positive: [NINJA, STREAM]
+  negative: [BED, ORANGE, TIME, CAP, WIND, SHADOW]
+  clues: [TWITCH]
+  nonclues: []
+- id: 725cd28a-f9c1-4e82-881f-710a57b726bf
+  positive: [EMBASSY, TURKEY]
+  negative: [TAP, NINJA, BOARD, CLIFF, SCREEN, STICK]
+  clues: [DIPLOMAT]
+  nonclues: []
+- id: e112dcd7-8521-4984-9d2f-843d32a0859d
+  positive: [AMBULANCE, POLICE]
+  negative: [CLIFF, CELL, BUG, SLUG, GHOST, LAB]
+  clues: ['911']
+  nonclues: []
+- id: 38b85747-6805-4379-bd77-696f096de077
+  positive: [MINE, GOLD]
+  negative: [BERMUDA, LEPRECHAUN, SATELLITE, CHANGE, FOREST, SUPERHERO]
+  clues: [MINERAL]
+  nonclues: []
+- id: 80a883ba-339a-4a17-8378-eb8aebc5736a
+  positive: [PLAY, KING]
+  negative: [MICROSCOPE, WALL, LOCH NESS, HOSPITAL, GAME, BUCK]
+  clues: [HAMLET]
+  nonclues: []
+- id: 31b2bf3b-976f-45c7-b1bb-e238b44780c3
+  positive: [TIE, POINT]
+  negative: [TABLE, ENGINE, SHARK, PUMPKIN, SINK, CONTRACT]
+  clues: [DEUCE]
+  nonclues: []
+- id: 6c9f324a-b5d4-49ff-b005-da1398dace83
+  positive: [WHALE, RABBIT]
+  negative: [HAND, WALL, WAVE, GHOST, BACK, LEAD]
+  clues: [MAMMAL]
+  nonclues: []
+- id: c3154240-9dcb-44fe-a944-98d00206ec0b
+  positive: [PLANE, VAN]
+  negative: [BEAR, NAIL, CROWN, BED, BANK, WIND]
+  clues: [VEHICLE]
+  nonclues: []
+- id: 6ca73e34-c816-4688-80d5-337b57bc5349
+  positive: [UNDERTAKER, TEACHER]
+  negative: [POLE, DISEASE, IVORY, MOUNT, PRESS, PIT]
+  clues: [OCCUPATION]
+  nonclues: []
+- id: b252ed06-0bbd-4ca2-bcb4-739849b4ee68
+  positive: [CRICKET, DUCK]
+  negative: [WASHER, COMPOUND, TUBE, GLASS, STRIKE, COURT]
+  clues: [ANIMAL]
+  nonclues: []
+- id: bdc76a39-ac09-49b0-8d6f-197cf31269da
+  positive: [NAIL, RING]
+  negative: [TUBE, ATLANTIS, HOOK, SPOT, KING, SCORPION]
+  clues: [FINGER]
+  nonclues: []
+- id: 1cea9771-c214-4030-b685-253c4708fbdf
+  positive: [HIMALAYAS, STATE]
+  negative: [CYCLE, BACK, CHOCOLATE, EYE, TABLET, SOLDIER]
+  clues: [NEPAL]
+  nonclues: []
+- id: 78a1ddc0-1638-4b66-9fbf-0025d7b8d341
+  positive: [JET, AIR]
+  negative: [DRAGON, TEMPLE, POST, STAFF, FRANCE, WATCH]
+  clues: [PLANE]
+  nonclues: []
+- id: ef769750-f1e4-455e-a9a0-b9cc78f42230
+  positive: [SPIDER, SCORPION]
+  negative: [BERLIN, COPPER, BELT, NUT, EAGLE, DUCK]
+  clues: [INVERTEBRATE]
+  nonclues: []
+- id: a2f71312-e1df-4b8e-b981-cf50b7f3d6c2
+  positive: [ORGAN, LIFE]
+  negative: [SOUND, MOUSE, PLATYPUS, AMAZON, FAIR, BOW]
+  clues: [BIOLOGY]
+  nonclues: []
+- id: 900d9a18-2790-42e8-a7f4-fd6aad122d85
+  positive: [PARACHUTE, TOWER]
+  negative: [STICK, SPELL, CHANGE, SHAKESPEARE, GRASS, RING]
+  clues: [HIGH]
+  nonclues: []
+- id: 44bd70e4-b1fd-4eff-9b13-28f7461a36bc
+  positive: [WAVE, GLOVE]
+  negative: [STICK, NUT, BOMB, CAPITAL, FISH, GERMANY]
+  clues: [HAND]
+  nonclues: []
+- id: 839133bc-df5f-4862-bc59-4be755cfbd54
+  positive: [KEY, PARK]
+  negative: [BILL, BAR, THIEF, DOCTOR, PAPER, DRESS]
+  clues: [CAR]
+  nonclues: []
+- id: db3ccf01-89f6-4d08-bcde-f49b520dd7fc
+  positive: [NURSE, CHEST]
+  negative: [CONDUCTOR, MARCH, STADIUM, LEPRECHAUN, JUPITER, MAIL]
+  clues: [CPR]
+  nonclues: []
+- id: 6ad0f224-5c97-4dd1-aefc-a585043bdb18
+  positive: [CHICK, DATE]
+  negative: [SUB, PIE, HORN, VAN, NUT, LUCK]
+  clues: [GIRLFRIEND]
+  nonclues: []
+- id: 3f481c58-23bf-4702-96a9-7d454a619334
+  positive: [PLATYPUS, CENTAUR]
+  negative: [THUMB, ARM, SWITCH, SERVER, TRIANGLE, ROCK]
+  clues: [CREATURE]
+  nonclues: []
+- id: a3df927b-f0e6-4866-9b92-b0f4370f526a
+  positive: [HAND, RACKET]
+  negative: [CLUB, KIWI, ALPS, FLY, BEAR, BOOM]
+  clues: [GRIP]
+  nonclues: []
+- id: 8dcd48f4-fcec-46bb-8aa7-e2bd70e9d096
+  positive: [LOCH NESS, DINOSAUR]
+  negative: [FORCE, DANCE, PANTS, CHANGE, RING, WAR]
+  clues: [MONSTER]
+  nonclues: []
+- id: 18b17bbb-227a-4b92-b119-0ef65178776f
+  positive: [LIGHT, PUMPKIN]
+  negative: [GERMANY, CYCLE, FACE, GIANT, COMIC, MOON]
+  clues: [LANTERN]
+  nonclues: []
+- id: 428a9237-d7d7-4dc3-8761-58275f1ff1c0
+  positive: [LONDON, CLUB]
+  negative: [COMIC, FIGHTER, SWITCH, FLUTE, CARROT, MOUNT]
+  clues: [FOOTBALL]
+  nonclues: []
+- id: fcab37bb-c8ff-4983-bb19-6b6120ea44f0
+  positive: [HAWK, AUSTRALIA]
+  negative: [PUMPKIN, BERRY, HORN, DICE, CONCERT, NET]
+  clues: [KANGAROO]
+  nonclues: []
+- id: 034b7b18-5fb2-4bd0-9c38-7315405cf1af
+  positive: [COLD, BEIJING]
+  negative: [MODEL, TABLET, MOON, CONDUCTOR, CANADA, PITCH]
+  clues: [HARBIN]
+  nonclues: []
+- id: 92c63555-83d7-47d2-b3e5-c81aa3e92b08
+  positive: [BED, FENCE]
+  negative: [RING, MOSCOW, GREEN, LINK, MASS, SLUG]
+  clues: [HOUSE]
+  nonclues: []
+- id: fbf3fdf7-8d69-4bb4-814f-93b0fdef4c5c
+  positive: [SOLDIER, SUPERHERO]
+  negative: [CARD, LION, PLATE, SPINE, DROP, PIN]
+  clues: [PERSON]
+  nonclues: []
+- id: e0a4608c-6bd2-4b14-ae87-2071abb89eb3
+  positive: [CASINO, CARD]
+  negative: [FILM, TABLE, PLATE, TRAIN, PARACHUTE, HOOK]
+  clues: [POKER]
+  nonclues: []
+- id: a2827d5d-751a-4337-b7ca-684737f4bc6d
+  positive: [DEGREE, TELESCOPE]
+  negative: [NUT, LEMON, ICE CREAM, CLIFF, CHARGE, CAP]
+  clues: [ASTRONOMY]
+  nonclues: []
+- id: dd8ecbf2-6d07-4a40-992f-eaab233a076c
+  positive: [SCIENTIST, DOCTOR]
+  negative: [PITCH, SOUL, BAT, BRIDGE, CIRCLE, COTTON]
+  clues: [PERSON]
+  nonclues: []
+- id: de0c64e4-7e0b-4e0e-963c-7785eb8cdaab
+  positive: [SNOW, BOTTLE]
+  negative: [SCREEN, HORN, LEPRECHAUN, CENTAUR, ANTARCTICA, CELL]
+  clues: [WATER]
+  nonclues: []
+- id: 2b8bae2d-25f7-4a4c-b630-3f08378b8293
+  positive: [POOL, SOUND]
+  negative: [WEB, EUROPE, SHAKESPEARE, CHECK, KING, MINE]
+  clues: [WATER]
+  nonclues: []
+- id: cd1b13f0-def8-4cd8-aa2d-dd65f016358e
+  positive: [POUND, BUTTON]
+  negative: [PAPER, KETCHUP, CENTER, DOG, BRUSH, BOTTLE]
+  clues: [KEY]
+  nonclues: []
+- id: 3134993b-513f-4e45-a09e-cc48f09fdc5d
+  positive: [COVER, BOW]
+  negative: [SUIT, PILOT, DICE, GLASS, KEY, CARROT]
+  clues: [GIFT]
+  nonclues: []
+- id: c8993277-71f3-4e5e-a4fc-bb8aa4ae2d39
+  positive: [PLOT, SCREEN]
+  negative: [JET, SPOT, OLYMPUS, LINE, FAIR, WASHINGTON]
+  clues: [MOVIE]
+  nonclues: []
+- id: 6cb0fc34-e083-4f38-b1c0-e688db05f996
+  positive: [SCALE, DRAGON]
+  negative: [HONEY, LOCK, PARK, TABLET, FIRE, DOG]
+  clues: [REPTILE]
+  nonclues: []
+- id: a7cd73bd-0e99-4213-9bc2-8c2a9933a215
+  positive: [GAME, CANADA]
+  negative: [DATE, BANK, PIN, REVOLUTION, FILE, CAST]
+  clues: [HOCKEY]
+  nonclues: []
+- id: 2e5a0d88-d3c2-4fc5-830a-5f4cf3935231
+  positive: [PYRAMID, SKYSCRAPER]
+  negative: [CZECH, WEB, SHOE, FLUTE, BEAT, STRAW]
+  clues: [BUILDING]
+  nonclues: []
+- id: 1a633915-2b5e-4302-9cd6-04bc0ad550ca
+  positive: [WITCH, ROBOT]
+  negative: [LIGHT, HOTEL, SWING, FIGURE, EGYPT, MOSCOW]
+  clues: [BEING]
+  nonclues: []
+- id: b933d451-56f0-4392-895e-d8098a29a49f
+  positive: [FOREST, ROOT]
+  negative: [TRAIN, FIGURE, PARACHUTE, LIFE, SUPERHERO, BALL]
+  clues: [TREE]
+  nonclues: []
+- id: dcd9e9e0-295c-4d67-940c-cb76e08eb96a
+  positive: [WORM, LOG]
+  negative: [PLATE, GIANT, PIANO, DATE, SPY, MOSCOW]
+  clues: [DECOMPOSE]
+  nonclues: []
+- id: c80b1d12-d3c9-48fb-a6b9-d2a622cf4bc5
+  positive: [BAR, BEAT]
+  negative: [CLOAK, FILM, BRIDGE, RING, GROUND, TORCH]
+  clues: [RAP]
+  nonclues: []
+- id: bfd1529e-cb41-4d36-b7b3-754b95eb73b4
+  positive: [BOLT, SPRING]
+  negative: [BUCK, MAPLE, IRON, CONDUCTOR, BACK, MINE]
+  clues: [PART]
+  nonclues: []
+- id: 5cced625-bfa2-4d04-9cba-de09949e8dca
+  positive: [LINE, TRIANGLE]
+  negative: [ROBOT, NOVEL, CRASH, BED, MISSILE, COLD]
+  clues: [GEOMETRY]
+  nonclues: []
+- id: 3a33e26d-c3b6-40d7-8f29-409ff90e6bc5
+  positive: [MAPLE, CHOCOLATE]
+  negative: [BOX, CAPITAL, CELL, FOREST, EUROPE, MINT]
+  clues: [SYRUP]
+  nonclues: []
+- id: 0bf1324d-f185-457b-b950-634a8f5242a6
+  positive: [SPACE, GENIUS]
+  negative: [BERLIN, STAR, WORM, CRASH, EGYPT, OLIVE]
+  clues: [HAWKING]
+  nonclues: []
+- id: 10f3d2a4-9c4a-4a94-93eb-2062e95f1a7e
+  positive: [ATLANTIS, ALIEN]
+  negative: [HIMALAYAS, MINE, MAIL, BERRY, POOL, SUB]
+  clues: [FICITONAL]
+  nonclues: []
+- id: 1e48e312-3cda-4d83-9213-ea77348dd44c
+  positive: [IVORY, CALF]
+  negative: [ROCK, TAP, SOCK, STRAW, EYE, HAWK]
+  clues: [ELEPHANT]
+  nonclues: []
+- id: fefcc621-dc5d-4950-a43c-e23da11d0805
+  positive: [CAP, WASHER]
+  negative: [MUG, NET, STICK, TAIL, GOLD, FOOT]
+  clues: [CLOTHES]
+  nonclues: []
+- id: be90387b-6d03-451e-88ee-49fc987a5156
+  positive: [TIME, FACE]
+  negative: [STRIKE, BAR, TELESCOPE, COURT, PARK, ALPS]
+  clues: [CLOCK]
+  nonclues: []
+- id: fbc694a5-41c4-464b-9088-145424724bff
+  positive: [FOOT, BOOT]
+  negative: [LINK, LOCK, MOUNT, TRIANGLE, JAM, SPINE]
+  clues: [SHOES]
+  nonclues: []
+- id: 18344685-887e-4985-b295-f7b84ff98d07
+  positive: [ICE, SNOWMAN]
+  negative: [CLIFF, FIRE, GIANT, SQUARE, CONCERT, LOCK]
+  clues: [COLD]
+  nonclues: []
+- id: 93bd1ef6-1ef8-445e-aa7c-e17c81f066bd
+  positive: [CHECK, BUCK]
+  negative: [TOKYO, AGENT, NOVEL, MOLE, LIMOUSINE, WORM]
+  clues: [MONEY]
+  nonclues: []
+- id: b5950cf0-9ad2-413a-b4cd-af976a117574
+  positive: [GRASS, ROCK]
+  negative: [NIGHT, TELESCOPE, RAY, TEACHER, SKYSCRAPER, SCALE]
+  clues: [NATURE]
+  nonclues: []
+- id: d22d8804-7a7f-4ce5-a7bd-0f37f8307a4d
+  positive: [WHIP, NEEDLE]
+  negative: [ARM, BUCK, PART, DEATH, POISON, DROP]
+  clues: [THIN]
+  nonclues: []
+- id: cbd94b45-3007-4929-a3ae-6fd3dbcca1b3
+  positive: [COPPER, IRON]
+  negative: [TRUNK, PALM, LEPRECHAUN, CHECK, LAP, BERMUDA]
+  clues: [METAL]
+  nonclues: []
+- id: bcdf4df5-c8aa-4f1e-9e84-4fe9d7413223
+  positive: [SLIP, PAPER]
+  negative: [LASER, SQUARE, AFRICA, POLE, LAB, MATCH]
+  clues: [NOTE]
+  nonclues: []
+- id: 4ac6ce4e-5a73-4523-942d-088852c1abf5
+  positive: [GREEN, ORANGE]
+  negative: [CHAIR, SLIP, CLOAK, PIRATE, MILLIONAIRE, COMPOUND]
+  clues: [COLOR]
+  nonclues: []
+- id: b3109ec9-139c-4a9c-9495-40e8dd4ce819
+  positive: [SATURN, VACUUM]
+  negative: [BOOT, COPPER, CRANE, BOARD, LONDON, FENCE]
+  clues: [SPACE]
+  nonclues: []
+- id: d013369d-15c9-4423-b291-3e353fe2da2a
+  positive: [MOUSE, CONCERT]
+  negative: [CAR, BED, INDIA, SCIENTIST, STRIKE, PARACHUTE]
+  clues: [DEADMAU5]
+  nonclues: []
+- id: 2f2aaf41-2de3-4df7-bd7a-e599c0c22ebe
+  positive: [LAWYER, CONTRACT]
+  negative: [OPERA, EGYPT, ROULETTE, TRIANGLE, STICK, SKYSCRAPER]
+  clues: [LEGAL]
+  nonclues: []
+- id: 756a29a5-5fe4-4baf-8312-be2da5d07723
+  positive: [LITTER, STRAW]
+  negative: [ROOT, CANADA, RAY, CARROT, BOND, STICK]
+  clues: [PLASTIC]
+  nonclues: []
+- id: 057c7106-d0f4-4996-a2da-7e34ac861072
+  positive: [GAS, SHAKESPEARE]
+  negative: [BATTERY, CENTAUR, JAM, TRUNK, MAPLE, GRASS]
+  clues: [NOBLE]
+  nonclues: []
+- id: b7b897aa-9549-4737-8831-80e7c74e33bc
+  positive: [HEAD, FLUTE]
+  negative: [AMAZON, IRON, PIN, WITCH, DEGREE, ALPS]
+  clues: [MOUTH]
+  nonclues: []
+- id: b4e10b4e-4ad3-4667-acb4-a1c931d300ba
+  positive: [NUT, PANTS]
+  negative: [SPY, IVORY, NOVEL, CALF, RULER, GERMANY]
+  clues: [CROTCH]
+  nonclues: []
+- id: d0a551d1-2a8e-4360-84df-b2aaee71f77c
+  positive: [STICK, TORCH]
+  negative: [DRAGON, ORANGE, ARM, NAIL, TEACHER, PENGUIN]
+  clues: [FIREWOOD]
+  nonclues: []
+- id: 2b7844da-79a0-4cdb-b8d9-a48b2e07a159
+  positive: [HORSE, FIGHTER]
+  negative: [CAPITAL, FILM, WAVE, MUG, EGYPT, CAP]
+  clues: [CAVALRY]
+  nonclues: []
+- id: eafd90cf-f348-482a-9dff-585e5a8fe37f
+  positive: [PRESS, FILM]
+  negative: [LION, DINOSAUR, KNIFE, LINK, LIFE, PHOENIX]
+  clues: [MEDIA]
+  nonclues: []
+- id: 5d545ba9-797b-471b-802a-04530ec5d54f
+  positive: [WEB, BATTERY]
+  negative: [ROME, MILLIONAIRE, PARK, PLATE, SLUG, ROUND]
+  clues: [TECHNOLOGY]
+  nonclues: []
+- id: 00a23f5d-8b0c-476d-9b42-ccd51da0cf46
+  positive: [SPIKE, DROP]
+  negative: [CARROT, CIRCLE, DEGREE, FENCE, ROBIN, HIMALAYAS]
+  clues: [VOLTAGE]
+  nonclues: []
+- id: 34a17b93-99ed-4227-8f86-3d8e648c0291
+  positive: [OLIVE, GRACE]
+  negative: [LEMON, ENGLAND, HIMALAYAS, ICE CREAM, FOOT, WHIP]
+  clues: [PEACE]
+  nonclues: []
+- id: 4bdf2d46-08cf-48ab-a790-91d285ee9d42
+  positive: [DECK, SINK]
+  negative: [GROUND, CHINA, INDIA, WORM, BOMB, NOVEL]
+  clues: [SHIP]
+  nonclues: []
+- id: 1e51775a-6a30-4771-9431-62d506b7ff38
+  positive: [BUGLE, BELL]
+  negative: [DRAFT, CODE, ALPS, DAY, VAN, FIGURE]
+  clues: [INSTRUMENT]
+  nonclues: []
+- id: aeb13a52-6115-4037-be1b-0e64a78f5871
+  positive: [SOCK, CLOAK]
+  negative: [AFRICA, DOG, MATCH, DINOSAUR, VACUUM, SOUND]
+  clues: [CLOTHING]
+  nonclues: []
+- id: cf557a5f-dab2-4097-ac92-b65ac8dbc47b
+  positive: [PIANO, BARK]
+  negative: [HORSESHOE, SUB, FIGHTER, CLIFF, DINOSAUR, SINK]
+  clues: [BARK]
+  nonclues: []
+- id: e2255500-f20f-4ae8-823d-955b782f9dc6
+  positive: [THEATER, CAST]
+  negative: [LINE, TABLET, CODE, DUCK, LIGHT, CRICKET]
+  clues: [MOVIE]
+  nonclues: []
+- id: 70e98bb4-b59c-4503-88f3-129b61a142bb
+  positive: [CELL, ROW]
+  negative: [CONTRACT, FOREST, ROOT, LAWYER, RAY, HONEY]
+  clues: [TABLE]
+  nonclues: []
+- id: d23afcb3-205b-416a-a7e3-1f8397a5ca11
+  positive: [GIANT, MARBLE]
+  negative: [NUT, LITTER, OCTOPUS, BOMB, PRINCESS, BOND]
+  clues: [STATUE]
+  nonclues: []
+- id: 20d999a5-9dc5-4426-ab68-1e567e0e29cf
+  positive: [GHOST, SOUL]
+  negative: [ALIEN, EMBASSY, PART, TRAIN, POLICE, TIE]
+  clues: [EXORCISE]
+  nonclues: []
+- id: 496ef5f7-3917-4967-b2d2-9ed773274076
+  positive: [EYE, SHADOW]
+  negative: [PUMPKIN, STATE, SNOWMAN, MARBLE, TRACK, JAM]
+  clues: [LIGHT]
+  nonclues: []
+- id: a50050ce-ab38-4b78-a8d3-48d3e7d3bb95
+  positive: [TICK, BAND]
+  negative: [LEPRECHAUN, SQUARE, FILM, MAMMOTH, BOOT, CODE]
+  clues: [BEATLE]
+  nonclues: []
+- id: 776717de-12a5-4f32-b343-9f5834baf276
+  positive: [STRING, SPELL]
+  negative: [HOLLYWOOD, KING, STRAW, PLATYPUS, PLAY, MERCURY]
+  clues: [LETTERS]
+  nonclues: []
+- id: f962ffaa-3331-475d-8e2f-e5ae2aa26326
+  positive: [REVOLUTION, LEAD]
+  negative: [KNIGHT, SCREEN, POOL, SOUND, SHARK, FRANCE]
+  clues: [GUEVARA]
+  nonclues: []
+- id: 54a51ee2-4907-4302-a01c-2cdd893f089e
+  positive: [ROULETTE, DICE]
+  negative: [HOLLYWOOD, BOX, NOVEL, STRAW, MOSCOW, THEATER]
+  clues: [GAME]
+  nonclues: []
+- id: edc3ac52-9e7c-4e87-bfc7-468ad9c61b30
+  positive: [CAR, CIRCLE]
+  negative: [HIMALAYAS, MODEL, ARM, HORSE, LEAD, PART]
+  clues: [WHEEL]
+  nonclues: []
+- id: 77789e11-6c18-4e7b-a4de-2fd38d7b63f6
+  positive: [NIGHT, MARCH]
+  negative: [WHIP, TOWER, ROW, STAFF, SNOWMAN, MEXICO]
+  clues: [EQUINOX]
+  nonclues: []
+- id: 7b6c7b0c-bb5b-4dc5-873d-31972e091d3d
+  positive: [SHARK, FISH]
+  negative: [CARROT, SCUBA DIVER, BEAR, PLOT, PIRATE, ORANGE]
+  clues: [GILLS]
+  nonclues: []
+- id: 928ffd10-18ac-4483-971d-2fb3cf63a1a6
+  positive: [BAT, MICROSCOPE]
+  negative: [LUCK, TOWER, FISH, BELT, NOVEL, BUGLE]
+  clues: [COVID]
+  nonclues: []
+- id: b90d2d77-00b1-4ef2-beb7-8ca4e58f130f
+  positive: [TABLE, NOTE]
+  negative: [MAMMOTH, COVER, MICROSCOPE, PUMPKIN, WAKE, PART]
+  clues: [WRITE]
+  nonclues: []
+- id: 399da5c2-85e9-4e60-a6ba-c96728113e2c
+  positive: [MOUNT, TEMPLE]
+  negative: [SATURN, SERVER, THEATER, FACE, CAP, OLIVE]
+  clues: [JERUSALEM]
+  nonclues: []
+- id: 32c0c962-1855-4abe-b718-8d2b03d24e9d
+  positive: [CLIFF, OLYMPUS]
+  negative: [HOLE, GHOST, KANGAROO, PISTOL, KNIGHT, FENCE]
+  clues: [MOUNTAIN]
+  nonclues: []
+- id: 5a3db029-3f50-40c2-a463-8b32caead2ce
+  positive: [GLASS, PLASTIC]
+  negative: [HAM, BED, PART, HEAD, VACUUM, LOCH NESS]
+  clues: [MATERIAL]
+  nonclues: []
+- id: 7aecaf64-3602-4483-a350-5d06bdef9cac
+  positive: [HEART, FALL]
+  negative: [DRESS, CLUB, PAN, BAT, THIEF, PLATE]
+  clues: [LOVE]
+  nonclues: []
+- id: 044dd285-7053-4f10-9f13-5dbe99d5b94b
+  positive: [HONEY, ROSE]
+  negative: [PANTS, DISEASE, SPIKE, OCTOPUS, NOVEL, GAME]
+  clues: [SWEET]
+  nonclues: []
+- id: 78aa2c8a-b0b7-476c-a657-b8947e58ba8e
+  positive: [CODE, FILE]
+  negative: [SHOE, FORK, WASHINGTON, TRIANGLE, FOOT, SEAL]
+  clues: [JPEG]
+  nonclues: []
+- id: da12e6fe-f143-4e55-854c-09f63b8f4696
+  positive: [PAN, FAN]
+  negative: [MINE, BAND, CENTAUR, TEACHER, SHAKESPEARE, HOSPITAL]
+  clues: [DEVICE]
+  nonclues: []
+- id: c1520320-ced3-46a6-9f3e-e721506d207c
+  positive: [STAFF, WAR]
+  negative: [SCIENTIST, CONDUCTOR, AFRICA, FOREST, BEAR, SWING]
+  clues: [SERGEANT]
+  nonclues: []
+- id: 82fd5c40-6326-4b7e-9830-d01fa1397de8
+  positive: [MUG, SHOT]
+  negative: [LIMOUSINE, PLAY, FORCE, SHIP, MERCURY, DICE]
+  clues: [PHOTO]
+  nonclues: []
+- id: 91e77166-8cbc-415e-a3f7-e54e63cfe25b
+  positive: [MODEL, SPY]
+  negative: [TRIP, SQUARE, POUND, MOLE, PLATE, TRUNK]
+  clues: [PERSON]
+  nonclues: []
+- id: 42f04d8c-155e-478e-8a89-f37a7cde0f72
+  positive: [OPERA, SWING]
+  negative: [CLUB, COVER, CROSS, JUPITER, GRASS, SATELLITE]
+  clues: [PLAY]
+  nonclues: []
+- id: 124bd6dd-cd07-4d83-903b-4ad76a892e32
+  positive: [BLOCK, STRIKE]
+  negative: [HOOK, LIMOUSINE, BEIJING, MOSCOW, OIL, NEW YORK]
+  clues: [PUNCH]
+  nonclues: []
+- id: 10c79505-d6ae-451e-895e-55bede882e5b
+  positive: [BRIDGE, LUCK]
+  negative: [BUFFALO, PLOT, SERVER, KNIFE, KID, TEMPLE]
+  clues: [CARDS]
+  nonclues: []
+- id: 409c32f9-7635-4041-9b04-d3c53d54fb32
+  positive: [BOOM, CYCLE]
+  negative: [LAP, MODEL, STADIUM, STRIKE, THUMB, SOCK]
+  clues: [ECONOMIC]
+  nonclues: []
+- id: 1009b8b1-1ef9-4e74-abdb-521006189973
+  positive: [PASTE, LINK]
+  negative: [MUG, PIT, MAPLE, CONTRACT, PYRAMID, OPERA]
+  clues: [COPY]
+  nonclues: []
+- id: 26d9d948-4e75-48e1-8c23-84ce13c61ad6
+  positive: [MATCH, TAG]
+  negative: [PLATYPUS, SPIDER, SEAL, SCREEN, CODE, SUPERHERO]
+  clues: [GAME]
+  nonclues: []
+- id: ee646584-f6d3-4fc3-9350-c69fc0ec7e07
+  positive: [PIT, WELL]
+  negative: [AUSTRALIA, HORN, AFRICA, HEART, BANK, BRUSH]
+  clues: [DEEP]
+  nonclues: []
+- id: b7b48c08-1f2a-4c29-8b40-f575695cf8b7
+  positive: [SPOT, LAB]
+  negative: [ARM, MAMMOTH, DATE, KING, DEGREE, BOND]
+  clues: [INVESTIGATE]
+  nonclues: []
+- id: cf22d885-9a31-4af0-bcb7-4095bf8429d9
+  positive: [WAKE, CHANGE]
+  negative: [KANGAROO, MEXICO, COTTON, BEAR, HORSESHOE, BARK]
+  clues: [DAWN]
+  nonclues: []
+- id: 76f24848-9cc6-4797-bb4c-da1e1473f216
+  positive: [PLATE, PIE]
+  negative: [TIE, MAMMOTH, COMIC, SHOP, MOUSE, SLUG]
+  clues: [FOOD]
+  nonclues: []
+- id: d536125c-7b09-4724-b22b-1ae874a813bd
+  positive: [BRUSH, PART]
+  negative: [SLIP, TABLE, AZTEC, TAP, SHARK, ANTARCTICA]
+  clues: [HAIR]
+  nonclues: []
+- id: 2a5b101f-4258-491b-9a69-d86043b2497e
+  positive: [CHAIR, WALL]
+  negative: [IVORY, MICROSCOPE, COVER, MOUTH, HEAD, PYRAMID]
+  clues: [ROOM]
+  nonclues: []
+- id: 5a1489bf-9594-43b0-8cad-84235af02046
+  positive: [HORSESHOE, BELT]
+  negative: [LIMOUSINE, SPY, BILL, PIPE, INDIA, DUCK]
+  clues: [WEARABLE]
+  nonclues: []
+- id: 682cce36-4688-45d4-a7f7-08ae1d4c0fca
+  positive: [COMPOUND, BOND]
+  negative: [PRINCESS, APPLE, FIGURE, ORANGE, PASTE, BRUSH]
+  clues: [COVALENT]
+  nonclues: []
+- id: d51d12b2-eea9-4c48-b0e3-cbcd47181a08
+  positive: [LAP, TRACK]
+  negative: [CONTRACT, LITTER, CLUB, ROULETTE, OPERA, CIRCLE]
+  clues: [RACE]
+  nonclues: []
+- id: 3b71c592-8211-4ed3-86b9-73f303c61c6c
+  positive: [CROSS, KANGAROO]
+  negative: [CONDUCTOR, CHAIR, PASTE, LAWYER, POINT, BARK]
+  clues: [HAIR]
+  nonclues: []
+- id: 8d3fa552-1ace-4154-8f55-e9577cd636cc
+  positive: [CZECH, POLE]
+  negative: [KNIGHT, ROOT, OCTOPUS, LAP, HOTEL, PIPE]
+  clues: [POLAND]
+  nonclues: []
+- id: 250374b9-2bb7-4d36-9170-9e1db3aa34a5
+  positive: [LOCK, AGENT]
+  negative: [ROUND, BERLIN, BED, TRIANGLE, WATER, UNDERTAKER]
+  clues: [SECRET]
+  nonclues: []
+- id: efd0072b-5ce1-49ce-89d3-a1e94eadf425
+  positive: [BOARD, FAIR]
+  negative: [WIND, SCREEN, DEATH, SPACE, FOREST, PANTS]
+  clues: [GAME]
+  nonclues: []
+- id: d616fcbd-8a8f-4fd5-b0ed-f51f1bab6526
+  positive: [LEPRECHAUN, REVOLUTION]
+  negative: [WIND, SCREEN, DEATH, SPACE, FOREST, PANTS]
+  clues: [GAME]
+  nonclues: [IRELAND]
