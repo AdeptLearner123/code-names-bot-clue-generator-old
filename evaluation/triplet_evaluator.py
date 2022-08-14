@@ -47,6 +47,7 @@ def test_scenario(triplet, clue_generator):
     )
 
     scenario_report = {
+        "id": triplet.id,
         "pos": triplet.positive,
         "neg": triplet.negative,
         "clue": clue,
