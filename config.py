@@ -1,10 +1,12 @@
 TERMS_PATH = "static/terms.txt"
 
 TRIPLETS_PATH = "static/triplets/"
-TRAIN_TRIPLETS_PATH = "static/train_triplets.yaml"
-TEST_TRIPLETS_PATH = "static/test_triplets.yaml"
+TRAIN_TRIPLETS_PATH = "static/train_triplets.txt"
+TEST_TRIPLETS_PATH = "static/test_triplets.txt"
 
-WIKI_SCORES_PATH = "output/wiki_scores.sqlite"
+WIKI = "wiki"
+HYPERNYM = "hypernym"
 
-HYPERNYM_SCORES_PATH = "output/hypernym_scores.sqlite"
-HYPERNYM_EVAL_REPORT_PATH = "evaluation_reports/hypernym_eval_report.yaml"
+GET_SCORES_PATH = lambda alias: f"output/{alias}_scores.sqlite"
+GET_TRAIN_EVAL_REPORT_PATH = lambda alias: f"evaluation_reports/{alias}_train_eval_report.yaml"
+GET_TEST_EVAL_REPORT_PATH = lambda alias: f"evaluation_reports/{alias}_test_eval_report.yaml"

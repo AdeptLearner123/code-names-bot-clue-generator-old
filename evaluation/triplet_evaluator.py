@@ -2,12 +2,15 @@ import random
 
 from enum import Enum
 import yaml
+import os
 
-from config import TRAIN_TRIPLETS_PATH, HYPERNYM_SCORES_PATH, HYPERNYM_EVAL_REPORT_PATH
+from config import TRAIN_TRIPLETS_PATH, TEST_TRIPLETS_PATH, TRIPLETS_PATH, HYPERNYM, GET_SCORES_PATH, GET_TRAIN_EVAL_REPORT_PATH, GET_TEST_EVAL_REPORT_PATH
 from evaluation.clue_generator import ClueGenerator
 
 from .scenario import ScenarioSet
 
+
+ALIAS = HYPERNYM
 
 class NoAliasDumper(yaml.Dumper):
     def ignore_aliases(self, data):
@@ -97,11 +100,21 @@ def print_clue_details(pos_terms, neg_terms, clue, clue_score, clue_count, clue_
             print(neg_term, clue_reasons[neg_term]["type"], clue_reasons[neg_term]["reason"])
 
 
-def main():
-    with open(TRAIN_TRIPLETS_PATH, "r") as in_file:
-        evaluation_triplets = ScenarioSet.from_yaml_obj(yaml.safe_load(in_file))
+def get_scenarios_dict():
+    all_scenarios = {}
+    for file in os.listdir(TRIPLETS_PATH):
+        path = os.path.join(TRIPLETS_PATH, file)
+        with open(path, 'r') as f:
+            triplets = ScenarioSet.from_yaml_obj(yaml.safe_load(f))
+            for triplet in triplets.scenarios:
+                all_scenarios[triplet.id] = (triplet, triplets, path)
+    return all_scenarios
 
-    clue_generator = ClueGenerator(HYPERNYM_SCORES_PATH)
+
+def create_report(is_train, scenarios_dict, clue_generator):
+    print("Create report", is_train)
+    triplet_ids_path = TRAIN_TRIPLETS_PATH if is_train else TEST_TRIPLETS_PATH
+    scenario_ids = list(open(triplet_ids_path, "r").read().splitlines())
 
     report = {
         "correct_scenarios": [],
@@ -109,9 +122,11 @@ def main():
         "incorrect_scenarios": []
     }
     correct = skipped = incorrect = 0
-    total = len(evaluation_triplets.scenarios)
+    total = len(scenario_ids)
     i = 0
-    for triplet in evaluation_triplets.scenarios:
+
+    for scenario_id in scenario_ids:
+        triplet, scenario_set, path = scenarios_dict[scenario_id]
         i += 1
         print("\n\n")
         print(f"--- Scenario {i} / {total} ---")
@@ -128,9 +143,9 @@ def main():
             incorrect += 1
             report["incorrect_scenarios"].append(scenario_report)
 
-        with open(TRAIN_TRIPLETS_PATH, "w") as out_file:
+        with open(path, "w") as out_file:
             yaml.dump(
-                evaluation_triplets.to_yaml_obj(), out_file, default_flow_style=None, sort_keys=False
+                scenario_set.to_yaml_obj(), out_file, default_flow_style=None, sort_keys=False
             )
 
     score = correct * 2 + skipped
@@ -141,10 +156,19 @@ def main():
     report["correct"] = correct
     report["skipped"] = skipped
     report["incorrect"] = incorrect
-    with open(HYPERNYM_EVAL_REPORT_PATH, "w") as out_file:
+
+    eval_path = GET_TRAIN_EVAL_REPORT_PATH(ALIAS) if is_train else GET_TEST_EVAL_REPORT_PATH(ALIAS)
+    with open(eval_path, "w") as out_file:
         yaml.dump(
             report, out_file, default_flow_style=None, sort_keys=False, Dumper=NoAliasDumper
         )
+
+
+def main():
+    scenarios_dict = get_scenarios_dict()
+    clue_generator = ClueGenerator(GET_SCORES_PATH(ALIAS))
+    create_report(True, scenarios_dict, clue_generator)
+    create_report(False, scenarios_dict, clue_generator)
 
 
 if __name__ == "__main__":
