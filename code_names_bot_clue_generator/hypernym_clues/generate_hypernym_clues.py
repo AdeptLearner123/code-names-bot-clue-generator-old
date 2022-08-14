@@ -71,11 +71,8 @@ def get_synset_words(hypernym_synsets):
     result_words = dict()
     for hypernym in hypernym_synsets:
         depth, path = hypernym_synsets[hypernym]
-
-        words = map(lambda lemma: lemma.name(), hypernym.lemmas())
-        for lemma in words:
-            if lemma not in result_words or result_words[lemma][0] > depth:
-                result_words[lemma] = (depth, path)
+        word = hypernym.name().split(".")[0]
+        result_words[word] = (depth, path)
     return result_words
 
 

@@ -206,7 +206,7 @@
 - id: 1f67ae02-e6f4-4eae-a45c-fd59d245b549
   positive: [DWARF, ANGEL]
   negative: [LINK, WATCH, LEMON, MODEL, TOOTH, FORK]
-  clues: [MYTHICAL, BEING]
+  clues: [MYTHICAL, BEING, ORGANISM]
   nonclues: []
 - id: 4190cc49-c844-47d7-9514-72be7eb89464
   positive: [CARROT, OCTOPUS]
@@ -297,7 +297,7 @@
   positive: [BILL, DRAFT]
   negative: [LION, NURSE, IVORY, AFRICA, DRAGON, SHARK]
   clues: [LEGISLATION]
-  nonclues: [ARTEFACT]
+  nonclues: [ARTEFACT, ARTIFACT]
 - id: 04c697b2-c7cf-4b35-8853-c0c7bad282d1
   positive: [MINT, HAM]
   negative: [POST, PLANE, CLIFF, LAP, PISTOL, FLY]
@@ -421,7 +421,7 @@
 - id: 6ca73e34-c816-4688-80d5-337b57bc5349
   positive: [UNDERTAKER, TEACHER]
   negative: [POLE, DISEASE, IVORY, MOUNT, PRESS, PIT]
-  clues: [OCCUPATION, BEING]
+  clues: [OCCUPATION, BEING, ORGANISM]
   nonclues: []
 - id: b252ed06-0bbd-4ca2-bcb4-739849b4ee68
   positive: [CRICKET, DUCK]
@@ -477,7 +477,7 @@
   positive: [CHICK, DATE]
   negative: [SUB, PIE, HORN, VAN, NUT, LUCK]
   clues: [GIRLFRIEND]
-  nonclues: [BEING]
+  nonclues: [BEING, ORGANISM]
 - id: 3f481c58-23bf-4702-96a9-7d454a619334
   positive: [PLATYPUS, CENTAUR]
   negative: [THUMB, ARM, SWITCH, SERVER, TRIANGLE, ROCK]
@@ -757,7 +757,7 @@
   positive: [SOCK, CLOAK]
   negative: [AFRICA, DOG, MATCH, DINOSAUR, VACUUM, SOUND]
   clues: [CLOTHING]
-  nonclues: [ARTEFACT]
+  nonclues: [ARTEFACT, ARTIFACT]
 - id: cf557a5f-dab2-4097-ac92-b65ac8dbc47b
   positive: [PIANO, BARK]
   negative: [HORSESHOE, SUB, FIGHTER, CLIFF, DINOSAUR, SINK]
@@ -877,7 +877,7 @@
   positive: [MUG, SHOT]
   negative: [LIMOUSINE, PLAY, FORCE, SHIP, MERCURY, DICE]
   clues: [PHOTO]
-  nonclues: [BEING]
+  nonclues: [BEING, ORGANISM]
 - id: 91e77166-8cbc-415e-a3f7-e54e63cfe25b
   positive: [MODEL, SPY]
   negative: [TRIP, SQUARE, POUND, MOLE, PLATE, TRUNK]

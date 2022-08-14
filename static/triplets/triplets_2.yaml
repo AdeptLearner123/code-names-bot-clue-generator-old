@@ -17,7 +17,7 @@
   positive: [QUEEN, AZTEC]
   negative: [SHAKESPEARE, GAME, NEEDLE, CAPITAL, RING, SNOWMAN]
   clues: [MONARCH]
-  nonclues: [TIME, INDIVIDUAL]
+  nonclues: [TIME, INDIVIDUAL, PERSON]
 - id: 55f574a9-42eb-40e9-b327-a2bf8fdb9109
   positive: [BATTERY, FILE]
   negative: [LEPRECHAUN, SPIKE, POINT, SUIT, PAN, WAVE]
@@ -46,7 +46,7 @@
 - id: abea4b07-98df-4f0a-aa66-1cdb2dba42dd
   positive: [RABBIT, NINJA]
   negative: [ALPS, TABLET, HEAD, FLY, CARROT, COLD]
-  clues: [MAMMAL, BEING]
+  clues: [MAMMAL, BEING, ORGANISM]
   nonclues: [APACHE]
 - id: 3ed44a63-3edb-478a-b432-3e2ef3493c99
   positive: [WELL, AMERICA]
@@ -326,7 +326,7 @@
 - id: a596782c-ee73-49b3-bfd2-fa60b55cc1a2
   positive: [LION, WHALE]
   negative: [MARCH, CHINA, KEY, SPINE, PLANE, DAY]
-  clues: [MAMMAL]
+  clues: [MAMMAL, ORGANISM]
   nonclues: [BEING]
 - id: 0aa64450-b873-4c7e-924a-5a0cc82e27b4
   positive: [TRUNK, GAS]
@@ -531,7 +531,7 @@
 - id: 68af6af1-1b50-42dd-80e0-916db4e7e7bf
   positive: [DWARF, GHOST]
   negative: [CHOCOLATE, REVOLUTION, NEW YORK, SQUARE, CELL, BACK]
-  clues: [FICTION, BEING]
+  clues: [FICTION, BEING, ORGANISM]
   nonclues: []
 - id: 1b741f91-a224-4e27-a6fe-065e484f002a
   positive: [SATURN, HIMALAYAS]
@@ -602,7 +602,7 @@
   positive: [RING, THUMB]
   negative: [WEB, PARK, AIR, CRASH, PITCH, MEXICO]
   clues: [FINGER]
-  nonclues: [DECORATION, GO, ARTEFACT]
+  nonclues: [DECORATION, GO, ARTEFACT, ARTIFACT]
 - id: 6cbee116-c923-4270-b49a-7f39010cd347
   positive: [PILOT, SOLDIER]
   negative: [POINT, COOK, PARACHUTE, CANADA, HOTEL, KETCHUP]
@@ -641,7 +641,7 @@
 - id: f0c21477-62c6-4ec4-a94f-de1712b57369
   positive: [SLUG, BUFFALO]
   negative: [JAM, POLE, BLOCK, DRESS, WALL, TAIL]
-  clues: [ANIMAL, BEING]
+  clues: [ANIMAL, BEING, ORGANISM]
   nonclues: [LIZARD, FOOD]
 - id: 04b6b4ca-c929-4b8d-8a45-ef4835577d8a
   positive: [MILLIONAIRE, BILL]

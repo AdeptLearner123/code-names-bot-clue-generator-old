@@ -2,7 +2,7 @@ correct_scenarios:
 - id: 1f67ae02-e6f4-4eae-a45c-fd59d245b549
   pos: [DWARF, ANGEL]
   neg: [LINK, WATCH, LEMON, MODEL, TOOTH, FORK]
-  clue: BEING
+  clue: ORGANISM
   score: 2.0
   count: 2
   terms: [DWARF, ANGEL]
@@ -13,7 +13,7 @@ correct_scenarios:
 - id: f0c21477-62c6-4ec4-a94f-de1712b57369
   pos: [SLUG, BUFFALO]
   neg: [JAM, POLE, BLOCK, DRESS, WALL, TAIL]
-  clue: BEING
+  clue: ORGANISM
   score: 2.0
   count: 2
   terms: [SLUG, BUFFALO]
@@ -35,7 +35,7 @@ correct_scenarios:
 - id: 6ca73e34-c816-4688-80d5-337b57bc5349
   pos: [UNDERTAKER, TEACHER]
   neg: [POLE, DISEASE, IVORY, MOUNT, PRESS, PIT]
-  clue: BEING
+  clue: ORGANISM
   score: 2.0
   count: 2
   terms: [UNDERTAKER, TEACHER]
@@ -90,12 +90,12 @@ skipped_scenarios:
 - id: 11e69c68-bc89-4156-91a7-cc5e865473cd
   pos: [ARM, FACE]
   neg: [BUTTON, TURKEY, ALPS, NOVEL, BAR, GRACE]
-  clue: BRANCH
+  clue: PROJECTION
   score: 1.0
   count: 1
   terms: [ARM]
   reasons:
-    ARM: {type: HYPERNYM, reason: arm.n.02}
+    ARM: {type: HYPERNYM, reason: arm.n.02->projection.n.04}
   result: SKIPPED
 - id: 5cced625-bfa2-4d04-9cba-de09949e8dca
   pos: [LINE, TRIANGLE]
@@ -110,22 +110,22 @@ skipped_scenarios:
 - id: 717a4bf9-77d0-4b72-89c3-a376b4648dcc
   pos: [COMIC, JACK]
   neg: [BALL, FENCE, POINT, WAVE, JAM, BLOCK]
-  clue: BEING
+  clue: COMEDIAN
   score: 1.0
   count: 1
   terms: [COMIC]
   reasons:
-    COMIC: {type: HYPERNYM, reason: comedian.n.01->performer.n.01->entertainer.n.01->person.n.01->organism.n.01}
+    COMIC: {type: HYPERNYM, reason: comedian.n.01}
   result: SKIPPED
 - id: 1a633915-2b5e-4302-9cd6-04bc0ad550ca
   pos: [WITCH, ROBOT]
   neg: [LIGHT, HOTEL, SWING, FIGURE, EGYPT, MOSCOW]
-  clue: BEING
+  clue: ENCHANTRESS
   score: 1.0
   count: 1
   terms: [WITCH]
   reasons:
-    WITCH: {type: HYPERNYM, reason: enchantress.n.02->occultist.n.01->person.n.01->organism.n.01}
+    WITCH: {type: HYPERNYM, reason: enchantress.n.02}
   result: SKIPPED
 - id: a3ee8e58-729f-465d-ab0a-09c6c4d7713c
   pos: [ALIEN, PLANE]
@@ -140,17 +140,17 @@ skipped_scenarios:
 - id: b90d2d77-00b1-4ef2-beb7-8ca4e58f130f
   pos: [TABLE, NOTE]
   neg: [MAMMOTH, COVER, MICROSCOPE, PUMPKIN, WAKE, PART]
-  clue: ELEVATION
+  clue: HIGHLAND
   score: 1.0
   count: 1
   terms: [TABLE]
   reasons:
-    TABLE: {type: HYPERNYM, reason: mesa.n.01->tableland.n.01->highland.n.01->natural_elevation.n.01}
+    TABLE: {type: HYPERNYM, reason: mesa.n.01->tableland.n.01->highland.n.01}
   result: SKIPPED
 - id: 78d47a57-ea64-4f95-9a60-1df71a1835ab
   pos: [PILOT, GERMANY]
   neg: [SATURN, BRIDGE, NOVEL, SKYSCRAPER, LOCH NESS, ROCK]
-  clue: BUFFER
+  clue: FENDER
   score: 1.0
   count: 1
   terms: [PILOT]
@@ -170,17 +170,17 @@ skipped_scenarios:
 - id: c8993277-71f3-4e5e-a4fc-bb8aa4ae2d39
   pos: [PLOT, SCREEN]
   neg: [JET, SPOT, OLYMPUS, LINE, FAIR, WASHINGTON]
-  clue: PARCEL
+  clue: REGION
   score: 1.0
   count: 1
   terms: [PLOT]
   reasons:
-    PLOT: {type: HYPERNYM, reason: plot.n.02->tract.n.01}
+    PLOT: {type: HYPERNYM, reason: plot.n.02->tract.n.01->geographical_area.n.01->region.n.03}
   result: SKIPPED
 - id: cfbf7872-b4cd-4623-aac4-f04cb27cebb9
   pos: [OIL, DRILL]
   neg: [STAFF, COMPOUND, COMIC, POLE, CAP, EAGLE]
-  clue: COAT
+  clue: COATING
   score: 1.0
   count: 1
   terms: [OIL]
@@ -210,7 +210,7 @@ skipped_scenarios:
 - id: 5a3db029-3f50-40c2-a463-8b32caead2ce
   pos: [GLASS, PLASTIC]
   neg: [HAM, BED, PART, HEAD, VACUUM, LOCH NESS]
-  clue: ARTEFACT
+  clue: ARTIFACT
   score: 1.0
   count: 1
   terms: [GLASS]
@@ -250,7 +250,7 @@ skipped_scenarios:
 - id: 3a33e26d-c3b6-40d7-8f29-409ff90e6bc5
   pos: [MAPLE, CHOCOLATE]
   neg: [BOX, CAPITAL, CELL, FOREST, EUROPE, MINT]
-  clue: BEING
+  clue: ORGANISM
   score: 1.0
   count: 1
   terms: [MAPLE]
@@ -290,12 +290,12 @@ skipped_scenarios:
 - id: 0aa64450-b873-4c7e-924a-5a0cc82e27b4
   pos: [TRUNK, GAS]
   neg: [FORK, BERMUDA, CHEST, CENTAUR, CRICKET, MARCH]
-  clue: BOLE
+  clue: STALK
   score: 1.0
   count: 1
   terms: [TRUNK]
   reasons:
-    TRUNK: {type: HYPERNYM, reason: trunk.n.01}
+    TRUNK: {type: HYPERNYM, reason: trunk.n.01->stalk.n.02}
   result: SKIPPED
 - id: 756a29a5-5fe4-4baf-8312-be2da5d07723
   pos: [LITTER, STRAW]
@@ -320,12 +320,12 @@ skipped_scenarios:
 - id: b5db62bf-7261-4db0-bce3-f2f57c2bfe71
   pos: [PUPIL, SCUBA DIVER]
   neg: [PLANE, MICROSCOPE, SWITCH, LIFE, BERLIN, WHALE]
-  clue: EDUCATEE
+  clue: ENROLLEE
   score: 1.0
   count: 1
   terms: [PUPIL]
   reasons:
-    PUPIL: {type: HYPERNYM, reason: student.n.01}
+    PUPIL: {type: HYPERNYM, reason: student.n.01->enrollee.n.01}
   result: SKIPPED
 - id: aed812e5-34c7-4aaa-8ed4-d57ff96159ec
   pos: [LAWYER, NEW YORK]
@@ -340,12 +340,12 @@ skipped_scenarios:
 - id: 52a3643d-b5a0-4568-a0da-2bbe4a6cdf55
   pos: [NAIL, ENGINE]
   neg: [SNOW, OIL, WIND, TAG, DANCE, CONCERT]
-  clue: CONSTRAINT
+  clue: FASTENER
   score: 1.0
   count: 1
   terms: [NAIL]
   reasons:
-    NAIL: {type: HYPERNYM, reason: nail.n.02->fastener.n.02->restraint.n.06}
+    NAIL: {type: HYPERNYM, reason: nail.n.02->fastener.n.02}
   result: SKIPPED
 - id: 13886a1d-5b89-465f-bf41-e8d2b8a9dd56
   pos: [STOCK, BOND]
@@ -360,12 +360,12 @@ skipped_scenarios:
 - id: 236e5ba5-2aee-4a24-a5d7-677bccf29cad
   pos: [BOMB, POISON]
   neg: [YARD, BUG, ROW, DWARF, PART, CLIFF]
-  clue: ARMS
+  clue: INSTRUMENTALITY
   score: 1.0
   count: 1
   terms: [BOMB]
   reasons:
-    BOMB: {type: HYPERNYM, reason: bomb.n.01->weaponry.n.01}
+    BOMB: {type: HYPERNYM, reason: bomb.n.01->weaponry.n.01->instrumentality.n.03}
   result: SKIPPED
 - id: d23afcb3-205b-416a-a7e3-1f8397a5ca11
   pos: [GIANT, MARBLE]
@@ -390,12 +390,11 @@ skipped_scenarios:
 - id: 0e906bad-d5ae-4e5f-952e-50f404213457
   pos: [DRAGON, SPELL]
   neg: [BARK, HAM, ROBOT, TRACK, DWARF, EYE]
-  clue: TARTAR
-  score: 1.0
-  count: 1
-  terms: [DRAGON]
-  reasons:
-    DRAGON: {type: HYPERNYM, reason: dragon.n.02}
+  clue: null
+  score: null
+  count: null
+  terms: null
+  reasons: null
   result: SKIPPED
 - id: c3154240-9dcb-44fe-a944-98d00206ec0b
   pos: [PLANE, VAN]
@@ -410,17 +409,17 @@ skipped_scenarios:
 - id: ee646584-f6d3-4fc3-9350-c69fc0ec7e07
   pos: [PIT, WELL]
   neg: [AUSTRALIA, HORN, AFRICA, HEART, BANK, BRUSH]
-  clue: CAVITY
+  clue: HOLE
   score: 1.0
   count: 1
   terms: [PIT]
   reasons:
-    PIT: {type: HYPERNYM, reason: pit.n.01}
+    PIT: {type: HYPERNYM, reason: pit.n.01->hole.n.05}
   result: SKIPPED
 - id: 26d9c8c7-d110-477f-9d06-1dc651a9e850
   pos: [AMBULANCE, CROSS]
   neg: [PYRAMID, POUND, GLASS, CRASH, ICE, EUROPE]
-  clue: AUTO
+  clue: CAR
   score: 1.0
   count: 1
   terms: [AMBULANCE]
@@ -458,7 +457,7 @@ skipped_scenarios:
 - id: 76f24848-9cc6-4797-bb4c-da1e1473f216
   pos: [PLATE, PIE]
   neg: [TIE, MAMMOTH, COMIC, SHOP, MOUSE, SLUG]
-  clue: ARTEFACT
+  clue: ARTIFACT
   score: 1.0
   count: 1
   terms: [PLATE]
@@ -487,7 +486,7 @@ skipped_scenarios:
 - id: 4ac9c928-2d77-461b-9ae1-24d90139bfa2
   pos: [DATE, MARCH]
   neg: [PRESS, SWING, ROOT, STRING, MISSILE, FIRE]
-  clue: ASSOCIATE
+  clue: COMPANION
   score: 1.0
   count: 1
   terms: [DATE]
@@ -497,12 +496,12 @@ skipped_scenarios:
 - id: 20d999a5-9dc5-4426-ab68-1e567e0e29cf
   pos: [GHOST, SOUL]
   neg: [ALIEN, EMBASSY, PART, TRAIN, POLICE, TIE]
-  clue: AUTHOR
+  clue: COMMUNICATOR
   score: 1.0
   count: 1
   terms: [GHOST]
   reasons:
-    GHOST: {type: HYPERNYM, reason: ghostwriter.n.01->writer.n.01}
+    GHOST: {type: HYPERNYM, reason: ghostwriter.n.01->writer.n.01->communicator.n.01}
   result: SKIPPED
 - id: d0a551d1-2a8e-4360-84df-b2aaee71f77c
   pos: [STICK, TORCH]
@@ -517,17 +516,17 @@ skipped_scenarios:
 - id: a50050ce-ab38-4b78-a8d3-48d3e7d3bb95
   pos: [TICK, BAND]
   neg: [LEPRECHAUN, SQUARE, FILM, MAMMOTH, BOOT, CODE]
-  clue: CUSHIONING
+  clue: MATTRESS
   score: 1.0
   count: 1
   terms: [TICK]
   reasons:
-    TICK: {type: HYPERNYM, reason: tick.n.04->mattress.n.01->pad.n.04->padding.n.01}
+    TICK: {type: HYPERNYM, reason: tick.n.04->mattress.n.01}
   result: SKIPPED
 - id: fbf3fdf7-8d69-4bb4-814f-93b0fdef4c5c
   pos: [SOLDIER, SUPERHERO]
   neg: [CARD, LION, PLATE, SPINE, DROP, PIN]
-  clue: MAN
+  clue: SERVICEMAN
   score: 1.0
   count: 1
   terms: [SOLDIER]
@@ -537,12 +536,12 @@ skipped_scenarios:
 - id: 8f1ce022-5a01-44ab-8890-5aeed0e7e1fa
   pos: [MOUSE, WATCH]
   neg: [KIWI, CIRCLE, PENGUIN, CHEST, EYE, PLANE]
-  clue: HOROLOGE
+  clue: INSTRUMENT
   score: 1.0
   count: 1
   terms: [WATCH]
   reasons:
-    WATCH: {type: HYPERNYM, reason: watch.n.01->timepiece.n.01}
+    WATCH: {type: HYPERNYM, reason: watch.n.01->timepiece.n.01->measuring_instrument.n.01->instrument.n.01}
   result: SKIPPED
 - id: 78b2ed9f-a13a-4d14-8b72-fc1798b51e87
   pos: [LASER, LIGHT]
@@ -587,7 +586,7 @@ skipped_scenarios:
 - id: 7d460faf-880d-48a6-b1c9-b76825ae4516
   pos: [AGENT, NIGHT]
   neg: [PLAY, CHOCOLATE, NUT, WITCH, BEACH, SCORPION]
-  clue: BOURGEOIS
+  clue: BUSINESSPERSON
   score: 1.0
   count: 1
   terms: [AGENT]
@@ -597,12 +596,12 @@ skipped_scenarios:
 - id: 67d4b454-ac4c-459c-b574-04c6abfd97b2
   pos: [BANK, SCHOOL]
   neg: [CENTER, GIANT, KIWI, PIPE, NUT, STRAW]
-  clue: FORMATION
+  clue: SLOPE
   score: 1.0
   count: 1
   terms: [BANK]
   reasons:
-    BANK: {type: HYPERNYM, reason: bank.n.01->slope.n.01->geological_formation.n.01}
+    BANK: {type: HYPERNYM, reason: bank.n.01->slope.n.01}
   result: SKIPPED
 - id: 1e48e312-3cda-4d83-9213-ea77348dd44c
   pos: [IVORY, CALF]
@@ -647,12 +646,12 @@ skipped_scenarios:
 - id: c7889250-d965-4879-b114-0fbe7eb5c0d6
   pos: [CONDUCTOR, FIELD]
   neg: [BLOCK, DEGREE, BACK, PASTE, BED, KNIFE]
-  clue: CHAMPAIGN
+  clue: LAND
   score: 1.0
   count: 1
   terms: [FIELD]
   reasons:
-    FIELD: {type: HYPERNYM, reason: plain.n.01}
+    FIELD: {type: HYPERNYM, reason: plain.n.01->land.n.04}
   result: SKIPPED
 - id: ee6b899f-7db2-482e-933f-532c4ca1d48d
   pos: [ATLANTIS, MAMMOTH]
@@ -677,17 +676,17 @@ skipped_scenarios:
 - id: 78a1ddc0-1638-4b66-9fbf-0025d7b8d341
   pos: [JET, AIR]
   neg: [DRAGON, TEMPLE, POST, STAFF, FRANCE, WATCH]
-  clue: AEROPLANE
+  clue: AIRCRAFT
   score: 1.0
   count: 1
   terms: [JET]
   reasons:
-    JET: {type: HYPERNYM, reason: jet.n.01->airplane.n.01}
+    JET: {type: HYPERNYM, reason: jet.n.01->airplane.n.01->heavier-than-air_craft.n.01->aircraft.n.01}
   result: SKIPPED
 - id: e112dcd7-8521-4984-9d2f-843d32a0859d
   pos: [AMBULANCE, POLICE]
   neg: [CLIFF, CELL, BUG, SLUG, GHOST, LAB]
-  clue: ARTEFACT
+  clue: ARTIFACT
   score: 1.0
   count: 1
   terms: [AMBULANCE]
@@ -707,7 +706,7 @@ skipped_scenarios:
 - id: 6bf96a82-b116-4314-8c21-1ae13a6aca8f
   pos: [BERLIN, STATE]
   neg: [JUPITER, SPACE, FOREST, PHOENIX, MOLE, GHOST]
-  clue: AUTO
+  clue: CAR
   score: 1.0
   count: 1
   terms: [BERLIN]
@@ -757,12 +756,12 @@ skipped_scenarios:
 - id: b0cfc3ab-979f-4e62-8d38-63fa566f4129
   pos: [BANK, CARD]
   neg: [GAME, WALL, BUFFALO, BERRY, GOLD, FOOT]
-  clue: FORMATION
+  clue: SLOPE
   score: 1.0
   count: 1
   terms: [BANK]
   reasons:
-    BANK: {type: HYPERNYM, reason: bank.n.01->slope.n.01->geological_formation.n.01}
+    BANK: {type: HYPERNYM, reason: bank.n.01->slope.n.01}
   result: SKIPPED
 - id: edc3ac52-9e7c-4e87-bfc7-468ad9c61b30
   pos: [CAR, CIRCLE]
@@ -836,17 +835,17 @@ skipped_scenarios:
 - id: 04c697b2-c7cf-4b35-8853-c0c7bad282d1
   pos: [MINT, HAM]
   neg: [POST, PLANE, CLIFF, LAP, PISTOL, FLY]
-  clue: COMPLEX
+  clue: PLANT
   score: 1.0
   count: 1
   terms: [MINT]
   reasons:
-    MINT: {type: HYPERNYM, reason: mint.n.06->plant.n.01->building_complex.n.01}
+    MINT: {type: HYPERNYM, reason: mint.n.06->plant.n.01}
   result: SKIPPED
 - id: b933d451-56f0-4392-895e-d8098a29a49f
   pos: [FOREST, ROOT]
   neg: [TRAIN, FIGURE, PARACHUTE, LIFE, SUPERHERO, BALL]
-  clue: EARTH
+  clue: LAND
   score: 1.0
   count: 1
   terms: [FOREST]
@@ -914,12 +913,12 @@ skipped_scenarios:
 - id: 8d3fa552-1ace-4154-8f55-e9577cd636cc
   pos: [CZECH, POLE]
   neg: [KNIGHT, ROOT, OCTOPUS, LAP, HOTEL, PIPE]
-  clue: DENIZEN
+  clue: EUROPEAN
   score: 1.0
   count: 1
   terms: [CZECH]
   reasons:
-    CZECH: {type: HYPERNYM, reason: czech.n.01->european.n.01->inhabitant.n.01}
+    CZECH: {type: HYPERNYM, reason: czech.n.01->european.n.01}
   result: SKIPPED
 - id: 4fa6abc1-5d0a-4e07-9d23-b80e52991c8d
   pos: [OPERA, CAST]
@@ -934,12 +933,12 @@ skipped_scenarios:
 - id: 81860b61-6ddf-47a2-903b-c8c058367ce7
   pos: [BEACH, PIRATE]
   neg: [DISEASE, SKYSCRAPER, BRIDGE, TOKYO, MOSCOW, SNOW]
-  clue: FORMATION
+  clue: CONVEYANCE
   score: 1.0
   count: 1
-  terms: [BEACH]
+  terms: [PIRATE]
   reasons:
-    BEACH: {type: HYPERNYM, reason: beach.n.01->geological_formation.n.01}
+    PIRATE: {type: HYPERNYM, reason: pirate.n.03->ship.n.01->vessel.n.02->craft.n.02->vehicle.n.01->conveyance.n.03}
   result: SKIPPED
 - id: 8fb0c377-1c1b-4e6b-a48e-0b53edeaa531
   pos: [HOOK, SHIP]
@@ -963,7 +962,7 @@ skipped_scenarios:
 - id: 14287cd3-3dc0-4eed-bbe6-b09b2f4e9755
   pos: [INDIA, BUG]
   neg: [STRAW, CHURCH, LASER, MERCURY, GHOST, HELICOPTER]
-  clue: GERM
+  clue: MICROBE
   score: 1.0
   count: 1
   terms: [BUG]
@@ -973,7 +972,7 @@ skipped_scenarios:
 - id: 0a6da844-ac8b-4e79-8242-5bedd5d7ef8c
   pos: [SOUL, BEAT]
   neg: [HOSPITAL, BOLT, SUPERHERO, DISEASE, LINK, HOTEL]
-  clue: BEING
+  clue: ORGANISM
   score: 1.0
   count: 1
   terms: [SOUL]
@@ -993,12 +992,12 @@ skipped_scenarios:
 - id: b3109ec9-139c-4a9c-9495-40e8dd4ce819
   pos: [SATURN, VACUUM]
   neg: [BOOT, COPPER, CRANE, BOARD, LONDON, FENCE]
-  clue: EMPTINESS
+  clue: LOCATION
   score: 1.0
   count: 1
   terms: [VACUUM]
   reasons:
-    VACUUM: {type: HYPERNYM, reason: void.n.02}
+    VACUUM: {type: HYPERNYM, reason: void.n.02->space.n.02->location.n.01}
   result: SKIPPED
 - id: 00a23f5d-8b0c-476d-9b42-ccd51da0cf46
   pos: [SPIKE, DROP]
@@ -1032,7 +1031,7 @@ skipped_scenarios:
 - id: 187abb87-9e4f-4346-bcc0-2dc7cf72632c
   pos: [BOMB, WAVE]
   neg: [CHAIR, LUCK, DROP, ROCK, SCUBA DIVER, CLIFF]
-  clue: ARMS
+  clue: WEAPONRY
   score: 1.0
   count: 1
   terms: [BOMB]
@@ -1102,7 +1101,7 @@ skipped_scenarios:
 - id: 250374b9-2bb7-4d36-9170-9e1db3aa34a5
   pos: [LOCK, AGENT]
   neg: [ROUND, BERLIN, BED, TRIANGLE, WATER, UNDERTAKER]
-  clue: COVER
+  clue: COVERING
   score: 1.0
   count: 1
   terms: [LOCK]
@@ -1122,12 +1121,11 @@ skipped_scenarios:
 - id: e3e8fe47-6c9d-499b-b66f-ea7d50c12e1f
   pos: [POISON, BED]
   neg: [MOUSE, LEPRECHAUN, CHOCOLATE, HORSESHOE, CELL, ARM]
-  clue: BOTTOM
-  score: 1.0
-  count: 1
-  terms: [BED]
-  reasons:
-    BED: {type: HYPERNYM, reason: bed.n.03}
+  clue: null
+  score: null
+  count: null
+  terms: null
+  reasons: null
   result: SKIPPED
 - id: 837d5475-987c-4a7c-9d98-e4ba75eb0cc1
   pos: [ROBIN, NOVEL]
@@ -1142,17 +1140,17 @@ skipped_scenarios:
 - id: 0416540f-051d-463e-a892-671d6f577b66
   pos: [PIT, HOLE]
   neg: [CROSS, CHARGE, STAR, CROWN, CODE, AZTEC]
-  clue: CAVITY
+  clue: SPACE
   score: 1.0
   count: 1
-  terms: [PIT]
+  terms: [HOLE]
   reasons:
-    PIT: {type: HYPERNYM, reason: pit.n.01}
+    HOLE: {type: HYPERNYM, reason: hole.n.04->space.n.02}
   result: SKIPPED
 - id: 9955eb08-fe99-4710-9417-64507d1af7aa
   pos: [PUMPKIN, MOON]
   neg: [WALL, DOG, KID, WATER, TEMPLE, BOARD]
-  clue: FLORA
+  clue: PLANT
   score: 1.0
   count: 1
   terms: [PUMPKIN]
@@ -1181,22 +1179,21 @@ skipped_scenarios:
 - id: 399da5c2-85e9-4e60-a6ba-c96728113e2c
   pos: [MOUNT, TEMPLE]
   neg: [SATURN, SERVER, THEATER, FACE, CAP, OLIVE]
-  clue: ELEVATION
+  clue: MOUNTAIN
   score: 1.0
   count: 1
   terms: [MOUNT]
   reasons:
-    MOUNT: {type: HYPERNYM, reason: mountain.n.01->natural_elevation.n.01}
+    MOUNT: {type: HYPERNYM, reason: mountain.n.01}
   result: SKIPPED
 - id: 32c0c962-1855-4abe-b718-8d2b03d24e9d
   pos: [CLIFF, OLYMPUS]
   neg: [HOLE, GHOST, KANGAROO, PISTOL, KNIGHT, FENCE]
-  clue: DROP
-  score: 1.0
-  count: 1
-  terms: [CLIFF]
-  reasons:
-    CLIFF: {type: HYPERNYM, reason: cliff.n.01}
+  clue: null
+  score: null
+  count: null
+  terms: null
+  reasons: null
   result: SKIPPED
 - id: d4f67ca7-a291-489a-b88c-6d2dc248148d
   pos: [NINJA, STREAM]
@@ -1221,12 +1218,12 @@ skipped_scenarios:
 - id: d96b7a27-8042-41c5-981b-1ff438898056
   pos: [SWITCH, CONDUCTOR]
   neg: [PARACHUTE, POINT, TRAIN, KANGAROO, NIGHT, PLANE]
-  clue: RAILROAD
+  clue: TRACK
   score: 1.0
   count: 1
   terms: [SWITCH]
   reasons:
-    SWITCH: {type: HYPERNYM, reason: switch.n.04->railroad_track.n.01}
+    SWITCH: {type: HYPERNYM, reason: switch.n.04->railroad_track.n.01->track.n.03}
   result: SKIPPED
 - id: 3f429e5c-90be-409d-9475-759287140338
   pos: [FAIR, POLICE]
@@ -1298,7 +1295,7 @@ skipped_scenarios:
 - id: 3c4da337-cc78-4be1-a76d-314c93a3c87f
   pos: [WEB, MATCH]
   neg: [IRON, GLASS, BATTERY, SNOW, BARK, TABLE]
-  clue: BEING
+  clue: ORGANISM
   score: 1.0
   count: 1
   terms: [MATCH]
@@ -1338,32 +1335,32 @@ skipped_scenarios:
 - id: 713b41fb-8660-490d-9d42-fb6383752970
   pos: [KNIFE, FORK]
   neg: [PIT, SCORPION, DAY, TAIL, FILM, SCHOOL]
-  clue: ARM
+  clue: DEVICE
   score: 1.0
   count: 1
   terms: [KNIFE]
   reasons:
-    KNIFE: {type: HYPERNYM, reason: knife.n.02->weapon.n.01}
+    KNIFE: {type: HYPERNYM, reason: knife.n.02->weapon.n.01->instrument.n.01->device.n.01}
   result: SKIPPED
 - id: a13ef486-b586-4c13-9ed4-6e6d9b5d4985
   pos: [MEXICO, CAPITAL]
   neg: [TOKYO, CONTRACT, YARD, JUPITER, KID, PUMPKIN]
-  clue: CAP
+  clue: TOP
   score: 1.0
   count: 1
   terms: [CAPITAL]
   reasons:
-    CAPITAL: {type: HYPERNYM, reason: capital.n.08}
+    CAPITAL: {type: HYPERNYM, reason: capital.n.08->top.n.01}
   result: SKIPPED
 - id: daf0122d-c095-470b-b2b4-f26d3bc45fb2
   pos: [CHARGE, STOCK]
   neg: [TIE, TOOTH, HAND, SCIENTIST, STADIUM, LOG]
-  clue: BEARING
+  clue: DECORATION
   score: 1.0
   count: 1
   terms: [CHARGE]
   reasons:
-    CHARGE: {type: HYPERNYM, reason: charge.n.14}
+    CHARGE: {type: HYPERNYM, reason: charge.n.14->heraldry.n.02->emblem.n.01->design.n.04->decoration.n.01}
   result: SKIPPED
 - id: cd1b13f0-def8-4cd8-aa2d-dd65f016358e
   pos: [POUND, BUTTON]
@@ -1388,12 +1385,12 @@ skipped_scenarios:
 - id: 6b5a0fb2-ee6e-4226-94dc-89864675d6aa
   pos: [SPINE, BUFFALO]
   neg: [SUB, AZTEC, SWING, CHEST, PRINCESS, PIN]
-  clue: BACKBONE
+  clue: PART
   score: 1.0
   count: 1
   terms: [SPINE]
   reasons:
-    SPINE: {type: HYPERNYM, reason: spine.n.04}
+    SPINE: {type: HYPERNYM, reason: spine.n.04->part.n.02}
   result: SKIPPED
 - id: e29ecb68-8bf3-4c1c-875e-f1b904666129
   pos: [PYRAMID, EGYPT]
@@ -1447,12 +1444,12 @@ skipped_scenarios:
 - id: 1acbc5a2-a355-44f2-94e4-54503ca5999f
   pos: [DIAMOND, STRIKE]
   neg: [COLD, KANGAROO, CONTRACT, BAND, CYCLE, TIME]
-  clue: INFIELD
+  clue: LOCATION
   score: 1.0
   count: 1
   terms: [DIAMOND]
   reasons:
-    DIAMOND: {type: HYPERNYM, reason: baseball_diamond.n.01}
+    DIAMOND: {type: HYPERNYM, reason: baseball_diamond.n.01->tract.n.01->geographical_area.n.01->region.n.03->location.n.01}
   result: SKIPPED
 - id: 38b486d3-c243-4c6d-b396-ba98593ab059
   pos: [NEW YORK, CATTLE]
@@ -1486,27 +1483,26 @@ skipped_scenarios:
 - id: df8c5f2d-5839-4296-a116-0f16d96baa88
   pos: [PISTOL, PIPE]
   neg: [BRUSH, DISEASE, BEACH, GAME, MOSCOW, SOCK]
-  clue: ARM
+  clue: DEVICE
   score: 1.0
   count: 1
   terms: [PISTOL]
   reasons:
-    PISTOL: {type: HYPERNYM, reason: pistol.n.01->firearm.n.01->gun.n.01->weapon.n.01}
+    PISTOL: {type: HYPERNYM, reason: pistol.n.01->firearm.n.01->gun.n.01->weapon.n.01->instrument.n.01->device.n.01}
   result: SKIPPED
 - id: 9c3985b4-5f00-4109-a56d-d485e7a89bfc
   pos: [RULER, FORCE]
   neg: [JACK, TELESCOPE, MUG, SHOT, GENIUS, HORSESHOE]
-  clue: SWAYER
-  score: 1.0
-  count: 1
-  terms: [RULER]
-  reasons:
-    RULER: {type: HYPERNYM, reason: ruler.n.01}
+  clue: null
+  score: null
+  count: null
+  terms: null
+  reasons: null
   result: SKIPPED
 - id: a5f736f9-0796-4f9c-ba1f-18425dd1d5d4
   pos: [FIGHTER, BAR]
   neg: [ROME, CHANGE, AUSTRALIA, DRILL, CALF, ARM]
-  clue: BATTLER
+  clue: COMBATANT
   score: 1.0
   count: 1
   terms: [FIGHTER]
@@ -1555,12 +1551,12 @@ skipped_scenarios:
 - id: d287a98f-0ac4-43d6-a6bd-ca4fc6e1a279
   pos: [COPPER, PRESS]
   neg: [OLYMPUS, ORANGE, HORN, CONDUCTOR, PIPE, KETCHUP]
-  clue: BEING
+  clue: BULL
   score: 1.0
   count: 1
   terms: [COPPER]
   reasons:
-    COPPER: {type: HYPERNYM, reason: bull.n.05->policeman.n.01->lawman.n.01->defender.n.01->preserver.n.03->person.n.01->organism.n.01}
+    COPPER: {type: HYPERNYM, reason: bull.n.05}
   result: SKIPPED
 - id: 26b954aa-3ba2-4b5b-bccc-4689291a8650
   pos: [BALL, DANCE]
@@ -1584,7 +1580,7 @@ skipped_scenarios:
 - id: 26d9d948-4e75-48e1-8c23-84ce13c61ad6
   pos: [MATCH, TAG]
   neg: [PLATYPUS, SPIDER, SEAL, SCREEN, CODE, SUPERHERO]
-  clue: COMPEER
+  clue: PEER
   score: 1.0
   count: 1
   terms: [MATCH]
@@ -1614,17 +1610,17 @@ skipped_scenarios:
 - id: cff9d8fb-bb15-4a91-a63c-e5b070c069f6
   pos: [ARM, ENGLAND]
   neg: [COLD, GROUND, WHIP, ROULETTE, BOLT, BOND]
-  clue: BRANCH
+  clue: PROJECTION
   score: 1.0
   count: 1
   terms: [ARM]
   reasons:
-    ARM: {type: HYPERNYM, reason: arm.n.02}
+    ARM: {type: HYPERNYM, reason: arm.n.02->projection.n.04}
   result: SKIPPED
 - id: 6cbee116-c923-4270-b49a-7f39010cd347
   pos: [PILOT, SOLDIER]
   neg: [POINT, COOK, PARACHUTE, CANADA, HOTEL, KETCHUP]
-  clue: BUFFER
+  clue: FENDER
   score: 1.0
   count: 1
   terms: [PILOT]
@@ -1643,12 +1639,12 @@ skipped_scenarios:
 - id: 4ac6ce4e-5a73-4523-942d-088852c1abf5
   pos: [GREEN, ORANGE]
   neg: [CHAIR, SLIP, CLOAK, PIRATE, MILLIONAIRE, COMPOUND]
-  clue: COMMON
+  clue: LOCATION
   score: 1.0
   count: 1
   terms: [GREEN]
   reasons:
-    GREEN: {type: HYPERNYM, reason: park.n.02}
+    GREEN: {type: HYPERNYM, reason: park.n.02->tract.n.01->geographical_area.n.01->region.n.03->location.n.01}
   result: SKIPPED
 - id: 1009b8b1-1ef9-4e74-abdb-521006189973
   pos: [PASTE, LINK]
@@ -1673,12 +1669,12 @@ skipped_scenarios:
 - id: 10f3d2a4-9c4a-4a94-93eb-2062e95f1a7e
   pos: [ATLANTIS, ALIEN]
   neg: [HIMALAYAS, MINE, MAIL, BERRY, POOL, SUB]
-  clue: BEING
+  clue: FOREIGNER
   score: 1.0
   count: 1
   terms: [ALIEN]
   reasons:
-    ALIEN: {type: HYPERNYM, reason: foreigner.n.01->traveler.n.01->person.n.01->organism.n.01}
+    ALIEN: {type: HYPERNYM, reason: foreigner.n.01}
   result: SKIPPED
 - id: 9ef12bef-47fa-405b-84c7-690a36e3e1fa
   pos: [PLASTIC, KETCHUP]
@@ -1721,7 +1717,7 @@ skipped_scenarios:
 - id: 44feb926-eb50-4fd0-9a86-ec1cb0cd5723
   pos: [SCALE, MICROSCOPE]
   neg: [PAN, PLOT, HEAD, PYRAMID, SQUARE, NEW YORK]
-  clue: COVER
+  clue: COVERING
   score: 1.0
   count: 1
   terms: [SCALE]
@@ -1731,7 +1727,7 @@ skipped_scenarios:
 - id: 77fe32dc-e430-4d84-8210-2b8725c5b04b
   pos: [ROSE, TORCH]
   neg: [COMPOUND, BERMUDA, STOCK, COVER, ORGAN, ROW]
-  clue: BEING
+  clue: ORGANISM
   score: 1.0
   count: 1
   terms: [ROSE]
@@ -1751,12 +1747,12 @@ skipped_scenarios:
 - id: c80b1d12-d3c9-48fb-a6b9-d2a622cf4bc5
   pos: [BAR, BEAT]
   neg: [CLOAK, FILM, BRIDGE, RING, GROUND, TORCH]
-  clue: ELEVATION
+  clue: RIDGE
   score: 1.0
   count: 1
   terms: [BAR]
   reasons:
-    BAR: {type: HYPERNYM, reason: bar.n.08->ridge.n.01->natural_elevation.n.01}
+    BAR: {type: HYPERNYM, reason: bar.n.08->ridge.n.01}
   result: SKIPPED
 - id: eca6bdc8-1889-447a-8505-a3241cf4e5de
   pos: [FIRE, BELL]
@@ -1771,12 +1767,12 @@ skipped_scenarios:
 - id: 92c63555-83d7-47d2-b3e5-c81aa3e92b08
   pos: [BED, FENCE]
   neg: [RING, MOSCOW, GREEN, LINK, MASS, SLUG]
-  clue: BOTTOM
+  clue: BARRIER
   score: 1.0
   count: 1
-  terms: [BED]
+  terms: [FENCE]
   reasons:
-    BED: {type: HYPERNYM, reason: bed.n.03}
+    FENCE: {type: HYPERNYM, reason: fence.n.01->barrier.n.01}
   result: SKIPPED
 - id: bd8f51a2-c815-4666-8096-44a1c7ccb09e
   pos: [PIRATE, WIND]
@@ -1811,17 +1807,16 @@ skipped_scenarios:
 - id: 6cb0fc34-e083-4f38-b1c0-e688db05f996
   pos: [SCALE, DRAGON]
   neg: [HONEY, LOCK, PARK, TABLET, FIRE, DOG]
-  clue: TARTAR
-  score: 1.0
-  count: 1
-  terms: [DRAGON]
-  reasons:
-    DRAGON: {type: HYPERNYM, reason: dragon.n.02}
+  clue: null
+  score: null
+  count: null
+  terms: null
+  reasons: null
   result: SKIPPED
 - id: a48ce82a-9a34-4f91-90bc-69860c1b3772
   pos: [COTTON, NUT]
   neg: [HOLLYWOOD, MARBLE, HIMALAYAS, BRUSH, MEXICO, BELT]
-  clue: CLOTH
+  clue: FABRIC
   score: 1.0
   count: 1
   terms: [COTTON]
@@ -1831,12 +1826,12 @@ skipped_scenarios:
 - id: 26ff05b0-aad8-409b-92f3-2331217ed02c
   pos: [NOTE, SLIP]
   neg: [STICK, BEAR, CARD, VACUUM, BALL, GOLD]
-  clue: BILLET
+  clue: CREATION
   score: 1.0
   count: 1
   terms: [NOTE]
   reasons:
-    NOTE: {type: HYPERNYM, reason: note.n.02}
+    NOTE: {type: HYPERNYM, reason: note.n.02->personal_letter.n.01->letter.n.01->document.n.02->representation.n.02->creation.n.02}
   result: SKIPPED
 incorrect_scenarios:
 - id: 08d32c2d-59de-4f18-bad6-f28fc3a44d51
@@ -1853,7 +1848,7 @@ incorrect_scenarios:
 - id: f851f588-f348-4fd0-a05c-faa9f1067f73
   pos: [RING, THUMB]
   neg: [WEB, PARK, AIR, CRASH, PITCH, MEXICO]
-  clue: ARTEFACT
+  clue: ARTIFACT
   score: 2.0
   count: 2
   terms: [RING, THUMB]
@@ -1886,7 +1881,7 @@ incorrect_scenarios:
 - id: 1eccbf1b-bf56-45c1-a934-763493bd4950
   pos: [BILL, DRAFT]
   neg: [LION, NURSE, IVORY, AFRICA, DRAGON, SHARK]
-  clue: ARTEFACT
+  clue: ARTIFACT
   score: 2.0
   count: 2
   terms: [BILL, DRAFT]
