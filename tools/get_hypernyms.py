@@ -3,7 +3,7 @@ import sys
 from nltk.corpus import wordnet
 
 from code_names_bot_clue_generator.hypernym_clues.generate_hypernym_clues import \
-    get_all_hypernyms, filter_hypernyms, get_synset_words
+    get_all_hypernyms, get_filtered_hypernyms, get_synset_words
 
 
 def print_path_map(map):
@@ -21,7 +21,7 @@ def main():
     print()
 
     print("--- Filtered ---")
-    hypernym_synsets = filter_hypernyms(hypernym_synsets)
+    hypernym_synsets = get_filtered_hypernyms(term)
     print_path_map(hypernym_synsets)
     print()
 

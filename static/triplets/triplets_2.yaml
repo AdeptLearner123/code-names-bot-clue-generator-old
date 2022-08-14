@@ -236,7 +236,7 @@
 - id: c18d509f-aaae-4cdc-97da-7616215cb451
   positive: [HEAD, PRINCESS]
   negative: [TEMPLE, DANCE, LAB, STOCK, ROCK, PHOENIX]
-  clues: [CROWN]
+  clues: [CROWN, LEADER]
   nonclues: [TITLE, BEING]
 - id: 742fa9cf-0bbd-4150-b01d-9bc2903c7927
   positive: [PLOT, ANGEL]
@@ -262,11 +262,11 @@
   positive: [PLATYPUS, FISH]
   negative: [AGENT, GRASS, CHURCH, COTTON, PLASTIC, WORM]
   clues: [VERTEBRATE]
-  nonclues: []
+  nonclues: [CHORDATE]
 - id: 670102c6-47f8-4149-bfb9-bfa02f0bf25c
   positive: [HORSE, KNIGHT]
   negative: [UNICORN, DANCE, SHOT, CANADA, SMUGGLER, CHANGE]
-  clues: [CAVALRY]
+  clues: [CAVALRY, CHESSMAN]
   nonclues: [CHARGE]
 - id: 1c8b9535-1482-4c15-a089-21f5abb41ecc
   positive: [MINT, JAM]
@@ -297,12 +297,12 @@
   positive: [STOCK, BOND]
   negative: [QUEEN, GHOST, MILLIONAIRE, OIL, MOUTH, OPERA]
   clues: [INVESTMENT]
-  nonclues: [ATTRIBUTE, ABSTRACTION]
+  nonclues: [ATTRIBUTE, ABSTRACTION, DEVICE]
 - id: 394e715a-bfe3-45e4-bde2-db13d0317383
   positive: [SPIKE, BLOCK]
   negative: [EGYPT, BAND, LOCK, TRIP, NAIL, CHANGE]
   clues: [VOLLEYBALL]
-  nonclues: [CONSTRUCTION]
+  nonclues: [CONSTRUCTION, LOCATION]
 - id: 187abb87-9e4f-4346-bcc0-2dc7cf72632c
   positive: [BOMB, WAVE]
   negative: [CHAIR, LUCK, DROP, ROCK, SCUBA DIVER, CLIFF]
@@ -326,7 +326,7 @@
 - id: a596782c-ee73-49b3-bfd2-fa60b55cc1a2
   positive: [LION, WHALE]
   negative: [MARCH, CHINA, KEY, SPINE, PLANE, DAY]
-  clues: [MAMMAL, ORGANISM]
+  clues: [MAMMAL, ORGANISM, ANIMAL]
   nonclues: [BEING]
 - id: 0aa64450-b873-4c7e-924a-5a0cc82e27b4
   positive: [TRUNK, GAS]
@@ -346,7 +346,7 @@
 - id: 15b4e09e-5fca-4e86-baba-f8595f84c49a
   positive: [PLANE, SHIP]
   negative: [PAPER, KIWI, BOX, TABLET, LEAD, MARBLE]
-  clues: [VEHICLE]
+  clues: [VEHICLE, CONVEYANCE]
   nonclues: []
 - id: 31fd2970-4769-4ad5-9f48-56984bc1b342
   positive: [CAP, PANTS]
@@ -356,7 +356,7 @@
 - id: af89270b-f539-4799-90d0-e40511c420f3
   positive: [TEACHER, DOCTOR]
   negative: [AMAZON, CAP, ORANGE, JACK, GREECE, SOUL]
-  clues: [OCCUPATION]
+  clues: [OCCUPATION, PROFESSIONAL]
   nonclues: []
 - id: 87e9cb56-856e-4ae3-b01b-6b775bf3afe6
   positive: [BERRY, LEMON]
@@ -412,7 +412,7 @@
   positive: [SCALE, MICROSCOPE]
   negative: [PAN, PLOT, HEAD, PYRAMID, SQUARE, NEW YORK]
   clues: [SMALL]
-  nonclues: []
+  nonclues: [INSTRUMENT]
 - id: 5951dbee-2d05-44e1-8882-f35f4cca51fa
   positive: [LIFE, ALIEN]
   negative: [DRAGON, POOL, AIR, SNOWMAN, DINOSAUR, MARBLE]
@@ -507,7 +507,7 @@
   positive: [SATELLITE, SPACE]
   negative: [DWARF, PLATYPUS, CRICKET, COPPER, HEART, BERRY]
   clues: [ORBIT]
-  nonclues: [JAXA, MOVE]
+  nonclues: [JAXA, MOVE, ARTIFACT]
 - id: df8c5f2d-5839-4296-a116-0f16d96baa88
   positive: [PISTOL, PIPE]
   negative: [BRUSH, DISEASE, BEACH, GAME, MOSCOW, SOCK]
@@ -566,13 +566,13 @@
 - id: 040c7256-e672-4de5-9021-31dd4ec8a838
   positive: [BUCK, LION]
   negative: [BACK, FILE, PIPE, HORN, PYRAMID, VAN]
-  clues: [MAMMAL]
+  clues: [MAMMAL, ANIMAL]
   nonclues: []
 - id: 0a6da844-ac8b-4e79-8242-5bedd5d7ef8c
   positive: [SOUL, BEAT]
   negative: [HOSPITAL, BOLT, SUPERHERO, DISEASE, LINK, HOTEL]
   clues: [MUSIC]
-  nonclues: [ACT]
+  nonclues: [ACT, ORGANISM]
 - id: 6a2b0a95-f735-4b1f-801e-07bcf4d1166b
   positive: [NURSE, SPINE]
   negative: [WIND, MUG, MICROSCOPE, SHOT, DINOSAUR, YARD]
@@ -617,12 +617,12 @@
   positive: [COTTON, NUT]
   negative: [HOLLYWOOD, MARBLE, HIMALAYAS, BRUSH, MEXICO, BELT]
   clues: [SEED]
-  nonclues: [ARTEFACT]
+  nonclues: [ARTEFACT, ORGANISM]
 - id: 08d32c2d-59de-4f18-bad6-f28fc3a44d51
   positive: [POLE, LINE]
   negative: [STAR, SPINE, BATTERY, MINE, GERMANY, STAFF]
   clues: [STRAIGHT]
-  nonclues: [SPINNAKER, AMOUNT, LOCATION]
+  nonclues: [SPINNAKER, AMOUNT, LOCATION, CONNECTION]
 - id: 5655fad3-18af-425b-bfad-06f8f8bc110d
   positive: [LINK, PLAY]
   negative: [CAPITAL, PORT, HOLE, VET, CZECH, LAWYER]
@@ -656,7 +656,7 @@
 - id: 154597f5-ad23-4d10-8f77-1df3e217650b
   positive: [BUTTON, WASHER]
   negative: [HEART, AZTEC, KETCHUP, POINT, COURT, MATCH]
-  clues: [CLOTHES]
+  clues: [CLOTHES, FASTENER]
   nonclues: [CONSTRAINT]
 - id: 9955eb08-fe99-4710-9417-64507d1af7aa
   positive: [PUMPKIN, MOON]
@@ -707,7 +707,7 @@
   positive: [BOARD, SCREEN]
   negative: [BOLT, TRIP, HOOK, CAP, HEART, AMERICA]
   clues: [FLAT]
-  nonclues: [TRS-80]
+  nonclues: [TRS-80, DISPLAY]
 - id: a038fce3-9fb2-42ce-89e8-b569438b3b6a
   positive: [JUPITER, MOUNT]
   negative: [TABLET, BALL, SPINE, SHAKESPEARE, CAST, BELT]
@@ -717,7 +717,7 @@
   positive: [BAT, HAWK]
   negative: [TOWER, POISON, SCALE, AMERICA, SHOT, SCORPION]
   clues: [FLYING]
-  nonclues: [ACT]
+  nonclues: [ACT, CHORDATE]
 - id: 7c534dbb-5cdd-4bf3-8350-0a245fdbc1ed
   positive: [ROULETTE, DICE]
   negative: [FLUTE, HEART, PLASTIC, SHOT, GLASS, LOCK]
@@ -882,7 +882,7 @@
   positive: [SQUARE, CENTER]
   negative: [TABLET, MOON, LEMON, ICE, FISH, AZTEC]
   clues: [GEOMETRY]
-  nonclues: [PONTEVEDRA, ARTEFACT, INDIVIDUAL]
+  nonclues: [PONTEVEDRA, ARTEFACT, INDIVIDUAL, LOCATION]
 - id: 16d993c4-e003-4263-abcd-c91d1be6ca38
   positive: [ANTARCTICA, PENGUIN]
   negative: [BRUSH, HOSPITAL, KEY, KING, DANCE, SLIP]

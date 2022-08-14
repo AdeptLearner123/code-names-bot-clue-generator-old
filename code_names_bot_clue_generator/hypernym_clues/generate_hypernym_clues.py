@@ -26,8 +26,7 @@ def main():
 
 
 def get_hypernym_clues(term):
-    hypernym_synsets = get_all_hypernyms(term)
-    hypernym_synsets = filter_hypernyms(hypernym_synsets)
+    hypernym_synsets = get_filtered_hypernyms(term)
     return get_synset_words(hypernym_synsets)
 
 
@@ -54,17 +53,23 @@ def get_all_hypernyms(term):
     return result_synsets
 
 
-def filter_hypernyms(hypernym_synsets):
+def get_filtered_hypernyms(term):
     filtered_synsets = dict()
-
-    obj_synset = wordnet.synsets("object")[0]
-    if obj_synset in hypernym_synsets:
-        _, path = hypernym_synsets[obj_synset]
-        for i in range(len(path) - 1):
-            synset = path[i]
-            filtered_synsets[synset] = (i + 1, path[:i + 1])
-
+    synsets = wordnet.synsets(term)
+    for synset in synsets:
+        explore_parents(synset, [], filtered_synsets)
     return filtered_synsets
+
+
+def explore_parents(synset, path, filtered_synsets):
+    if synset == wordnet.synsets("object")[0]:
+        for i in range(len(path)):
+            path_synset = path[i]
+            filtered_synsets[path_synset] = (i + 1, path[:i + 1])
+        return
+    
+    for hypernym in synset.hypernyms():
+        explore_parents(hypernym, path + [synset], filtered_synsets)
 
 
 def get_synset_words(hypernym_synsets):
