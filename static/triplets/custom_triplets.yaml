@@ -1,0 +1,15 @@
+- id: a3ee8e58-729f-465d-ab0a-09c6c4d7713c
+  positive: [ALIEN, PLANE]
+  negative: [ORANGE, SPELL, TAIL, DUCK, DOG, MATCH]
+  clues: [UFO]
+  nonclues: []
+- id: 66610275-3e7d-4104-9d3e-d98386f043b6
+  positive: [GRASS, KNIFE]
+  negative: [ORANGE, SPELL, TAIL, DUCK, DOG, MATCH]
+  clues: [BLADE]
+  nonclues: []
+- id: 38b486d3-c243-4c6d-b396-ba98593ab059
+  positive: [NEW YORK, CATTLE]
+  negative: [ORANGE, SPELL, TAIL, DUCK, DOG, MATCH]
+  clues: [STEAK]
+  nonclues: []

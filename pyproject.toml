@@ -19,6 +19,7 @@ format                  = "tasks:format"
 setup                   = "tasks:setup"
 
 create-eval-triplets    = "evaluation.triplet_generator:main"
+train-test-split        = "evaluation.train_test_split:main"
 eval-triplets           = "evaluation.triplet_evaluator:main"
 migrate-triplets        = "evaluation.triplet_migrate:main"
 
