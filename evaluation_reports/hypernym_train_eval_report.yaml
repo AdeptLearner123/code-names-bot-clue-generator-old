@@ -186,6 +186,17 @@ correct_scenarios:
     HELICOPTER: {type: HYPERNYM, reason: helicopter.n.01->heavier-than-air_craft.n.01->aircraft.n.01->craft.n.02->vehicle.n.01->conveyance.n.03}
     MISSILE: {type: HYPERNYM, reason: missile.n.01->rocket.n.01->vehicle.n.01->conveyance.n.03}
   result: CORRECT
+- id: 44feb926-eb50-4fd0-9a86-ec1cb0cd5723
+  pos: [SCALE, MICROSCOPE]
+  neg: [PAN, PLOT, HEAD, PYRAMID, SQUARE, NEW YORK]
+  clue: INSTRUMENT
+  score: 2.0
+  count: 2
+  terms: [SCALE, MICROSCOPE]
+  reasons:
+    SCALE: {type: HYPERNYM, reason: scale.n.07->measuring_instrument.n.01->instrument.n.01}
+    MICROSCOPE: {type: HYPERNYM, reason: microscope.n.01->magnifier.n.01->scientific_instrument.n.01->instrument.n.01}
+  result: CORRECT
 - id: 92c63555-83d7-47d2-b3e5-c81aa3e92b08
   pos: [BED, FENCE]
   neg: [RING, MOSCOW, GREEN, LINK, MASS, SLUG]
@@ -1894,17 +1905,6 @@ incorrect_scenarios:
     BILL: {type: HYPERNYM, reason: bill.n.09->brim.n.02->projection.n.04->structure.n.01->artifact.n.01}
     DRAFT: {type: HYPERNYM, reason: draft.n.07->regulator.n.01->control.n.09->mechanism.n.05->device.n.01->instrumentality.n.03->artifact.n.01}
   result: INCORRECT
-- id: 44feb926-eb50-4fd0-9a86-ec1cb0cd5723
-  pos: [SCALE, MICROSCOPE]
-  neg: [PAN, PLOT, HEAD, PYRAMID, SQUARE, NEW YORK]
-  clue: INSTRUMENT
-  score: 2.0
-  count: 2
-  terms: [SCALE, MICROSCOPE]
-  reasons:
-    SCALE: {type: HYPERNYM, reason: scale.n.07->measuring_instrument.n.01->instrument.n.01}
-    MICROSCOPE: {type: HYPERNYM, reason: microscope.n.01->magnifier.n.01->scientific_instrument.n.01->instrument.n.01}
-  result: INCORRECT
 - id: a48ce82a-9a34-4f91-90bc-69860c1b3772
   pos: [COTTON, NUT]
   neg: [HOLLYWOOD, MARBLE, HIMALAYAS, BRUSH, MEXICO, BELT]
@@ -1916,6 +1916,6 @@ incorrect_scenarios:
     COTTON: {type: HYPERNYM, reason: cotton.n.03->shrub.n.01->woody_plant.n.01->vascular_plant.n.01->plant.n.02->organism.n.01}
     NUT: {type: HYPERNYM, reason: addict.n.01->enthusiast.n.01->supporter.n.01->advocate.n.01->person.n.01->organism.n.01}
   result: INCORRECT
-correct: 18
+correct: 19
 skipped: 159
-incorrect: 13
+incorrect: 12

@@ -411,8 +411,8 @@
 - id: 44feb926-eb50-4fd0-9a86-ec1cb0cd5723
   positive: [SCALE, MICROSCOPE]
   negative: [PAN, PLOT, HEAD, PYRAMID, SQUARE, NEW YORK]
-  clues: [SMALL]
-  nonclues: [INSTRUMENT]
+  clues: [SMALL, INSTRUMENT]
+  nonclues: []
 - id: 5951dbee-2d05-44e1-8882-f35f4cca51fa
   positive: [LIFE, ALIEN]
   negative: [DRAGON, POOL, AIR, SNOWMAN, DINOSAUR, MARBLE]
