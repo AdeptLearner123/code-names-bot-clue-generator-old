@@ -27,6 +27,7 @@ explore-clues           = "tools.explore_clues:main"
 get-synsets             = "tools.get_synsets:main"
 get-hypernyms           = "tools.get_hypernyms:main"
 get-oxford-definition   = "tools.get_oxford_definition:main"
+set-primary-synsets     = "tools.set_primary_synsets:main"
 
 generate-hypernym-clues = "code_names_bot_clue_generator.hypernym_clues.generate_hypernym_clues:main"
 
