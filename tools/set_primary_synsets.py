@@ -5,12 +5,12 @@ import sys
 from nltk.corpus import wordnet
 
 
-def print_term_synsets(term, added, options):
+def print_term_synsets(term, primary, options):
     print(f"TERM: {term}")
 
-    print("Added:")
-    for synset in added:
-        print(f"\t {synset.name()}: {synset.definition()}")
+    print("Primary:")
+    if primary is not None:
+        print(f"\t {primary.name()}: {primary.definition()}")
     
     print("Options:")
     for i in range(len(options)):
@@ -18,31 +18,34 @@ def print_term_synsets(term, added, options):
 
 
 def set_term_synsets(term, term_synsets):
-    if term not in term_synsets:
-        term_synsets[term] = []
-
-    while True:
-        all_synsets = wordnet.synsets(term)
-        added = list(map(lambda synset_name: wordnet.synset(synset_name), term_synsets[term]))
-        added.sort(key=lambda s: s.name())
-        options = list(set(all_synsets) - set(added))
-        options.sort(key=lambda s: s.name())
-
-        if (len(options) == 0):
-            print("Skipped")
-            break
-        if (len(added) == 0 and len(options) == 1):
-            term_synsets[term].append(options[0].name())
-            print("Only 1 option, skipped")
-            break
-
-        print_term_synsets(term, added, options)
-        key = input()
+    primary = None
+    if term in term_synsets:
+        primary = wordnet.synset(term_synsets[term])
+    else:
         try:
-            term_synsets[term].append(options[int(key)].name())
+            primary = wordnet.synset(f"{term.lower().replace(' ', '_')}.n.01")
         except:
-            print("Invalid input")
-            break
+            primary = None
+    options = wordnet.synsets(term.replace(' ', '_'))
+    print(options, primary)
+    if primary is not None:
+        options.remove(primary)
+    options = list(sorted(filter(lambda s: s.name().split('.')[1] == 'n', options)))
+
+    if len(options) == 0:
+        print("Skipped")
+        return
+
+    print_term_synsets(term, primary, options)
+
+    key = input()
+    try:
+        idx = int(key)
+        term_synsets[term] = options[idx].name()
+        print("Selected " + options[idx].name())
+    except:
+        term_synsets[term] = primary.name()
+        print("Invalid input")
 
 
 def main():
@@ -50,9 +53,7 @@ def main():
         term_synsets = yaml.safe_load(f)
     term_synsets = term_synsets if term_synsets is not None else dict()
 
-    print(sys.argv)
     i = 1 if len(sys.argv) == 1 else int(sys.argv[1])
-    print(i)
     terms = list(open(TERMS_PATH, "r").read().splitlines())
     while i < len(terms):
         term = terms[i]

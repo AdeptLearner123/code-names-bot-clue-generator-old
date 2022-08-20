@@ -1,662 +1,345 @@
-AFRICA:
-- africa.n.01
-AGENT:
-- agent.n.05
-- agent.n.02
-AIR:
-- air.n.01
-- atmosphere.n.03
-ALIEN:
-- extraterrestrial_being.n.01
-- foreigner.n.01
-ALPS:
-- alps.n.01
-AMAZON:
-- amazon.n.03
-- amazon.n.02
-AMBULANCE:
-- ambulance.n.01
-AMERICA:
-- united_states.n.01
-ANGEL:
-- angel.n.01
-ANTARCTICA:
-- antarctica.n.01
-APPLE:
-- apple.n.01
-ARM:
-- arm.n.01
-- weapon.n.01
-- arm.v.02
-ATLANTIS:
-- atlantis.n.01
-AUSTRALIA:
-- australia.n.01
-- australia.n.02
-AZTEC:
-- aztec.n.01
-BACK:
-- back.r.03
-- back.n.03
-- back.r.02
-- back.n.01
-BALL:
-- ball.n.04
-- ball.n.03
-- ball.n.06
-- ball.n.01
-BAND:
-- band.n.07
-- dance_band.n.01
-- band.n.02
-BANK:
-- bank.n.01
-- bank.n.09
-BAR:
-- barroom.n.01
-- bar.n.03
-- bar.n.15
-BARK:
-- bark.n.01
-- bark.n.04
-BAT:
-- bat.n.05
-- bat.n.01
-BATTERY:
-- battery.n.02
-- battery.n.01
-- battery.n.07
-BEACH:
-- beach.n.01
-BEAR:
-- give_birth.v.01
-- bear.n.02
-- bear.n.01
-BEAT:
-- beat.n.08
-- beat.v.11
-- beat.v.02
-BED:
-- bed.n.01
-- bed.n.02
-BEIJING:
-- beijing.n.01
-BELL:
-- bell.n.01
-BELT:
-- belt.n.02
-BERLIN:
-- berlin.n.01
-BERMUDA:
-- bermuda.n.01
-BERRY:
-- berry.n.01
-- berry.n.02
-BILL:
-- charge.v.03
-- bill.n.03
-- bill.n.02
-- bill.n.01
-BLOCK:
-- barricade.v.01
-- obstruct.v.01
-- block.n.03
-- block.n.02
-- obstruct.v.02
-- blocking.n.01
-BOARD:
-- board.n.02
-- board.n.03
-- board.n.01
-BOLT:
-- bolt.v.01
-- bolt.n.06
-- thunderbolt.n.01
-BOMB:
-- bombard.v.02
-- bomb.n.01
-BOND:
-- bond.n.02
-- chemical_bond.n.01
-- bail.n.01
-- bind.v.02
-- adhesiveness.n.01
-BOOM:
-- boom.n.01
-- boom.n.02
-BOOT:
-- boot.n.01
-BOTTLE:
-- bottle.n.01
-BOW:
-- bow.n.03
-- bow.n.08
-- bow.n.02
-- bow.n.06
-- bow.v.01
-- bow.n.04
-- bow.v.03
-BOX:
-- box.n.01
-- box.v.01
-- box.v.03
-BRIDGE:
-- bridge.n.05
-- bridge.n.01
-- bridge.v.02
-- bridge.n.09
-BRUSH:
-- brush.v.05
-- brush.n.02
-- brush.v.01
-- brush.v.03
-- brush.n.01
-BUCK:
-- dollar.n.02
-- buck.n.05
-BUFFALO:
-- american_bison.n.01
-- old_world_buffalo.n.01
-- buffalo.n.02
-BUG:
-- wiretap.v.01
-- bug.n.01
-- bug.n.02
-- hemipterous_insect.n.01
-BUGLE:
-- bugle.n.01
-BUTTON:
-- button.n.01
-- push_button.n.01
-CALF:
-- calf.n.02
-- calf.n.01
-CANADA:
-- canada.n.01
-CAP:
-- ceiling.n.03
-- crown.n.11
-- cap.n.01
-CAPITAL:
-- capital.n.01
-- capital.s.03
-- capital.n.04
-- capital.n.03
-CAR:
-- car.n.01
-CARD:
-- card.n.04
-- card.n.02
-- card.n.01
-- card.n.03
-CARROT:
-- carrot.n.01
-- carrot.n.02
-CASINO:
-- casino.n.01
-CAST:
-- shed.v.01
-- cast.v.03
-- cast.n.05
-- cast.n.01
-- mold.n.02
-- project.v.10
-CAT:
-- cat.n.01
-CELL:
-- cell.n.07
-- cell.n.02
-- cell.n.03
-- cell.n.01
-CENTAUR:
-- centaur.n.01
-CENTER:
-- center.n.01
-- center.n.03
-- center.n.04
-CHAIR:
-- chair.n.01
-- chair.v.01
-- president.n.04
-CHANGE:
-- change.n.01
-- change.n.03
-- change.n.02
-- change.n.04
-- change.n.05
-- change.n.08
-- change.v.02
-- change.v.01
-- change.v.05
-CHARGE:
-- accusation.n.02
-- appoint.v.02
-- charge.n.01
-- charge.n.02
-- charge.n.03
-- charge.n.04
-- charge.n.15
-- charge.v.01
-- charge.v.03
-- charge.v.02
-- charge.v.06
-- charge.v.24
-CHECK:
-- check.n.01
-- check.n.06
-- check.n.03
-- check.n.13
-- check.v.01
-- check.v.02
-CHEST:
-- breast.n.01
-- chest.n.02
-- thorax.n.02
-CHICK:
-- chick.n.01
-CHINA:
-- china.n.01
-- china.n.02
-CHOCOLATE:
-- chocolate.n.02
-CHURCH:
-- church.n.01
-- church.n.02
-CIRCLE:
-- circle.n.01
-- circle.v.01
-CLIFF:
-- cliff.n.01
-CLOAK:
-- cloak.n.01
-- cloak.v.03
-- cloak.n.02
-CLUB:
-- cabaret.n.01
-- club.n.02
-- club.n.03
-- club.n.06
-CODE:
-- code.n.01
-- code.n.02
-- code.n.03
-COLD:
-- cold.a.01
-- cold.n.01
-- cold.n.03
-COMIC:
-- amusing.s.02
-- comedian.n.01
-- comic.a.02
-COMPOUND:
-- compound.a.01
-- compound.n.01
-- compound.n.02
-- compound.n.03
-- compound.v.02
-CONCERT:
-- concert.n.01
-CONDUCTOR:
-- conductor.n.01
-- conductor.n.02
-- conductor.n.03
-CONTRACT:
-- abridge.v.01
-- contract.n.01
-COOK:
-- cook.n.01
-- cook.v.01
-- cook.v.02
-- cook.v.03
-COPPER:
-- copper.n.01
-COTTON:
-- cotton.n.01
-COURT:
-- court.n.01
-- court.n.02
-- court.n.03
-- court.n.04
-- court.v.03
-COVER:
-- binding.n.05
-- cover.n.03
-- cover.v.01
-- cover.v.03
-CRANE:
-- crane.n.04
-- crane.n.05
-CRASH:
-- crash.n.02
-- crash.n.04
-- crash.v.01
-- crash.n.05
-- crash.n.03
-CRICKET:
-- cricket.n.01
-- cricket.n.02
-CROSS:
-- crabbed.s.01
-- crisscross.n.01
-- cross.n.01
-- cross.n.03
-CROWN:
-- crown.n.04
-- crown.n.11
-- crown.v.01
-CYCLE:
-- cycle.n.01
-- cycle.v.01
-CZECH:
-- czech.a.01
-- czech.n.01
-- czech.n.03
-- czechoslovakian.n.01
-DANCE:
-- dance.n.01
-- dance.v.01
-- dance.v.02
-- dance.n.04
-DATE:
-- date.n.01
-- date.n.02
-- date.n.03
-- date.n.06
-- date.n.08
-- date.v.01
-- date.v.03
-DAY:
-- day.n.01
-- day.n.04
-- day.n.05
-DEATH:
-- death.n.01
-- death.n.02
-- death.n.03
-- death.n.04
-- death.n.05
-DECK:
-- deck.n.01
-- deck.n.04
-- deck.v.02
-- pack_of_cards.n.01
-DEGREE:
-- academic_degree.n.01
-- degree.n.01
-- degree.n.04
-- degree.n.05
-- degree.n.06
-- degree.n.07
-DIAMOND:
-- diamond.n.01
-- diamond.n.02
-- diamond.n.04
-- rhombus.n.01
-DICE:
-- cube.v.02
-- die.n.01
-DINOSAUR:
-- dinosaur.n.01
-DISEASE:
-- disease.n.01
-DOCTOR:
-- doctor.n.01
-DOG:
-- dog.n.01
-DRAFT:
-- blueprint.v.01
-- conscription.n.01
-- draft.n.02
-- draft.n.05
-DRAGON:
-- dragon.n.01
-DRESS:
-- dress.n.01
-- dress.v.01
-DRILL:
-- bore.v.02
-- drill.n.01
-- drill.n.04
-- drill.v.02
-DROP:
-- drop.n.01
-- drop.n.03
-- drop.n.02
-- drop.v.02
-- drop.v.03
-DUCK:
-- duck.n.01
-- duck.v.01
-DWARF:
-- dwarf.n.01
-- gnome.n.01
-- shadow.v.03
-EAGLE:
-- eagle.n.01
-EGYPT:
-- egypt.n.01
-- egyptian_empire.n.01
-EMBASSY:
-- embassy.n.01
-ENGINE:
-- engine.n.01
-- locomotive.n.01
-ENGLAND:
-- england.n.01
-EUROPE:
-- europe.n.01
-EYE:
-- eye.n.01
-FACE:
-- confront.v.01
-- face.n.01
-FAIR:
-- carnival.n.03
-- fair.a.01
-- fair.s.10
-FALL:
-- descend.v.01
-- drop.n.03
-- drop.n.06
-- fall.n.01
-- fall.v.01
-FAN:
-- fan.n.01
-- fan.n.03
-FENCE:
-- fence.n.01
-- fence.v.01
-FIELD:
-- discipline.n.01
-- field.n.01
-- field.n.05
-- field.n.03
-- field.n.06
-FIGHTER:
-- combatant.n.01
-- fighter.n.02
-FIGURE:
-- figure.n.01
-- figure.n.04
-- figure.n.06
-FILE:
-- charge.v.06
-- file.n.01
-- file.n.04
-FILM:
-- film.n.02
-- film.n.03
-- movie.n.01
-- film.v.02
-- film.v.01
-FIRE:
-- displace.v.03
-- fire.n.01
-- fire.n.02
-- fire.n.03
-FISH:
-- fish.n.01
-- fish.n.02
-- fish.v.02
-FLUTE:
-- flute.n.01
-FLY:
-- fly.n.01
-- fly.v.01
-- fly.v.03
-FOOT:
-- foot.n.01
-- foot.n.02
-FORCE:
-- coerce.v.01
-- force.n.01
-- force.n.02
-- force.n.03
-FOREST:
-- forest.n.01
-- forest.n.02
-FORK:
-- fork.n.01
-FRANCE:
-- france.n.01
-GAME:
-- game.n.01
-- game.n.02
-- game.n.03
-- game.n.04
-GAS:
-- accelerator.n.01
-- gas.n.01
-- gas.n.02
-- gasoline.n.01
-GENIUS:
-- brilliance.n.03
-- genius.n.01
-- genius.n.04
-GERMANY:
-- germany.n.01
-GHOST:
-- ghost.n.03
-GIANT:
-- elephantine.s.01
-- giant.n.01
-- giant.n.06
-GLASS:
-- glass.n.01
-- glass.n.02
-GLOVE:
-- glove.n.02
-GOLD:
-- gold.n.03
-GRACE:
-- grace.n.02
-GRASS:
-- grass.n.01
-GREECE:
-- greece.n.01
-- greece.n.02
-GREEN:
-- green.n.01
-GROUND:
-- earth.n.02
-HAM:
-- ham.n.01
-HAND:
-- hand.n.01
-- hand.n.06
-- pass.v.05
-HAWK:
-- hawk.n.01
-- hawk.n.02
-HEAD:
-- head.n.01
-- head.v.01
-HEART:
-- heart.n.01
-- heart.n.02
-HELICOPTER:
-- helicopter.n.01
-HIMALAYAS:
-- himalayas.n.01
-HOLE:
-- hole.n.01
-HOLLYWOOD:
-- hollywood.a.01
-- hollywood.n.01
-HONEY:
-- honey.n.01
-HOOD:
-- hood.n.08
-HOOK:
-- hook.n.04
-HORN:
-- horn.n.01
-- horn.n.02
-HORSE:
-- horse.n.01
-HORSESHOE:
-- horseshoe.n.02
-HOSPITAL:
-- hospital.n.01
-- hospital.n.02
-HOTEL:
-- hotel.n.01
-ICE:
-- ice.n.01
-ICE CREAM: []
-INDIA:
-- india.n.01
-IRON:
-- iron.n.01
-IVORY:
-- ivory.n.01
-JACK: []
-JAM:
-- jam.n.01
-JET:
-- jet.n.01
-JUPITER:
-- jupiter.n.01
-KANGAROO:
-- kangaroo.n.01
-KETCHUP:
-- catsup.n.01
-KEY:
-- key.n.01
-KID:
-- child.n.01
-KING:
-- king.n.01
-KIWI:
-- kiwi.n.03
-- kiwi.n.04
-KNIFE:
-- knife.n.01
-- knife.n.02
-KNIGHT:
-- knight.n.01
-- knight.n.02
-LAB:
-- lab.n.01
-LAP:
-- lap.n.01
-LASER:
-- laser.n.01
-LAWYER:
-- lawyer.n.01
-LEAD:
-- lead.n.02
-- lead.n.01
-LEMON:
-- lemon.n.01
-LEPRECHAUN:
-- leprechaun.n.01
-LIFE:
-- life.n.01
-- life.n.02
-LIGHT:
-- light.n.01
-LIMOUSINE:
-- limousine.n.01
-LINE:
-- line.n.02
+AGENT: agent.n.01
+AIR: air.n.01
+ALIEN: extraterrestrial_being.n.01
+ALPS: alps.n.01
+AMAZON: amazon.n.02
+AMBULANCE: ambulance.n.01
+AMERICA: united_states.n.01
+ANGEL: angel.n.01
+APPLE: apple.n.01
+ARM: arm.n.01
+AUSTRALIA: australia.n.01
+BACK: back.n.01
+BALL: ball.n.01
+BAND: set.n.05
+BANK: depository_financial_institution.n.01
+BAR: barroom.n.01
+BARK: bark.n.01
+BAT: bat.n.01
+BATTERY: battery.n.02
+BEAR: bear.n.01
+BEAT: rhythm.n.01
+BED: bed.n.01
+BELL: bell.n.01
+BELT: belt.n.02
+BERLIN: berlin.n.01
+BERRY: berry.n.01
+BILL: bill.n.01
+BLOCK: block.n.01
+BOARD: board.n.01
+BOLT: thunderbolt.n.01
+BOMB: bomb.n.01
+BOND: chemical_bond.n.01
+BOOM: boom.n.01
+BOOT: boot.n.01
+BOTTLE: bottle.n.01
+BOW: bow.n.01
+BOX: box.n.01
+BRIDGE: bridge.n.01
+BRUSH: brush.n.02
+BUCK: buck.n.05
+BUFFALO: american_bison.n.01
+BUG: bug.n.01
+BUGLE: bugle.n.01
+BUTTON: button.n.01
+CALF: calf.n.01
+CAP: cap.n.01
+CAPITAL: capital.n.01
+CAR: car.n.01
+CARD: card.n.01
+CARROT: carrot.n.01
+CASINO: casino.n.01
+CAST: cast.n.01
+CAT: cat.n.01
+CELL: cell.n.01
+CENTAUR: centaur.n.01
+CENTER: center.n.01
+CHAIR: chair.n.01
+CHANGE: change.n.01
+CHARGE: charge.n.01
+CHECK: check.n.01
+CHEST: thorax.n.02
+CHICK: chick.n.01
+CHINA: china.n.01
+CHOCOLATE: cocoa.n.01
+CHURCH: church.n.01
+CIRCLE: circle.n.01
+CLOAK: cloak.n.01
+CLUB: cabaret.n.01
+CODE: code.n.03
+COLD: cold.n.03
+COMPOUND: compound.n.01
+CONDUCTOR: conductor.n.02
+CONTRACT: contract.n.01
+COOK: cook.n.01
+COPPER: copper.n.01
+COTTON: cotton.n.01
+COURT: court.n.01
+COVER: screen.n.04
+CRANE: crane.n.05
+CRASH: crash.n.04
+CRICKET: cricket.n.01
+CROSS: cross.n.01
+CROWN: crown.n.04
+CYCLE: cycle.n.01
+CZECH: czech.n.01
+DANCE: dance.n.01
+DATE: date.n.01
+DAY: day.n.01
+DEATH: death.n.01
+DECK: deck.n.01
+DEGREE: degree.n.01
+DIAMOND: diamond.n.01
+DOCTOR: doctor.n.01
+DOG: dog.n.01
+DRAFT: draft.n.01
+DRAGON: dragon.n.01
+DRESS: dress.n.01
+DRILL: drill.n.01
+DROP: drop.n.01
+DUCK: duck.n.01
+DWARF: dwarf.n.01
+EAGLE: eagle.n.01
+EGYPT: egypt.n.01
+EMBASSY: embassy.n.01
+ENGINE: engine.n.01
+EUROPE: europe.n.01
+EYE: eye.n.01
+FACE: face.n.01
+FAIR: carnival.n.03
+FALL: fall.n.01
+FAN: fan.n.01
+FENCE: fence.n.01
+FIELD: field.n.01
+FIGHTER: combatant.n.01
+FIGURE: figure.n.01
+FILE: file.n.01
+FILM: movie.n.01
+FIRE: fire.n.01
+FISH: fish.n.01
+FLUTE: flute.n.01
+FLY: fly.n.01
+FOOT: foot.n.01
+FORCE: force.n.01
+FOREST: forest.n.01
+FORK: fork.n.01
+FRANCE: france.n.01
+GAME: game.n.01
+GAS: gas.n.01
+GENIUS: genius.n.01
+GHOST: ghost.n.03
+GIANT: giant.n.01
+GLASS: glass.n.01
+GLOVE: baseball_glove.n.01
+GOLD: gold.n.03
+GRACE: grace.n.02
+GRASS: grass.n.01
+GREECE: greece.n.01
+GREEN: green.n.01
+GROUND: land.n.04
+HAM: ham.n.01
+HAND: hand.n.01
+HAWK: hawk.n.01
+HEAD: head.n.01
+HEART: heart.n.01
+HIMALAYAS: himalayas.n.01
+HOLE: hole.n.01
+HOLLYWOOD: hollywood.n.01
+HONEY: honey.n.01
+HOOD: hood.n.08
+HOOK: hook.n.04
+HORN: horn.n.01
+HORSE: horse.n.01
+HORSESHOE: horseshoe.n.02
+HOSPITAL: hospital.n.01
+ICE: ice.n.01
+IRON: iron.n.01
+IVORY: ivory.n.01
+JACK: jack.n.01
+JAM: jam.n.01
+JET: jet.n.01
+JUPITER: jupiter.n.01
+KEY: key.n.01
+KID: child.n.01
+KING: king.n.01
+KIWI: kiwi.n.03
+KNIFE: knife.n.01
+KNIGHT: knight.n.01
+LAP: lap.n.01
+LEAD: lead.n.01
+LEMON: lemon.n.01
+LIFE: life.n.01
+LIGHT: light.n.01
+LINE: line.n.01
+LINK: link.n.01
+LION: lion.n.01
+LITTER: litter.n.02
+LOCK: lock.n.01
+LOG: log.n.01
+LONDON: london.n.01
+LUCK: luck.n.02
+MAIL: mail.n.01
+MAPLE: maple.n.01
+MARBLE: marble.n.01
+MARCH: march.n.01
+MASS: mass.n.01
+MATCH: match.n.01
+MERCURY: mercury.n.01
+MINE: mine.n.01
+MINT: mint.n.02
+MISSILE: missile.n.01
+MODEL: model.n.01
+MOLE: mole.n.04
+MOON: moon.n.01
+MOUNT: saddle_horse.n.01
+MOUSE: mouse.n.01
+MOUTH: mouth.n.01
+MUG: mug.n.04
+NAIL: nail.n.02
+NEEDLE: needle.n.03
+NET: net.n.02
+NEW YORK: new_york.n.01
+NIGHT: night.n.01
+NINJA: ninja.n.01
+NOTE: note.n.01
+NOVEL: novel.n.01
+NURSE: nurse.n.01
+NUT: nut.n.01
+OCTOPUS: octopus.n.02
+OIL: oil.n.01
+OLIVE: olive.n.01
+OPERA: opera.n.01
+ORANGE: orange.n.01
+ORGAN: organ.n.01
+PALM: palm.n.01
+PAN: pan.n.01
+PANTS: trouser.n.01
+PAPER: paper.n.01
+PARK: park.n.01
+PART: part.n.01
+PASS: pass.n.06
+PASTE: paste.n.01
+PHOENIX: phoenix.n.03
+PIANO: piano.n.01
+PIE: pie.n.01
+PILOT: pilot.n.01
+PIN: pin.n.09
+PIPE: pipe.n.02
+PIRATE: pirate.n.02
+PIT: pit.n.01
+PITCH: pitch.n.01
+PLANE: airplane.n.01
+PLASTIC: plastic.n.01
+PLATE: plate.n.02
+PLAY: play.n.01
+PLOT: plot.n.03
+POINT: point.n.01
+POISON: poison.n.01
+POLE: pole.n.01
+POOL: pool.n.01
+PORT: port.n.01
+POST: post.n.01
+POUND: pound.n.01
+PRESS: press.n.02
+PUMPKIN: pumpkin.n.01
+PUPIL: student.n.01
+PYRAMID: pyramid.n.01
+QUEEN: queen.n.02
+RABBIT: rabbit.n.01
+RACKET: racket.n.01
+RAY: beam.n.04
+REVOLUTION: revolution.n.02
+RING: ring.n.08
+ROBIN: robin.n.01
+ROCK: rock.n.01
+ROME: rome.n.01
+ROOT: root.n.01
+ROSE: rose.n.01
+ROULETTE: roulette.n.03
+ROUND: round.n.01
+ROW: row.n.01
+RULER: ruler.n.01
+SATELLITE: satellite.n.01
+SATURN: saturn.n.01
+SCALE: scale.n.01
+SCHOOL: school.n.01
+SCORPION: scorpion.n.03
+SCREEN: screen.n.03
+SEAL: seal.n.02
+SERVER: server.n.03
+SHADOW: shadow.n.01
+SHARK: shark.n.01
+SHOE: shoe.n.01
+SHOP: shop.n.01
+SHOT: shooting.n.01
+SINK: sink.n.01
+SLIP: faux_pas.n.01
+SLUG: slug.n.07
+SNOW: snow.n.01
+SOCK: sock.n.01
+SOLDIER: soldier.n.01
+SOUL: soul.n.01
+SOUND: sound.n.01
+SPACE: outer_space.n.01
+SPELL: spell.n.04
+SPIDER: spider.n.01
+SPIKE: spike.n.09
+SPINE: spinal_column.n.01
+SPOT: topographic_point.n.01
+SPRING: spring.n.01
+SPY: spy.n.01
+SQUARE: square.n.01
+STAFF: staff.n.01
+STAR: star.n.01
+STATE: state.n.01
+STICK: stick.n.01
+STOCK: stock.n.01
+STRAW: straw.n.01
+STREAM: stream.n.01
+STRIKE: strike.n.01
+STRING: string.n.01
+SUB: bomber.n.03
+SUIT: suit.n.01
+SWING: swing.n.01
+SWITCH: switch.n.01
+TABLE: table.n.02
+TABLET: tablet.n.01
+TAG: tag.n.01
+TAIL: tail.n.01
+TAP: rap.n.02
+TEACHER: teacher.n.01
+TEMPLE: temple.n.01
+THEATER: theater.n.01
+THUMB: thumb.n.01
+TICK: tick.n.01
+TIE: necktie.n.01
+TIME: time.n.01
+TOOTH: tooth.n.01
+TORCH: torch.n.01
+TOWER: tower.n.01
+TRACK: path.n.04
+TRAIN: train.n.01
+TRIANGLE: triangle.n.01
+TRIP: trip.n.01
+TRUNK: trunk.n.01
+TUBE: tube.n.01
+TURKEY: turkey.n.01
+VACUUM: vacuum.n.01
+VAN: avant-garde.n.01
+VET: veterinarian.n.01
+WAKE: aftermath.n.01
+WALL: wall.n.01
+WAR: war.n.01
+WASHER: washer.n.03
+WASHINGTON: washington.n.01
+WATCH: watch.n.01
+WATER: water.n.01
+WAVE: wave.n.01
+WEB: web.n.01
+WELL: well.n.01
+WHALE: whale.n.02
+WHIP: whip.n.01
+WIND: wind.n.01
+WITCH: enchantress.n.02
+WORM: worm.n.01
+YARD: yard.n.02
