@@ -186,7 +186,7 @@
 - id: 3842b6e0-da16-40ae-816e-c29438777c92
   positive: [JET, MISSILE]
   negative: [MERCURY, SUPERHERO, JACK, IRON, SPACE, MARBLE]
-  clues: [WEAPON, CONVEYANCE]
+  clues: [WEAPON, CONVEYANCE, ARTIFACT]
   nonclues: []
 - id: 491c0374-59d7-49f9-8e22-61e4cdd42090
   positive: [STRING, CONCERT]
@@ -232,7 +232,7 @@
   positive: [BANK, SCHOOL]
   negative: [CENTER, GIANT, KIWI, PIPE, NUT, STRAW]
   clues: [INSTITUTION]
-  nonclues: [ISRAEL, AMOUNT]
+  nonclues: [ISRAEL, AMOUNT, GROUP]
 - id: c18d509f-aaae-4cdc-97da-7616215cb451
   positive: [HEAD, PRINCESS]
   negative: [TEMPLE, DANCE, LAB, STOCK, ROCK, PHOENIX]
@@ -267,7 +267,7 @@
   positive: [HORSE, KNIGHT]
   negative: [UNICORN, DANCE, SHOT, CANADA, SMUGGLER, CHANGE]
   clues: [CAVALRY, CHESSMAN]
-  nonclues: [CHARGE]
+  nonclues: [CHARGE, ORGANISM]
 - id: 1c8b9535-1482-4c15-a089-21f5abb41ecc
   positive: [MINT, JAM]
   negative: [TELESCOPE, DROP, MASS, CODE, VET, CRICKET]
@@ -351,17 +351,17 @@
 - id: 31fd2970-4769-4ad5-9f48-56984bc1b342
   positive: [CAP, PANTS]
   negative: [CIRCLE, CAT, DOG, TOOTH, JACK, FOOT]
-  clues: [CLOTHING]
+  clues: [CLOTHING, ARTIFACT]
   nonclues: []
 - id: af89270b-f539-4799-90d0-e40511c420f3
   positive: [TEACHER, DOCTOR]
   negative: [AMAZON, CAP, ORANGE, JACK, GREECE, SOUL]
-  clues: [OCCUPATION, PROFESSIONAL]
+  clues: [OCCUPATION, PROFESSIONAL, ADULT]
   nonclues: []
 - id: 87e9cb56-856e-4ae3-b01b-6b775bf3afe6
   positive: [BERRY, LEMON]
   negative: [SATELLITE, PLATE, LIFE, MOUTH, RACKET, STADIUM]
-  clues: [FRUIT]
+  clues: [FRUIT, FOOD]
   nonclues: []
 - id: 325926a4-7157-4e54-b8ba-52068a8a5fcb
   positive: [TABLET, CHURCH]
@@ -386,7 +386,7 @@
 - id: 22985cb2-ba21-496e-925b-ebefe735e1d9
   positive: [BOOM, CRASH]
   negative: [MOUNT, MICROSCOPE, BARK, BELT, MOON, FILE]
-  clues: [SOUND, CONCORDE]
+  clues: [SOUND, CONCORDE, EVENT]
   nonclues: [GO]
 - id: b0cfc3ab-979f-4e62-8d38-63fa566f4129
   positive: [BANK, CARD]
@@ -516,7 +516,7 @@
 - id: 85d57652-c613-41cd-a0b6-bd9416cb1d2f
   positive: [BOOT, BELT]
   negative: [BUG, CAST, SOLDIER, LION, ROULETTE, TAIL]
-  clues: [CLOTHING]
+  clues: [CLOTHING, ARTIFACT]
   nonclues: [ACT]
 - id: 03086878-99bf-4e24-8ee3-101b95fa503a
   positive: [LITTER, VACUUM]
@@ -542,7 +542,7 @@
   positive: [AMBULANCE, CROSS]
   negative: [PYRAMID, POUND, GLASS, CRASH, ICE, EUROPE]
   clues: [MEDIC]
-  nonclues: [GRAZ, ENTITY]
+  nonclues: [GRAZ, ENTITY, ARTIFACT]
 - id: ee6b899f-7db2-482e-933f-532c4ca1d48d
   positive: [ATLANTIS, MAMMOTH]
   negative: [CHOCOLATE, CODE, PLASTIC, PIRATE, RULER, ALPS]
@@ -552,7 +552,7 @@
   positive: [DATE, MARCH]
   negative: [PRESS, SWING, ROOT, STRING, MISSILE, FIRE]
   clues: [TIME]
-  nonclues: [CHARLEMAGNE, ASSEMBLAGE]
+  nonclues: [CHARLEMAGNE, ASSEMBLAGE, MEASURE]
 - id: 8f1ce022-5a01-44ab-8890-5aeed0e7e1fa
   positive: [MOUSE, WATCH]
   negative: [KIWI, CIRCLE, PENGUIN, CHEST, EYE, PLANE]
@@ -591,7 +591,7 @@
 - id: 52a3643d-b5a0-4568-a0da-2bbe4a6cdf55
   positive: [NAIL, ENGINE]
   negative: [SNOW, OIL, WIND, TAG, DANCE, CONCERT]
-  clues: [CONSTRUCT]
+  clues: [CONSTRUCT, DEVICE]
   nonclues: [ENGLAND, ARTEFACT]
 - id: 795a3f67-6ec5-4392-aba3-e0132f90e256
   positive: [BOX, CHEST]
@@ -692,7 +692,7 @@
   positive: [ARM, FACE]
   negative: [BUTTON, TURKEY, ALPS, NOVEL, BAR, GRACE]
   clues: [BODY]
-  nonclues: [SALUTE, ARTEFACT]
+  nonclues: [SALUTE, ARTEFACT, PART]
 - id: 65335ce8-33e5-45f6-84d6-339010bea97b
   positive: [MASS, TRAIN]
   negative: [LIFE, BEIJING, NUT, GRACE, GLOVE, LUCK]
@@ -792,7 +792,7 @@
   positive: [HOOK, NET]
   negative: [LIFE, CAR, SOCK, VET, SATELLITE, ROULETTE]
   clues: [FISHING]
-  nonclues: []
+  nonclues: [DEVICE]
 - id: 354da3ba-5536-49fc-81d1-9e92cee261a1
   positive: [COVER, CAR]
   negative: [FACE, ENGLAND, PIN, EGYPT, BRUSH, NOVEL]
@@ -807,7 +807,7 @@
   positive: [SOCK, DANCE]
   negative: [AMERICA, ROME, MAIL, PLAY, IRON, CHECK]
   clues: [LEGS]
-  nonclues: [ENTITY]
+  nonclues: [ENTITY, ARTIFACT]
 - id: a5f736f9-0796-4f9c-ba1f-18425dd1d5d4
   positive: [FIGHTER, BAR]
   negative: [ROME, CHANGE, AUSTRALIA, DRILL, CALF, ARM]
@@ -837,17 +837,17 @@
   positive: [TABLE, FORK]
   negative: [AIR, ROCK, PAPER, HAM, BUG, VACUUM]
   clues: [DINING]
-  nonclues: [RECORDER, MOVE]
+  nonclues: [RECORDER, MOVE, ARTIFACT]
 - id: 7b1a6eab-d1f6-444c-9554-9fa61ebabb22
   positive: [KEY, LOCK]
   negative: [POINT, DINOSAUR, STADIUM, LEPRECHAUN, STAR, MOSCOW]
-  clues: [DOOR]
+  clues: [DOOR, ARTIFACT]
   nonclues: [AREA]
 - id: b5fe84da-1089-4273-96eb-51e9ee4b48f7
   positive: [ROUND, BOW]
   negative: [CAT, ALIEN, MAPLE, SWING, GAME, PALM]
   clues: [CURVE]
-  nonclues: [STRING, ACT]
+  nonclues: [STRING, ACT, ARTIFACT]
 - id: 860717a0-47d3-46bc-a7b0-2f2f20e3d79a
   positive: [ALPS, COLD]
   negative: [FAIR, FLUTE, POLICE, CYCLE, BEACH, WORM]

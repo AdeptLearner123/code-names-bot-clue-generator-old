@@ -1,11 +1,9 @@
-from abc import ABC, abstractmethod
 from nltk.corpus import wordnet
-from nltk.tokenize import word_tokenize
-from nltk.stem import WordNetLemmatizer 
 from tqdm import tqdm
+import yaml
 
 from code_names_bot_clue_generator.clues.clues_database import CluesDatabase
-from config import HYPERNYM, GET_SCORES_PATH, TERMS_PATH
+from config import HYPERNYM, GET_SCORES_PATH, TERMS_PATH, TERM_PRIMARY_SYNSETS_PATH
 
 
 def main():
@@ -26,15 +24,28 @@ def main():
 
 
 def get_hypernym_clues(term):
-    hypernym_synsets = get_filtered_hypernyms(term)
+    hypernym_synsets = get_primary_hypernyms(term)
     return get_synset_words(hypernym_synsets)
 
 
 def get_all_hypernyms(term):
+    synsets = wordnet.synsets(term)
+    return get_synset_hypernyms(synsets)
+
+
+def get_primary_hypernyms(term):
+    with open(TERM_PRIMARY_SYNSETS_PATH, 'r') as f:
+        term_synsets = yaml.safe_load(f)
+    if term not in term_synsets:
+        return dict()
+    primary_synset = wordnet.synset(term_synsets[term])
+    return get_synset_hypernyms([primary_synset])
+
+
+def get_synset_hypernyms(synsets):
     queue = []
     result_synsets = dict()
-
-    synsets = wordnet.synsets(term)
+    
     for synset in synsets:
         for hypernym in synset.hypernyms():
             queue.append((hypernym, 1, [synset, hypernym]))
@@ -51,25 +62,6 @@ def get_all_hypernyms(term):
             queue.append((parent_hypernym, depth + 1, path + [parent_hypernym]))
 
     return result_synsets
-
-
-def get_filtered_hypernyms(term):
-    filtered_synsets = dict()
-    synsets = wordnet.synsets(term)
-    for synset in synsets:
-        explore_parents(synset, [], filtered_synsets)
-    return filtered_synsets
-
-
-def explore_parents(synset, path, filtered_synsets):
-    if synset == wordnet.synsets("object")[0]:
-        for i in range(len(path)):
-            path_synset = path[i]
-            filtered_synsets[path_synset] = (i + 1, path[:i + 1])
-        return
-    
-    for hypernym in synset.hypernyms():
-        explore_parents(hypernym, path + [synset], filtered_synsets)
 
 
 def get_synset_words(hypernym_synsets):

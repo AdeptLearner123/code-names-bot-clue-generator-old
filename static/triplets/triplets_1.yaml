@@ -2,7 +2,7 @@
   positive: [HOLE, MOLE]
   negative: [ORANGE, SPELL, TAIL, DUCK, DOG, MATCH]
   clues: [UNDERGROUND]
-  nonclues: []
+  nonclues: [ATTRIBUTE]
 - id: 054a18af-60e4-4610-a92d-2c6a34fd0d5f
   positive: [CRANE, PHOENIX]
   negative: [CLOAK, MICROSCOPE, HOTEL, SPELL, LEMON, CENTER]
@@ -47,7 +47,7 @@
   positive: [BERRY, COTTON]
   negative: [KNIGHT, SMUGGLER, ROOT, EMBASSY, STOCK, UNDERTAKER]
   clues: [HARVESTED]
-  nonclues: []
+  nonclues: [MATTER]
 - id: 822dff54-6f53-44b2-bd83-546ca5fe48ce
   positive: [DAY, STAR]
   negative: [PART, PALM, NINJA, SCREEN, WAKE, AMBULANCE]
@@ -296,7 +296,7 @@
 - id: 1eccbf1b-bf56-45c1-a934-763493bd4950
   positive: [BILL, DRAFT]
   negative: [LION, NURSE, IVORY, AFRICA, DRAGON, SHARK]
-  clues: [LEGISLATION]
+  clues: [LEGISLATION, COMMUNICATION]
   nonclues: [ARTEFACT, ARTIFACT]
 - id: 04c697b2-c7cf-4b35-8853-c0c7bad282d1
   positive: [MINT, HAM]
@@ -322,7 +322,7 @@
   positive: [FLY, BUG]
   negative: [KANGAROO, NIGHT, SCHOOL, CONDUCTOR, KETCHUP, MODEL]
   clues: [INSECT, ARTHROPOD]
-  nonclues: []
+  nonclues: [ANIMAL]
 - id: a8891123-9cb6-4590-8a0b-090f6eb9beee
   positive: [JACK, POST]
   negative: [NINJA, HORN, CYCLE, CAP, GOLD, BOOM]
@@ -612,7 +612,7 @@
   positive: [MAPLE, CHOCOLATE]
   negative: [BOX, CAPITAL, CELL, FOREST, EUROPE, MINT]
   clues: [SYRUP]
-  nonclues: []
+  nonclues: [MATTER]
 - id: 0bf1324d-f185-457b-b950-634a8f5242a6
   positive: [SPACE, GENIUS]
   negative: [BERLIN, STAR, WORM, CRASH, EGYPT, OLIVE]
@@ -661,13 +661,13 @@
 - id: d22d8804-7a7f-4ce5-a7bd-0f37f8307a4d
   positive: [WHIP, NEEDLE]
   negative: [ARM, BUCK, PART, DEATH, POISON, DROP]
-  clues: [THIN, INSTRUMENTALITY]
+  clues: [THIN, INSTRUMENTALITY, ARTIFACT]
   nonclues: []
 - id: cbd94b45-3007-4929-a3ae-6fd3dbcca1b3
   positive: [COPPER, IRON]
   negative: [TRUNK, PALM, LEPRECHAUN, CHECK, LAP, BERMUDA]
   clues: [METAL]
-  nonclues: []
+  nonclues: [MATTER]
 - id: bcdf4df5-c8aa-4f1e-9e84-4fe9d7413223
   positive: [SLIP, PAPER]
   negative: [LASER, SQUARE, AFRICA, POLE, LAB, MATCH]
@@ -697,7 +697,7 @@
   positive: [LITTER, STRAW]
   negative: [ROOT, CANADA, RAY, CARROT, BOND, STICK]
   clues: [PLASTIC]
-  nonclues: []
+  nonclues: [ABSTRACTION]
 - id: 057c7106-d0f4-4996-a2da-7e34ac861072
   positive: [GAS, SHAKESPEARE]
   negative: [BATTERY, CENTAUR, JAM, TRUNK, MAPLE, GRASS]
@@ -721,7 +721,7 @@
 - id: 2b7844da-79a0-4cdb-b8d9-a48b2e07a159
   positive: [HORSE, FIGHTER]
   negative: [CAPITAL, FILM, WAVE, MUG, EGYPT, CAP]
-  clues: [CAVALRY]
+  clues: [CAVALRY, ORGANISM]
   nonclues: []
 - id: eafd90cf-f348-482a-9dff-585e5a8fe37f
   positive: [PRESS, FILM]
@@ -752,11 +752,11 @@
   positive: [BUGLE, BELL]
   negative: [DRAFT, CODE, ALPS, DAY, VAN, FIGURE]
   clues: [INSTRUMENT]
-  nonclues: []
+  nonclues: [ARTIFACT]
 - id: aeb13a52-6115-4037-be1b-0e64a78f5871
   positive: [SOCK, CLOAK]
   negative: [AFRICA, DOG, MATCH, DINOSAUR, VACUUM, SOUND]
-  clues: [CLOTHING]
+  clues: [CLOTHING, COVERING]
   nonclues: [ARTEFACT, ARTIFACT]
 - id: cf557a5f-dab2-4097-ac92-b65ac8dbc47b
   positive: [PIANO, BARK]
@@ -781,7 +781,7 @@
 - id: 20d999a5-9dc5-4426-ab68-1e567e0e29cf
   positive: [GHOST, SOUL]
   negative: [ALIEN, EMBASSY, PART, TRAIN, POLICE, TIE]
-  clues: [EXORCISE]
+  clues: [EXORCISE, SPIRIT]
   nonclues: []
 - id: 496ef5f7-3917-4967-b2d2-9ed773274076
   positive: [EYE, SHADOW]
@@ -817,7 +817,7 @@
   positive: [NIGHT, MARCH]
   negative: [WHIP, TOWER, ROW, STAFF, SNOWMAN, MEXICO]
   clues: [EQUINOX]
-  nonclues: []
+  nonclues: [MEASURE]
 - id: 7b6c7b0c-bb5b-4dc5-873d-31972e091d3d
   positive: [SHARK, FISH]
   negative: [CARROT, SCUBA DIVER, BEAR, PLOT, PIRATE, ORANGE]
@@ -852,7 +852,7 @@
   positive: [HEART, FALL]
   negative: [DRESS, CLUB, PAN, BAT, THIEF, PLATE]
   clues: [LOVE]
-  nonclues: []
+  nonclues: [ABSTRACTION]
 - id: 044dd285-7053-4f10-9f13-5dbe99d5b94b
   positive: [HONEY, ROSE]
   negative: [PANTS, DISEASE, SPIKE, OCTOPUS, NOVEL, GAME]
@@ -861,7 +861,7 @@
 - id: 78aa2c8a-b0b7-476c-a657-b8947e58ba8e
   positive: [CODE, FILE]
   negative: [SHOE, FORK, WASHINGTON, TRIANGLE, FOOT, SEAL]
-  clues: [JPEG]
+  clues: [JPEG, COMMUNICATION]
   nonclues: []
 - id: da12e6fe-f143-4e55-854c-09f63b8f4696
   positive: [PAN, FAN]
@@ -887,7 +887,7 @@
   positive: [OPERA, SWING]
   negative: [CLUB, COVER, CROSS, JUPITER, GRASS, SATELLITE]
   clues: [PLAY]
-  nonclues: []
+  nonclues: [ABSTRACTION]
 - id: 124bd6dd-cd07-4d83-903b-4ad76a892e32
   positive: [BLOCK, STRIKE]
   negative: [HOOK, LIMOUSINE, BEIJING, MOSCOW, OIL, NEW YORK]
