@@ -1,5 +1,7 @@
 TERMS_PATH = "static/terms.txt"
 
+TERM_PRIMARY_SYNSETS_PATH = "static/term_primary_synsets.yaml"
+
 TRIPLETS_PATH = "static/triplets/"
 TRAIN_TRIPLETS_PATH = "static/train_triplets.txt"
 TEST_TRIPLETS_PATH = "static/test_triplets.txt"
